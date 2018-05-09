@@ -1,5 +1,12 @@
 \documentclass[conference]{IEEEtran}
 \usepackage{url}
+\usepackage{enumitem}
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+   \DeclareGraphicsExtensions{.png}
+ \else
+   \usepackage[dvips]{graphicx}
+\fi
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
