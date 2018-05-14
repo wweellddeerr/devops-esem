@@ -12,7 +12,7 @@ investigated DevOps, only make sense if the practices and concepts related to th
 
 \textbf{H1:} \textit{There is a group of categories related to DevOps adoption that only make senses if are used to increase the collaboration culture level. We call this group of categories of \textbf{enablers}}. If all is automated: deployment, infrastructure providing, monitoring, etc, but this automation is maintained into a silo, where only one people or one team is able or responsible to understand, adapt or evolve this automation, there is no increase in collaboration level and, consequently, the DevOps adoption has not advanced. The same is valid to the other categories of enablers. If transparency, sharing, etc don't contribute to the collaboration culture, they don't contribute to DevOps adoption.
 
-"Estava faltando esse meio de campo na ligacao entre ops e devs (...) essas ferramentas que a gente utilizou foram justamente para fazer a ligação do DevOps" P3
+"This midfield between dev and ops was missing, and this tools that we used were just to connect the DevOps" Fire P3
 
 \textbf{H2:} \textit{There is a group of categories related to DevOps adoption that don't contributes to increase of collaboration culture level, but that are pointed out as DevOps adoption related, because they emerge as expected or necessary consequence of the adoption. We call this group of categories of \textbf{outcomes}}. In a first moment, the simple fact that a team is more agile in delivering software, or more resilient in failure recovery, don't contributes directly to bring operations tasks closer to development tasks. But, the respondents of the interviews frequently cited the capacity of continuously delivery software and the strongly resilient infrastructure as part of their DevOps adoption process.
 
@@ -51,87 +51,12 @@ DevOps outcomes is that group of categories doesn't produces primarily the expec
 
 \footnotesize * This category can be enabler too
 
+
 \normalsize
 One well succeeded DevOps adoption typically increases the potential of agility, continuous measurement, quality assurance and resilience of a team. But, in some cases this potential is not completely used due business decisions. For example, one respondent has cited that at a first moment the company don't allowed the continuous deployment of applications in production:
 
 "Nos tinhamos condicoes e seguranca para publicar continuamente em ambiente de producao, porem, por os gerentes tinham medo e decidiram por publicar apenas semanalmente em producao" P9
 
-In this case, the DevOps adoption increased the level of agility of the company, but, this potential was not totally tapped.
+In this case, DevOps increased the level of agility of the company, but, this potential was not totally tapped.
 
 As well as enablers, each outcome will be detailed in the sequence of the paper.
-
-\subsection{The Core Category: Collaboration Culture}
-In this section we present the details of what exactly means build and increase a collaboration culture in DevOps adoption.
-
-The collaboration culture is essentially about remove the barriers that constitutes the silos between development and operations teams or activities. At first glance, it seems somewhat obvious, but the respondents cited some mistakes that they consider recurrent in not prioritize this aspect in a DevOps adoption:
-
-"Eh uma questão cultural muito forte, que as equipes algumas vezes nao estao acostumadas e uma coisa que me incomoda muito e eu vejo acontecer muito eh as pessoas atrelarem adotar DevOps unica e exclusivamente a ferramentas" P9
-
-As before described, in a grounded theory study, the categories emerge from a set of related concepts. The concepts that compose the "collaboration culture" category in our analyses are six:
-
-\begin{itemize}
-\item Facilitated communication
-\item Operations in day to day development
-\item Software development empowerment - confidence between teams.
-\item Blameless
-\item Shared responsibilities
-\item Product thinking
-\end{itemize}
-
-\subsection{Automation}
-Automation was the category most cited in interviews. Is the category with the higher number of related concepts. This occurs because manual proceedings are considered as strong candidates to propitiate the formation of a silo. If a task is manual, one people, or one team will be responsible to execute it. Although transparency and sharing can be used to ensure collaboration even in manual tasks, with automation the points where silos may arise are minimized.
-
-"When a developer needed to build a new application, the common flow was: he creates a ticket to the operations team, which manually evaluates and creates what was requested. This task could take a lot of time and there was no visibility between teams about what was done. So, here, we adopted this strategy of infrastructure as code where the entire infrastructure is versioned in a common language that anyone, be it the developer, the operations guy or even the manager, he looks and says: the configuration of application x is y, simple". Sprinklr (P11)
-
-In addition to contribute with transparency, automation is also considered important to ensure the repeatability of the tasks, reducing the risk of human failure and, consequently, collaborating to increase the confidence between teams, which is an important aspect of the collaboration culture.
-
-We find ** concepts that were grouped in the automation category:
-
-\begin{itemize}
-\item Automated deployment
-\item Automated infrastructure provisioning
-\item Automated infrastructure management
-\item Automated testing
-\item Containerization
-\item Infrastructure as code
-\end{itemize}
-
-\subsection{Continuous Measurement}
-
-\begin{itemize}
-\item Application Log Monitoring
-\item Continuous Infrastructure Monitoring
-\item Instrumented Application Metrics
-\end{itemize}
-
-\subsection{Quality Assurance}
-
-\subsection{Sharing}
-
-\begin{itemize}
-\item Activities Sharing
-\item Knowledge Sharing
-\item Process Sharing
-\end{itemize}
-
-\subsection{Transparency}
-
-\begin{itemize}
-\item Infrastructure as code
-\item Continuous delivery pipeline
-\item Sharing on a regular basis
-\end{itemize}
-
-\subsection{Agility}
-
-\begin{itemize}
-\item Continuous Integration
-\item Continuous Delivery
-\item Continuous Deployment
-\end{itemize}
-
-\subsection{Resilience}
-\begin{itemize}
-\item Auto scaling
-\item Zero down-time
-\end{itemize}

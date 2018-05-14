@@ -1,0 +1,111 @@
+\section{Categories and Concepts}
+In this section we present details and related concepts of each category of DevOps adoption.
+
+\subsection{The Core Category: Collaboration Culture}
+In this section we present the details of what exactly means build and increase a collaboration culture in DevOps adoption.
+
+The collaboration culture is essentially about remove the barriers that constitutes the silos between development and operations teams or activities. At first glance, it seems somewhat obvious, but the respondents cited some mistakes that they consider recurrent in not prioritize this aspect in a DevOps adoption:
+
+"In a DevOps adoption, there is a very strong cultural issue that the teams sometimes are not adapted. Related to this, one thing that bothers me a lot and that I see happen a lot is people hitching DevOps exclusively to tools" Hepta P9
+
+As before described, in a grounded theory study, the categories emerge from a set of related concepts. The concepts that compose the "collaboration culture" category in our analyses are six:
+
+\begin{itemize}
+\item Blameless
+\item Facilitated communication
+\item Operations in day to day development
+\item Product thinking
+\item Shared responsibilities
+\item Software development empowerment - confidence between teams.
+\end{itemize}
+
+\subsection{Automation} \label{ssec:automation}
+Automation was the category with the higher number of related concepts. This occurs because manual proceedings are considered as strong candidates to propitiate the formation of a silo. If a task is manual, one people, or one team will be responsible to execute it. Although transparency and sharing can be used to ensure collaboration even in manual tasks, with automation the points where silos may arise are minimized.
+
+"When a developer needed to build a new application, the common flow was: he creates a ticket to the operations team, which manually evaluates and creates what was requested. This task could take a lot of time and there was no visibility between teams about what was done. So, here, we adopted this strategy of infrastructure as code where the entire infrastructure is versioned in a common language that anyone, be it the developer, the operations guy or even the manager, he looks and says: the configuration of application x is y, simple". Sprinklr (P11)
+
+In addition to contribute with transparency, automation is also considered important to ensure the repeatability of the tasks, reducing rework and risk of human failure and, consequently, collaborating to increase the confidence between teams, which is an important aspect of the collaboration culture.
+
+"Before we adopt DevOps, there was a lot of manual work. For example, if you needed to create an database schema, was manual; if you needed to create a database server, was manual; if you needed to create one more EC2 instance, also manually. This manual work was time consuming and often caused errors and rework". Digitary (P1)
+
+"Our main motivation to adopt DevOps was basically reduce rework. Almost every week, we had to basically make new servers and start it manually, which was very time-consuming" UniOdonto (P4)
+
+We find 8 concepts that were grouped in the automation category:
+
+\begin{itemize}
+\item Autonomous services: it is one of the characteristics of microservices, frequently cited as part of DevOps adoption. The services need to be  independently deployable by fully automated deployment machinery;
+
+\item Containerization: docker is cited as a way to automate the provisioning the environment where the application will execute: a container. The container is one frequent way used to automate application execution.
+
+\item Deployment automation: use of tools like Docker, Kubernetes, Arch, Spinnaker, AWS CodeDeploy, Microsoft Visual Studio Team Service, etc to automate the deployment task. This automation contributes to repeatability, parity between environments and to reduce risks of human error in the deployment task.
+
+\item Infrastructure provisioning automation: use of tools like Terraform, Ansible, Puppet and Chef to provide infrastructure like database and application servers in an automated way.
+
+\item Infrastructure management automation: use of tools to management the infrastructure in an automated way. Examples: management of memory and CPU of a host, management of versions of libraries and database versioning.
+
+\item Monitoring automation: ability to monitor the application and infrastructure without human intervention. One classic example is the automated sending of alerts (SMS, slack message or even cellphone calls) in case of incidents.
+
+\item Recovery automation: ability to, without human intervention, replace one server instance that presents problem or roolback a failed deployment to the previous version.
+
+\item Test automation: execute the application tests in an automated way.
+\end{itemize}
+
+\subsection{Continuous Measurement}
+Continuous measurement has two facets in a DevOps adoption process: it can work as an enabler or as an outcome.
+
+As an enabler, perform regularly the activities of measurement and share this responsibility contributes to avoid this typical silo and reinforce the collaboration culture, because it is a typical responsibility of the operations team.
+
+"Citar trechos de entrevista aqui"
+
+As an outcome, continuously collect metrics from applications and infrastructure is a required consequence of DevOps adoption. It occurs because the resultant agility increases the risk of something going wrong. The team should be able to react quickly in case of problems, and the continuous measurement allows it to be proactive and resilient.
+
+"Citar trechos de entrevista aqui"
+
+\begin{itemize}
+\item Application log monitoring: every application produces logs, and these logs are an important source of data to be used in the continuous measurement perspective.
+
+\item Continuous infrastructure monitoring: the monitoring is not performed by a specific person or team in a specific moment. The responsibility to monitor the infrastructure is shared and it is executed in day by day software development.
+
+\item Continuous application measurement: the application is instrumented to provide metrics that are used to evaluate aspects and often direct evolutions or business decisions.
+
+\item Monitoring automation: see \ref{ssec:automation}.
+\end{itemize}
+
+\subsection{Quality Assurance}
+\begin{itemize}
+\item Code branching
+
+\item Cohesive services: another characteristic of microservices, frequently cited as part of DevOps adoption. The services need to be focused in doing one thing well, which is one quality assurance aspect.
+
+\item Continuous testing
+\item Parity between environments
+\item Source code static analysis
+\end{itemize}
+
+\subsection{Sharing}
+\begin{itemize}
+\item Activities sharing
+\item Knowledge sharing
+\item Process sharing
+\end{itemize}
+
+\subsection{Transparency}
+\begin{itemize}
+\item Infrastructure as code
+\item Shared pipelines
+\item Sharing on a regular basis
+\end{itemize}
+
+\subsection{Agility}
+\begin{itemize}
+\item Continuous Integration
+\item Continuous Delivery
+\item Continuous deployment: the deployment is a common point of manifestation of the existence of silos, the development team generates one artifact and throw it \textit{over the wall} to be deployed by the operations team.
+\end{itemize}
+
+\subsection{Resilience}
+\begin{itemize}
+\item Auto scaling
+\item Recovery automation
+\item Zero down-time
+\end{itemize}
