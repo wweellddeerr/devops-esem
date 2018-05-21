@@ -1,61 +1,73 @@
 \section{Research Method} \label{sec:research_method}
 
-We adopted Grounded Theory (GT) as research method. GT is a method originally
-proposed in \cite{glase1967discovery} which has as distinguishing features the
-absence of clear research hypothesis upfront and limitation of literature
-exposure at the beginning of the research. Is a theory-developing approach in
+We adopted Grounded Theory (GT) as the research method. GT is a method originally
+proposed by Glase~\cite{glase1967discovery}, which has as distinguishing features (1) the
+absence of clear research hypothesis upfront and (2) limitation of literature
+exposure at the beginning of the research. GT is a theory-developing approach in
 contrast with the more traditional theory-testing approach
-\cite{coleman2007using}.
+\cite{coleman2007using}.\gnote{não sei se entendi a diferenca. algum exemplo?}
+We used GT as the research method due to the following reasons:
 
-Some of related work claimed to used "GT inspired" approaches. It is a very
-common rhetoric in recent research on software engineering, but only research
-that embodies GT’s core principles should claim to be a grounded theory study
-\cite{stol2016grounded}.
+%Some of related work claimed to used ``GT inspired'' approaches\gnote{REF}. It is a very
+%common rhetoric in recent research on software engineering, but only research
+%that embodies GT’s core principles should claim to be a grounded theory study
+%\cite{stol2016grounded}.\gnote{eu removi esse paragrafo pq acho que ele facilmente compraria briga com muitos revisores}
 
-GT was employed as the research method for the following reasons:
+
 \begin{itemize}
 
-\item GT is a consolidated method in other areas of research like sociology,
-nursing, education and finances and is increasingly being employed
-to study software engineering topics \cite{stol2016grounded};
+\item GT is a consolidated method in other areas of research like sociology\gnote{REF},
+nursing\gnote{REF}, education\gnote{REF}, and finances\gnote{REF}. GT is also increasingly being employed
+to study software engineering topics~\cite{Hoda:2017:ICSE,stol2016grounded,Waterman:2015:ICSE};
 
 \item GT is considered an adequate approach to investigate scenarios with
-questions such as \textit{what's going on here?} \cite{barnsteiner2002using},
+questions such as ``\textit{what's going on here?}''~\cite{barnsteiner2002using},
 which is exactly the scenario proposed here: what's going on DevOps adoption?
 
-\item GT allows the researcher to get descriptions without bias of previous
+\item GT allows researchers to get descriptions\gnote{what is this get descriptions?} without bias of previous
 researches, which is adequate to collect empirical evidence directly from the
-practice on industry. The evidence is only reintegrated back with literature
+practice on industry\gnote{nao entendi bem a relação do primeiro item com o segundo?}. The evidence is only reintegrated back with literature
 after the theory construction.
 
 \end{itemize}
 
-Since the publication of the original version in \cite{glase1967discovery},
+Since the publication of the Glase's original version~\cite{glase1967discovery},
 several modifications and variations occurred in the original text, coming to
-exist at least seven different versions of the method \cite{denzin2007grounded},
-where the main versions are those of Glaser or classic, Strauss and
-Charmaz \cite{stol2016grounded}. The study presented in \cite{stol2016grounded}
+exist at least seven different versions of the GT method~\cite{denzin2007grounded}.
+The main versions are those of Glaser, Strauss and
+Charmaz~\cite{stol2016grounded}. The study of Stol and colleagues~\cite{stol2016grounded}
 explores the main aspects of GT versions and establishes that GT studies has to
-specify which version is used on it. In our study, we choose the classic
-version. The first reason to our choice is that we did not have a research
+specify which version the study is built upon. In our study, we chose the classic
+Glase's version due to at least two reasons.
+
+
+\begin{enumerate}
+\item First because we did not have a research
 question at the beginning of the research, exactly as suggested in the classic
-version. We start from a interest area that are: successfully DevOps adoption
-in industry. And the second reason is because the more detailed papers in
-software engineering research use predominantly this version
-\cite{stol2016grounded}.
+version. We start from an area of interest: successfully DevOps adoption
+in industry.
+\item Second because the more detailed papers in
+software engineering research use predominantly this version~\cite{stol2016grounded}.
+\end{enumerate}
+
 
 \subsection{GT Procedures}
 
-In Fig. \ref{fig1}, reproduced from \cite{adolph2011using}, is showed the view
-of the grounded theory procedures that we followed in the conduction of this
+In Figure~\ref{fig1}, reproduced from the study of Adolph and colleagues~\cite{adolph2011using}, shows the procedure of the grounded theory research methods followed in the conduction of this
 research.
 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.5\textwidth,natwidth=821,natheight=617]{GT.png}
-  \caption{The GT Method \cite{adolph2011using}}
+  \caption{The GT Method (reproduced from the study of Adolph and colleagues~\cite{adolph2011using}).}
   \label{fig1}
 \end{figure}
+
+This figure depicts four main steps (enumerated as A -- D).
+
+\gnote{acho que antes disso, é preciso dizer como você encontrou e abordou
+os possiveis entrevistados? Jogou um convite nas redes socias? foi por
+conveniencia (p.e., vc conhecia alguem?), etc}
 
 \begin{enumerate}[label=(\Alph*)]
 \item Initially, we begin collecting data about the adoption process from
@@ -63,48 +75,50 @@ companies that have successfully adopted it. As the data were collected, they
 were also analyzed simultaneously. The raw data is analyzed by searching for
 patterns of incidents to indicate concepts, and concepts grouped into
 categories. This first step, where all raw data is analyzed, is called open
-coding \cite{stol2016grounded}.
+coding~\cite{stol2016grounded}.
 
 \item The categories are developed by constant comparison of new incidents with
-previous. Every grounded theory study has to identify a "core category"
-\cite{stol2016grounded}. The core category is responsible for enabling the
+previous. Every grounded theory study has to identify a ``core category"~\cite{stol2016grounded}.
+The core category is responsible for enabling the
 integration of the other categories and structuring the results into a dense
-and consolidated grounded theory \cite{jantunen2014using}. The identification
+and consolidated grounded theory~\cite{jantunen2014using}. The identification
 of the core category represents the end of open coding and the beginning of the
 selective coding. In selective coding, only specific variables that are
 directly related to the core category and their relationships are coded, in
-order to enable the production of a harmonic theory \cite{coleman2007using}
-\cite{hoda2011impact}. Selective coding ends when theoretical saturation is achieved, which occurs when new data (............). Theoretical coding....
+order to enable the production of a harmonic theory~\cite{coleman2007using,hoda2011impact}.
+Selective coding ends when theoretical saturation is achieved, which occurs when new data (............). Theoretical coding....
 
 \item After saturation, the resulting theory is reintegrated back into
 literature comparing with existing theories. The literature search is performed
-only later to avoid forcing preconceived concepts on the theory development
-\cite{adolph2012reconciling}.
+only later to avoid forcing preconceived concepts on the theory development~\cite{adolph2012reconciling}.
 
-\item Throughout the process, memos are wrote capturing thoughts and analytic
+\item Throughout the process, memos were wrote capturing thoughts and analytic
 processes; the memos support the emerging concepts, categories, and their
-relationships \cite{adolph2012reconciling}.
-
+relationships~\cite{adolph2012reconciling}.
 \end{enumerate}
+
+\gnote{para cada um dos itens acima, poderiamos colocar exemplos reais
+do trabalho? p.e., citar 1-2 memos?}
 
 The following sub-sections present details of procedures applied in this study,
 containing some examples to illustrate their application.
 
 \subsection{Data Collection}
 We conducted semi-structured interviews with 15 practitioners of companies from
-Brazil, Ireland, Portugal, Spain and United States. This practitioners claim
-to have contributed to DevOps adoption process in their companies. Participants
-were recruited through direct contact in DevOps days event and some general
+Brazil, Portugal, Ireland, United States, and Spain. This practitioners claim
+to have participated to DevOps adoption process in their companies. Participants
+were recruited using two approaches: (1) through direct contact in DevOps days event
+and (2) through  general
 calls for participation posted on DevOps user groups, social networking sites
 and local communities. A variety of company types were covered in order to
 achieve a heterogeneous perspective, increasing the potential of generalization
-of the results. Table \ref{participant_table} presents the participant
+of the results. Table~\ref{participant_table} presents the participant
 characteristics.
 
 
 \begin{table}[t]
 \centering
-\caption{Participant Profile}
+\caption{Participant Profile. SWX means software development experience in years, DX means DevOps experience in years, CN means country of work, and CS means company size (CS).}
 \label{participant_table}
 \begin{tabular}{ccccccc}
 \textbf{P\#}          & \textbf{Role}         & \textbf{SWX} & \textbf{DX} & \textbf{CN}   & \textbf{Domain}    & \multicolumn{1}{l}{\textbf{CS}} \\
@@ -140,15 +154,18 @@ P15                  & Developer        & 3            & 2           & BR       
 \end{tabular}
 \end{table}
 
-The first column refers to participant numbers P1-P15 to maintain anonymity in
-conformance with human ethics guidelines. The second column presents the role of
-each participant in their respective company. The remain columns list the
-total years of experience in software development (SWX), years of experience
-with DevOps (DX), country of work (CN), main domain of the company, and company
-size (CS).
+
+To maintain anonymity in conformance with the human ethics guidelines,
+we refer to the participant as P1--P15 (first column).
+The second column shows the role of
+each participant in her respective company. The remaining columns list their
+software development experience in years (SWX), DevOps experience in years (DX),
+country of work (CN), main domain of the company \gnote{o que seria o asterístico na tabela?}, and company
+sizes (CS).
+
 
 The interview were conducted over one year using Skype calls and lasted
-approximately 30 minutes on average.
+approximately 30 minutes on average (max? min?).
 
 Data collection and analysis were iterative so the collected data helped guide
 future interviews. The questions of interview evolved according to the progress
@@ -157,17 +174,17 @@ of the research...
 \subsection{Data Analysis}
 The interviews were voice recorded, transcribed, and analyzed. The first moment
 of the analyze, called open coding in GT, started immediately after
-transcription of the first interview. So the results of the analysis of the
-first interview was used to evolve the interview script to the second and
-so on.
+
+transcription of the first interview. The analysis of the
+first interview was used to evolve the interview script to be used in
+the second interview, and so on.
 
 The open coding lasted until there was no doubt about the core category of the
-study. Similar to the described \cite{adolph2012reconciling} we have started
-with a strong candidate to core category that has not been consolidated. Until
-the analyze of the fourth interview, we have cogitated automation as core
-category because it is a recurring pattern in our data. But, we quickly
-realized that the "automation" category did not explain most of the behaviors
-or events in our data. At the same time we started to perceive that the
+study. Similar to what is described in the work of adolph and colleagues\cite{adolph2012reconciling}, we  started with a strong candidate core category yet not consolidated. Until
+the analysis of the fourth interview, we cogitated automation as core
+category because it is a recurring pattern in our data. However, we quickly
+realized that the ``automation" category did not explain most of the behaviors
+or events in our data. At the same time we start to perceive that the
 collaboration culture also appeared recurrently in the analysis and with more
 potential to explain the remaining events. We then started to ask explicitly
 about the role of the automation and how the collaboration culture is formed
@@ -175,17 +192,17 @@ in a DevOps adoption process.
 
 After the adaptations made in the script and analysis of new data in a constant
 comparison process, taking into account the previous analyses and the
-respective memos written during all the process, in the analysis of the tenth
-interview, we concluded that it was unequivocal the core role of the
-category "collaboration culture" in the explanation about how DevOps was
-successfully adopted in the companies. At this moment, the open coded ended
-and the selective coding started.
+
+respective memos wrote during all the process, during the analysis of the tenth
+interview, we concluded that ``collaboration culture" was unequivocal the core
+category regarding how DevOps was
+successfully adopted in the studied companies. At this moment, the open coded ended and the selective coding started.
 
 After the discovery of the core category, we started to restrict the coding only
 to specific variables that are directly related to the core category and their
 relationships: the selective coding.
 
-With more three interviews and respective analyze, we started to realize that
+With more three interviews and respective analysis, we realized that
 the new data added less and less content to the emerging theory. The
 explanation around how the collaboration culture is developed providing
 DevOps adoption showed signs of saturation. We then conducted more two
@@ -198,6 +215,8 @@ enablers and outcomes, as shown above.
 
 To illustrate the coding procedures, we present an example of working from
 interview transcript to the findings for one of the categories: automation.
+
+\gnote{seria bom linkar aqui os itens A--B descritos na seção anterior.}
 
 Apresentar aqui a exemplificacao da codificacao....
 
