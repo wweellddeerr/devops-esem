@@ -1,49 +1,171 @@
 \section{Categories and Concepts} \label{sec:categories_concepts}
-In this section we present details and related concepts of each category of DevOps adoption.
+In this section we present details and related concepts of each category of
+DevOps adoption.
 
 \subsection{The Core Category: Collaboration Culture}
-In this section we present the details of what exactly means build and increase a collaboration culture in DevOps adoption.
+In this section we present the details of what exactly means build and
+increase a collaboration culture in DevOps adoption. The core category has six
+related concepts and they are described in the next paragraphs.
 
-The collaboration culture is essentially about remove the barriers that constitutes the silos between development and operations teams or activities. At first glance, it seems somewhat obvious, but the respondents cited some mistakes that they consider recurrent in not prioritize this aspect in a DevOps adoption:
+The collaboration culture is essentially about remove the barriers that
+constitutes the silos between development and operations teams and activities.
+The operations tasks - like deployment, infrastructue provisioning and
+management, monitoring - should be present in day to day of development. This
+is the first concept related to collaboration culture category:
+\textbf{operations in day to day development}.
 
-"In a DevOps adoption, there is a very strong cultural issue that the teams sometimes are not adapted. Related to this, one thing that bothers me a lot and that I see happen a lot is people hitching DevOps exclusively to tools" Hepta P9
+``A very important step that we took was to bring the deployment into day to day
+development, no more waiting for a specific day of the week or month. We wanted
+to do deployment all the time, even if in a first moment it were not in
+production, a staging environment was enough. What we wanted was to embed
+deployment into development. Of course, to carry out the deployment
+continuously, we had to provide all the necessary infrastructure at the same
+pace" - P13, Technology Manager, Brazil
 
-As before described, in a grounded theory study, the categories emerge from a set of related concepts. The concepts that compose the "collaboration culture" category in our analyses are six:
+Without DevOps, a common scenario is an accelerated software development
+without concerns about operations. At the end, when the development team has a
+minimum viable software product, it is sent to the operations team for
+publication. Knowing few things about the nature of the software and how it
+was produced, the operations team has to create and configure an environment
+and to publish the software. In this scenario, software delivery is typically
+delayed and conflicts between teams manifest themselves. When a collaboration
+culture is fomented, teams collaborate to perform the tasks from the first day
+of software development. With the constant exercise of provisioning, management,
+configuration and deployment, the software delivery becomes more natural,
+reducing the delays and, consequently, the conflicts between teams.
 
-\begin{itemize}
-\item Blameless
-\item Facilitated communication
-\item Operations in day to day development
-\item Product thinking
-\item Shared responsibilities
-\item Software development empowerment - confidence between teams.
-\end{itemize}
+``We work in a very agile way, but we had a 15-day sprint where we focused on
+producing software, so we produced in a very absurd speed, and at the time of
+devlivering what was produced, complications appeared. The job of setting up
+the whole environment e make a manual deployment, this was not part of our
+sprint, we focused only on coding the application. Then delivey was delayed,
+having to deliver with delays of weeks, which was not good either for us or for
+the clients" - P6, Developer, Portugal
+
+The development team no longer need to stop their work waiting for the creation
+of one application server, or for the execution of some database script, or for
+the publication of a new version of the software in a staging environment.
+Everyone needs to know the way this is done and, with the collaboration of the
+operations team, this can be performed in day to day. If any task can be
+performed by development team and there is trust between teams, this task is
+incorporated into the development process in a natural way, manifesting the
+second concept related to collaboration culture category: \textbf{software
+development development}.
+
+``We had several people working on development, the amount of developers is
+impressive. It was not feasible so many developers generating artifacts and
+stoping their work to wait another completely separate team to publish. Or
+needing a test environment and having to wait for the operations team to
+provide it when possible. These activities have to be available to quickly
+serve the development team. So, with DevOps we supply the need of freedom and
+more power to execute some tasks which are intrinsically linked to their work"
+- P5, Systems Engineer, Spain
+
+A collaboration culture requires a \textbf{product thinking} in substitution to
+operations or development thinking. The development team has to understand that
+the software is a product that does not end after their push to source code
+repository and the operations team has to understand that the process does not
+start when an artifact is received for publication. \textbf{Product thinking}
+is the third concept related to collaboration culture category.
+
+citar sprinklr
+
+There should be a \textbf{facilitated communication} between teams. Ticketing
+systems are cited as the typical and inappropriate means of communication
+between development and operations. Face-to-face communication is the best
+option, but considering that it is not always feasible, the continuous use of
+tools like Slack and HipChat was cited as appropriate options.
+
+citar fire
+
+In case of problems at any point in the software life cycle, the responsibility
+to check it is shared. The strategy of avoiding liability should be avoided.
+The development team can not say that this is a problem in infrastructure, then
+it is responsibility of operations team. Or the opposite, the operations team
+also can not say that this is a problem in application, then it is
+responsibility of development team. A \textbf{blameless} context must exist.
+The teams need to be focused on solving problems, not on finding blame and
+running away from responsibility. The context of \textbf{shared
+responsibilities} involves not only solving problems, but any other
+responsibility inherent in the software product must be shared.
+\textbf{Blameless} and \textbf{shared responsibilities} are the remaining
+concepts of the category.
+
+citar quinto andar
+
+At first glance, consider the creation and strengthening of the collaboration
+culture as the most important in DevOps adoption seems somewhat obvious, but
+the respondents cited some mistakes that they consider recurrent in not
+prioritize this aspect in a DevOps adoption:
+
+"In a DevOps adoption, there is a very strong cultural issue that the teams
+sometimes are not adapted. Related to this, one thing that bothers me a lot and
+that I see happen a lot is people hitching DevOps exclusively to tools" P9, IT
+Manager, Brazil
+
+citar ESX
 
 \subsection{Automation} \label{ssec:automation}
-Automation was the category with the higher number of related concepts. This occurs because manual proceedings are considered as strong candidates to propitiate the formation of a silo. If a task is manual, one people, or one team will be responsible to execute it. Although transparency and sharing can be used to ensure collaboration even in manual tasks, with automation the points where silos may arise are minimized.
+Automation was the category with the higher number of related concepts. This
+occurs because manual proceedings are considered as strong candidates to
+propitiate the formation of a silo. If a task is manual, one people, or one
+team will be responsible to execute it. Although transparency and sharing can
+be used to ensure collaboration even in manual tasks, with automation the
+points where silos may arise are minimized.
 
-"When a developer needed to build a new application, the common flow was: he creates a ticket to the operations team, which manually evaluates and creates what was requested. This task could take a lot of time and there was no visibility between teams about what was done. So, here, we adopted this strategy of infrastructure as code where the entire infrastructure is versioned in a common language that anyone, be it the developer, the operations guy or even the manager, he looks and says: the configuration of application x is y, simple". Sprinklr (P11)
+"When a developer needed to build a new application, the common flow was: he
+creates a ticket to the operations team, which manually evaluates and creates
+what was requested. This task could take a lot of time and there was no
+visibility between teams about what was done. So, here, we adopted this
+strategy of infrastructure as code where the entire infrastructure is versioned
+in a common language that anyone, be it the developer, the operations guy or
+even the manager, he looks and says: the configuration of application x is y,
+simple". P11, Cloud Engineer, United States
 
-In addition to contribute with transparency, automation is also considered important to ensure the repeatability of the tasks, reducing rework and risk of human failure and, consequently, collaborating to increase the confidence between teams, which is an important aspect of the collaboration culture.
+In addition to contribute with transparency, automation is also considered
+important to ensure the repeatability of the tasks, reducing rework and risk of
+human failure and, consequently, collaborating to increase the confidence
+between teams, which is an important aspect of the collaboration culture.
 
-"Before we adopt DevOps, there was a lot of manual work. For example, if you needed to create a database schema, was manual; if you needed to create a database server, was manual; if you needed to create one more EC2 instance, also manually. This manual work was time consuming and often caused errors and rework". Digitary (P1)
+"Before we adopt DevOps, there was a lot of manual work. For example, if you
+needed to create a database schema, was manual; if you needed to create a
+database server, was manual; if you needed to create one more EC2 instance,
+also manually. This manual work was time consuming and often caused errors and
+rework" - P1, DevOps Developer, Ireland
 
-"Our main motivation to adopt DevOps was basically reduce rework. Almost every week, we had to basically make new servers and start it manually, which was very time-consuming" UniOdonto (P4)
+"Our main motivation to adopt DevOps was basically reduce rework. Almost every
+week, we had to basically make new servers and start it manually, which was
+very time-consuming" - P4, Computer Technician, Brazil
 
 We find 8 concepts that were grouped in the automation category:
 
 \begin{itemize}
-\item Autonomous services: it is one of the characteristics of microservices, frequently cited as part of DevOps adoption. The services need to be  independently deployable by fully automated deployment machinery;
+\item Autonomous services: it is one of the characteristics of microservices,
+frequently cited as part of DevOps adoption. The services need to be
+independently deployable by fully automated deployment machinery;
 
-\item Containerization: docker is cited as a way to automate the provisioning the environment where the application will execute: a container. The container is one frequent way used to automate application execution.
+\item Containerization: docker is cited as a way to automate the provisioning
+the environment where the application will execute: a container. The container
+is one frequent way used to automate application execution.
 
-\item Deployment automation: use of tools like Docker, Kubernetes, Arch, Spinnaker, AWS CodeDeploy, Microsoft Visual Studio Team Service, etc to automate the deployment task. This automation contributes to repeatability, parity between environments and to reduce risks of human error in the deployment task.
+\item Deployment automation: use of tools like Docker, Kubernetes, Arch,
+Spinnaker, AWS CodeDeploy, Microsoft Visual Studio Team Service, etc to
+automate the deployment task. This automation contributes to repeatability,
+parity between environments and to reduce risks of human error in the
+deployment task.
 
-\item Infrastructure provisioning automation: use of tools like Terraform, Ansible, Puppet and Chef to provide infrastructure like database and application servers in an automated way.
+\item Infrastructure provisioning automation: use of tools like Terraform,
+Ansible, Puppet and Chef to provide infrastructure like database and
+application servers in an automated way.
 
-\item Infrastructure management automation: use of tools to management the infrastructure in an automated way. Examples: management of memory and CPU of a host, management of versions of libraries and database versioning.
+\item Infrastructure management automation: use of tools to management the
+infrastructure in an automated way. Examples: management of memory and CPU of
+a host, management of versions of libraries and database versioning.
 
-\item Monitoring automation: ability to monitor the application and infrastructure without human intervention. One classic example is the automated sending of alerts (SMS, slack message or even cellphone calls) in case of incidents.
+\item Monitoring automation: ability to monitor the application and
+infrastructure without human intervention. One classic example is the
+automated sending of alerts (SMS, slack message or even cellphone calls) in
+case of incidents.
 
 \item Recovery automation: ability to, without human intervention, replace one server instance that presents problem or roolback a failed deployment to the previous version.
 
