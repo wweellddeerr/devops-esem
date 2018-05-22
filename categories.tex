@@ -162,61 +162,76 @@ rework" - P1, DevOps Developer, Ireland
 week, we had to basically make new servers and start it manually, which was
 very time-consuming" - P4, Computer Technician, Brazil
 
-In all interviews we extracted explanations about \textbf{deployment 
-automation} as part of DevOps adoption.
+The eight concepts of automation category will be detailed bellow.
 
-We find 8 concepts that were grouped in the automation category:
+In all interviews we extracted explanations about \textbf{deployment
+automation} (1) as part of DevOps adoption. Software delivery is the clearest
+manifestation of value delivery in software development. In case of problems
+in deployment, the expectation of delivering value to business can quickly
+generate conflicts and manifest the existence of silos. As previously discussed,
+automation typically increase agility and reliability of tasks. Some other
+concepts of automation revolve exactly around deployment automation. To
+effectively generate value to business, the mere quickly and successfully
+deployment is not sufficient. The delivered software needs to have quality.
+Therefore, quality checks needs to be automated so they can be part of the
+deployment pipeline, is the case of \textbf{test automation} (2). In order
+that the deployment can occur in an automated way, the environment where the
+application will run needs to be available. So, \textbf{infrastructure
+provisioning automation} (3) is embedded in the process. Beyond available,
+the environment needs to be properly configured. The amount of memory and CPU,
+versions of libraries, and database structure, if all this is not automated,
+the deployment automation can failure. So, the \textbf{infrastrucutre management
+automation} (4) is another concept of automation category.
 
-\begin{itemize}
-\item Autonomous services: it is one of the characteristics of microservices,
-frequently cited as part of DevOps adoption. The services need to be
-independently deployable by fully automated deployment machinery;
+Modern software is builded around services. Microservices  was commonly cited
+as one aspect of DevOps adoption. To Fowler and Lewis \cite{folwer}, in the
+microservice architectural style, services need to be independently deployable
+by fully automated deployment machinery. We call this part of microservices
+characteristics of \textbf{autonomous services} (5). \textbf{Containerization}
+(6) is cited as a way to automate the provisioning of containers that are the
+environment where these autonomous services will execute.
 
-\item Containerization: docker is cited as a way to automate the provisioning
-the environment where the application will execute: a container. The container
-is one frequent way used to automate application execution.
+\textbf{Monitoring automation} (7) and \textbf{recovery automation} (8) are the
+remaining concepts. The first reffers to the ability to monitor the
+applications and infrastructure without human intervention. One classic example
+is the automated sending of alerts (SMS, slack message or even cellphone calls)
+in case of incidents. And the second is related to the ability to replace
+without human intervention server instances that present problem or roolback a
+failed deployment to the previous version of the software.
 
-\item Deployment automation: use of tools like Docker, Kubernetes, Arch,
-Spinnaker, AWS CodeDeploy, Microsoft Visual Studio Team Service, etc to
-automate the deployment task. This automation contributes to repeatability,
-parity between environments and to reduce risks of human error in the
-deployment task.
-
-\item Infrastructure provisioning automation: use of tools like Terraform,
-Ansible, Puppet and Chef to provide infrastructure like database and
-application servers in an automated way.
-
-\item Infrastructure management automation: use of tools to management the
-infrastructure in an automated way. Examples: management of memory and CPU of
-a host, management of versions of libraries and database versioning.
-
-\item Monitoring automation: ability to monitor the application and
-infrastructure without human intervention. One classic example is the
-automated sending of alerts (SMS, slack message or even cellphone calls) in
-case of incidents.
-
-\item Recovery automation: ability to, without human intervention, replace one server instance that presents problem or roolback a failed deployment to the previous version.
-
-\item Test automation: execute the application tests in an automated way.
-\end{itemize}
 
 \subsection{Continuous Measurement}
-Continuous measurement has two facets in a DevOps adoption process: it can work as an enabler or as an outcome.
+Continuous measurement has two facets in a DevOps adoption process: it can work
+as an enabler or as an outcome.
 
-As an enabler, perform regularly the activities of measurement and share this responsibility contributes to avoid this typical silo and reinforce the collaboration culture, because it is a typical responsibility of the operations team.
+As an enabler, perform regularly the activities of measurement and share this
+responsibility contributes to avoid this typical silo and reinforce the
+collaboration culture, because it is a typical responsibility of the operations
+team.
 
 "Citar trechos de entrevista aqui"
 
-As an outcome, continuously collect metrics from applications and infrastructure is a required consequence of DevOps adoption. It occurs because the resultant agility increases the risk of something going wrong. The team should be able to react quickly in case of problems, and the continuous measurement allows it to be proactive and resilient.
+As an outcome, continuously collect metrics from applications and
+infrastructure is a required consequence of DevOps adoption. It occurs because
+the resultant agility increases the risk of something going wrong. The team
+should be able to react quickly in case of problems, and the continuous
+measurement allows it to be proactive and resilient.
 
 "Citar trechos de entrevista aqui"
 
 \begin{itemize}
-\item Application log monitoring: every application produces logs, and these logs are an important source of data to be used in the continuous measurement perspective.
+\item Application log monitoring: every application produces logs, and these
+logs are an important source of data to be used in the continuous measurement
+perspective.
 
-\item Continuous infrastructure monitoring: the monitoring is not performed by a specific person or team in a specific moment. The responsibility to monitor the infrastructure is shared and it is executed in day by day software development.
+\item Continuous infrastructure monitoring: the monitoring is not performed
+by a specific person or team in a specific moment. The responsibility to
+monitor the infrastructure is shared and it is executed in day by day
+software development.
 
-\item Continuous application measurement: the application is instrumented to provide metrics that are used to evaluate aspects and often direct evolutions or business decisions.
+\item Continuous application measurement: the application is instrumented to
+provide metrics that are used to evaluate aspects and often direct evolutions
+or business decisions.
 
 \item Monitoring automation: see \ref{ssec:automation}.
 \end{itemize}
@@ -225,7 +240,9 @@ As an outcome, continuously collect metrics from applications and infrastructure
 \begin{itemize}
 \item Code branching
 
-\item Cohesive services: another characteristic of microservices, frequently cited as part of DevOps adoption. The services need to be focused in doing one thing well, which is one quality assurance aspect.
+\item Cohesive services: another characteristic of microservices, frequently
+cited as part of DevOps adoption. The services need to be focused in doing one
+thing well, which is one quality assurance aspect.
 
 \item Continuous testing
 \item Parity between environments
@@ -250,7 +267,9 @@ As an outcome, continuously collect metrics from applications and infrastructure
 \begin{itemize}
 \item Continuous Integration
 \item Continuous Delivery
-\item Continuous deployment: the deployment is a common point of manifestation of the existence of silos, the development team generates one artifact and throw it \textit{over the wall} to be deployed by the operations team.
+\item Continuous deployment: the deployment is a common point of manifestation
+of the existence of silos, the development team generates one artifact and
+throw it \textit{over the wall} to be deployed by the operations team.
 \end{itemize}
 
 \subsection{Resilience}
