@@ -180,11 +180,12 @@ application will run needs to be available. So, \textbf{infrastructure
 provisioning automation} (3) is embedded in the process. Beyond available,
 the environment needs to be properly configured. The amount of memory and CPU,
 versions of libraries, and database structure, if all this is not automated,
-the deployment automation can failure. So, the \textbf{infrastrucutre management
+the deployment automation can failure. So, the \textbf{infrastructure management
 automation} (4) is another concept of automation category.
 
-Modern software is builded around services. Microservices  was commonly cited
-as one aspect of DevOps adoption. To Fowler and Lewis \cite{folwer}, in the
+Modern software is built around services. Microservices  was commonly cited
+as one aspect of DevOps adoption. To Fowler and Lewis
+\cite{martinfowler2014microservices}, in the
 microservice architectural style, services need to be independently deployable
 by fully automated deployment machinery. We call this part of microservices
 characteristics of \textbf{autonomous services} (5). \textbf{Containerization}
@@ -192,12 +193,12 @@ characteristics of \textbf{autonomous services} (5). \textbf{Containerization}
 environment where these autonomous services will execute.
 
 \textbf{Monitoring automation} (7) and \textbf{recovery automation} (8) are the
-remaining concepts. The first reffers to the ability to monitor the
+remaining concepts. The first refers to the ability to monitor the
 applications and infrastructure without human intervention. One classic example
-is the automated sending of alerts (SMS, slack message or even cellphone calls)
-in case of incidents. And the second is related to the ability to replace
-without human intervention server instances that present problem or roolback a
-failed deployment to the previous version of the software.
+is the automated sending of alerts (SMS, slack/hip chat message or even
+cellphone calls) in case of incidents. And the second is related to the ability
+to replace without human intervention server instances that present problem or
+roll back a failed deployment to the previous version of the software.
 
 
 \subsection{Continuous Measurement}
@@ -209,7 +210,15 @@ responsibility contributes to avoid this typical silo and reinforce the
 collaboration culture, because it is a typical responsibility of the operations
 team.
 
-"Citar trechos de entrevista aqui"
+``Before, we had only sporadic looks to zabbix to check if everything was OK.
+At most someone would stop to look memory and CPU consumption. To maintain the
+high performance we have expanded this view of metrics collection so that it
+became part of the software product. We pass to collect metrics continuously
+and with shared responsibilities. For example, if an overflow occurred in the
+number of database connections, everyone received an alert and had
+responsibility for seeking solutions to that problem, it is a good example of
+metrics that everyone started to be more attentive, not only the operations
+area" - P3, DevOps Developer, Ireland
 
 As an outcome, continuously collect metrics from applications and
 infrastructure is a required consequence of DevOps adoption. It occurs because
@@ -217,37 +226,54 @@ the resultant agility increases the risk of something going wrong. The team
 should be able to react quickly in case of problems, and the continuous
 measurement allows it to be proactive and resilient.
 
-"Citar trechos de entrevista aqui"
+``With DevOps we can do deployment all the time and, consequently, there was
+the need of greater control of what was happening. So, we used grafana and
+prometheus to follow everything that is happening in the infrastructure and in
+the applications. We have a complete dashboard in real time, we extract reports
+an, when something goes wrong, we are the first to know" - P10, Network
+Administrator, Brazil
 
-\begin{itemize}
-\item Application log monitoring: every application produces logs, and these
-logs are an important source of data to be used in the continuous measurement
-perspective.
-
-\item Continuous infrastructure monitoring: the monitoring is not performed
-by a specific person or team in a specific moment. The responsibility to
-monitor the infrastructure is shared and it is executed in day by day
-software development.
-
-\item Continuous application measurement: the application is instrumented to
-provide metrics that are used to evaluate aspects and often direct evolutions
-or business decisions.
-
-\item Monitoring automation: see \ref{ssec:automation}.
-\end{itemize}
+Continuous monitoring involves \textbf{application log monitoring} (1), an
+intuitive concept which corresponds to the use of the log produced by
+applications and infrastructure as data source. The concept of
+\textbf{continuous infrastructure monitoring} (2) indicates that the monitoring
+is not performed by a specific person or team in a specific moment. The
+responsibility to monitor the infrastructure is shared and it is executed in
+day by day. \textbf{Continuous application measurement} (3), in turn, refers to
+the instrumentation to provide metrics that are used to evaluate aspects and
+often direct evolutions or business decisions. All these monitoring/measurement
+can occur in an automated way, the \textbf{monitoring automation} already been
+detailed in subsection \ref{ssec:automation}.
 
 \subsection{Quality Assurance}
-\begin{itemize}
-\item Code branching
 
-\item Cohesive services: another characteristic of microservices, frequently
-cited as part of DevOps adoption. The services need to be focused in doing one
-thing well, which is one quality assurance aspect.
+In the same way as continuous measurement, quality assurance is a category that
+can work both as enabler and as outcome. As enabler because more quality
+generates more confidence between teams generating a virtuous cycle of
+collaboration between them. And as outcome the principle is that is not
+feasible create a scenario of continuous delivery of software without control
+about the quality of the products and its production processes.
 
-\item Continuous testing
-\item Parity between environments
-\item Source code static analysis
-\end{itemize}
+Respondents pointed to the need for sophisticated control of which code should
+be part of deliverables that are continuously delivered. Git Flow was
+recurrently cited as suitable \textbf{code branching} (1) model, the first
+concept of quality assurance.
+
+In subsection \label{ssec:automation} we explore the automation face of
+microservices and testing. These elements has also an quality assurance face.
+Another characteristic of microservices is the need for small services focusing
+in doing one thing well. These small services are more easy to scale and
+structure, which manifest a quality assurance concept: \textbf{cohesive
+services} (2). And about testing, the another face is \textbf{continuous
+testing} (3). To ensure quality in software products, the obtained view is that
+the tests and another quality checks can occur continuously. Continuous testing
+is considered challenging without automation, and this reinforces the needof
+the testing in an automated way.
+
+Another two concepts cited as part of quality assurance in DevOps adoption are
+the \textbf{source code static analysis} (4) to compute quality metrics in
+source code of applications and the \textbf{parity between environments} to
+reinforce transparency and collaboration during software development.
 
 \subsection{Sharing}
 \begin{itemize}
