@@ -47,7 +47,7 @@ version. We actually started from an area of interest: successfully DevOps adopt
 in industry. In addition, the more detailed papers in
 software engineering research use predominantly this version~\cite{stol2016grounded}.
 
-\subsection{GT Procedures}
+% \subsection{GT Procedures}
 
 % In Figure~\ref{fig1}, reproduced from the study of Adolph and colleagues~\cite{adolph2011using}, shows the procedure of the grounded theory research methods followed in the conduction of this
 % research.
@@ -61,59 +61,74 @@ software engineering research use predominantly this version~\cite{stol2016groun
 
 % This figure depicts four main steps (enumerated as A -- D).
 
-Adolph and colleagues~\cite{adolph2011using} detail a \emph{four-steps} procedure
-of the grounded theory research method we used to conduct our 
-research, as disscussed as follows. 
+We carried out our research using an existing 
+guideline about how to conduct a research based on 
+Grounded Theory~\cite{adolph2011using}. This guideline organizes 
+a GT investigation in three steps: Data Collection using \emph{open-coding},  
+Data Analysis using \emph{selective-coding}, and Theory Building. 
+ 
 
 \gnote{acho que antes disso, é preciso dizer como você encontrou e abordou
 os possiveis entrevistados? Jogou um convite nas redes socias? foi por
 conveniencia (p.e., vc conhecia alguem?), etc}
 
 \begin{enumerate}[label=(\Alph*)]
-\item {\bf Open Coding} In the first step we begin collecting and analysing data from
-  companies that have successfully adopted DevOps. To this end, we conduct a
-  \emph{raw data analysis}, by searching for patterns of incidents to indicate concepts  and
-  then grouping these concepts into categories. 
-coding~\cite{stol2016grounded}.
+\item {\bf Open-coding Data Collection.} We started our research 
+  by collecting and analysing data from companies that have successfully adopted DevOps. 
+  To this end, we conducted a \emph{raw data analysis} that search for patterns of 
+  incidents to indicate concepts,  and then grouped these concepts into 
+  categories~\cite{stol2016grounded}.
 
-\item {\bf Theoretical coding} In the second steps, we evolve the categories
-  by a constant comparison of new incidents with previous ones, since one of the
-  goals of a grounded theory study is to identify a ``core category''~\cite{stol2016grounded}.
+\item {\bf Selective-coding Data Analysis.} In the second step we evolve 
+  the initial set of 
+  categories by comparing new incidents with the previous ones. Here the goal is 
+  to identify a ``core category''~\cite{stol2016grounded}.
   The core category is responsible for enabling the integration of the other
   categories and structuring the results into a dense and consolidated grounded
   theory~\cite{jantunen2014using}. The identification of the core category
-  represents the end of open coding and the beginning of the selective coding.
-  In selective coding, only specific variables that are directly related to the core category
-  and their relationships are coded, in order to enable the production of an harmonic
-  theory~\cite{coleman2007using,hoda2011impact}. Selective coding ends {\color{red}when theoretical
-  saturation is achieved, which occurs when new data (............).}
+  represents the end of the open-coding phase and the beginning of the selective coding.
+  In the selective coding, we only consider the specific variables that are directly 
+  related to the core category, in order to enable the production of an harmonic
+  theory~\cite{coleman2007using,hoda2011impact}. Selective coding ends when we 
+  achieve a theoretical saturation is achieved, {\color{red}which occurs when new data (............).}
 
-\item After saturation, the resulting theory is reintegrated back into
-literature comparing with existing theories. The literature search is performed
-only later to avoid forcing preconceived concepts on the theory development~\cite{adolph2012reconciling}.
+\item {\bf Theoretical Coding.} After saturation, we built a theory that explains 
+ the categories and the relationships between the categories. Additionally, we reintegrated 
+ our theory with the existing literature, {\color{red}which allowed us to compare our proposal 
+ with other theories about DevOps}. That is, using a Grounded Theory approach, 
+ one should only conduct a literature review in later stages of a research,  
+in order to avoid external influences to conceive a theory~\cite{adolph2012reconciling}.
 
-\item Throughout the process, memos were wrote capturing thoughts and analytic
+\end{enumerate}
+
+Throughout the process, memos were wrote capturing thoughts and analytic
 processes; the memos support the emerging concepts, categories, and their
 relationships~\cite{adolph2012reconciling}.
-\end{enumerate}
 
 \gnote{para cada um dos itens acima, poderiamos colocar exemplos reais
 do trabalho? p.e., citar 1-2 memos?}
 
-The following sub-sections present details of procedures applied in this study,
-containing some examples to illustrate their application.
+% The following sub-sections present details of procedures applied in this study,
+% containing some examples to illustrate their application.
 
-\subsection{Data Collection}
-We conducted semi-structured interviews with 15 practitioners of companies from
-Brazil, Ireland, Portugal, Spain and United States. This practitioners claim
+% \subsection{Data Collection}
+
+Regarding data collection, we conducted semi-structured interviews with 15 practitioners of companies from
+Brazil, Ireland, Portugal, Spain, and United States. This practitioners claim
 to have contributed to DevOps adoption process in their companies. Participants
-were recruited using two approaches: (1) through direct contact in DevOps days event
-and (2) through  general
-calls for participation posted on DevOps user groups, social networking sites
-and local communities. A variety of company types were covered in order to
-achieve a heterogeneous perspective, increasing the potential of generalization
+were recruited using two approaches: (1) through direct contact in a \emph{DevOps Days} 
+event and (2) through  general
+calls for participation posted on DevOps user groups, social networking sites,
+and local communities. A variety of company types were covered, in order to
+achieve a heterogeneous perspective and increase the potential of generalization
 of the results. Table~\ref{participant_table} presents the participant
-characteristics.
+characteristics. 
+To maintain anonymity in conformance with the human ethics guidelines,
+hereafter we will refer to the participant as P1--P15 (first column).
+The second column shows the role of
+each participant in her respective company. The remaining columns list their
+software development experience in years (SWX), DevOps experience in years (DX),
+country of work (CN), main domain of the company, and company size (CS).
 
 
 \begin{table}[t]
@@ -155,41 +170,33 @@ P15                  & Developer        & 3            & 2           & BR       
 \end{table}
 
 
-To maintain anonymity in conformance with the human ethics guidelines,
-we refer to the participant as P1--P15 (first column).
-The second column shows the role of
-each participant in her respective company. The remaining columns list their
-software development experience in years (SWX), DevOps experience in years (DX),
-country of work (CN), main domain of the company, and company size (CS).
 
 The interview were conducted over one year using Skype calls and lasted
 approximately 30 minutes on average (max? min?).
-
 Data collection and analysis were iterative so the collected data helped guide
-future interviews. The questions of interview evolved according to the progress
-of the research...
+future interviews. {\color{red}The questions of interview evolved according to the progress
+of the research...} 
 
-\subsection{Data Analysis}
-The interviews were voice recorded, transcribed, and analyzed. The first moment
+With respect to \emph{data analysis}, the interviews were voice recorded, transcribed, and analyzed. The first moment
 of the analyze, called open coding in GT, started immediately after
 transcription of the first interview. The analysis of the
 first interview was used to evolve the interview script to be used in
 the second interview, and so on. The open coding lasted until there was no
 doubt about the core category of the study. Similar to what is described in
-the work of adolph and colleagues\cite{adolph2012reconciling}, we started
+the work of Adolph and colleagues\cite{adolph2012reconciling}, we started
 with a strong candidate core category yet not consolidated. Until
-the analysis of the fourth interview, we cogitated automation as core
+the analysis of the fourth interview, we cogitated \emph{automation} as core
 category because it is a recurring pattern in our data. However, we quickly
 realized that the ``automation" category did not explain most of the behaviors
-or events in our data. At the same time we start to perceive that the
-collaboration culture also appeared recurrently in the analysis and with more
+or events in our data. At the same time we started to understand that 
+\emph{collaboration culture} also appeared recurrently in the analysis and with more
 potential to explain the remaining events. We then started to ask explicitly
 about the role of the automation and how the collaboration culture is formed
 in a DevOps adoption process.
 
 After the adaptations made in the script and analysis of new data in a constant
 comparison process, taking into account the previous analyses and the
-respective memos written during all the process, during the analysis of the tenth
+respective memos written during all the process, after the analysis of the tenth
 interview, we concluded that ``collaboration culture" was unequivocal the core
 category regarding how DevOps was successfully adopted in the studied companies.
 At this moment, the open coded ended and the selective coding started.
@@ -197,9 +204,8 @@ At this moment, the open coded ended and the selective coding started.
 After the discovery of the core category, we started to restrict the coding only
 to specific variables that are directly related to the core category and their
 relationships: the selective coding.
-
 With more three interviews and respective analysis, we realized that
-the new data added less and less content to the emerging theory. The
+the new data added less and less content to the emerging theory. Thtat is, the
 explanation around how the collaboration culture is developed providing
 DevOps adoption showed signs of saturation. We then conducted more two
 interviews to conclude that we had reached the theoretical saturation.
