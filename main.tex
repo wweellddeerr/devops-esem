@@ -1,8 +1,25 @@
 \documentclass[conference]{IEEEtran}
 
-\usepackage{xcolor}
+% \usepackage[table]{xcolor}
+\usepackage[usenames,svgnames]{xcolor}
 \usepackage{url}
 \usepackage{enumitem}
+\usepackage{mdframed}
+
+\definecolor{yellow}{RGB}{255, 255, 204}
+\newmdenv [ % 
+ outerlinewidth   = 2              , 
+ roundcorner      = 5pt            ,   
+ leftmargin       = 2              , 
+ rightmargin      = 2              , 
+ backgroundcolor  = OldLace        ,  
+ outerlinecolor   = blue           , 
+ innertopmargin   = \topskip       , 
+ splittopskip     = \topskip      ]{mq}
+
+
+
+
 \ifCLASSINFOpdf
    \usepackage[pdftex]{graphicx}
    \DeclareGraphicsExtensions{.png}
@@ -14,8 +31,10 @@
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-\newcommand{\cat}[1]{{\color{blue}{\emph{#1}}}}
+\newcommand{\cat}[1]{{\color{DarkRed}{\emph{#1}}}}
+
 \begin{document}
+
 \title{Adopting DevOps: A Grounded Theory of Well Succeeded DevOps Adoption in
 Practice}
 
