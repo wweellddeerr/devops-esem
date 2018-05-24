@@ -276,31 +276,91 @@ source code of applications and the \textbf{parity between environments} to
 reinforce transparency and collaboration during software development.
 
 \subsection{Sharing}
+
+The sharing category represents the grouping of concepts emerged from recurrent
+relates of regular events of sharing. Trainings, tech talks, committees
+lectures, and round tables are examples of these sharing events. The creation
+of channels in communication tools are another pattern of stories about sharing
+as part of DevOps adoption. According with the content of what is shared, we
+have identified three concepts:
+
 \begin{itemize}
-\item Activities sharing
-\item Knowledge sharing
-\item Process sharing
+\item Activities sharing, where the focus is on sharing how simple tasks were
+performed. Communication tools, committees and round tables are the common
+forum of the sharing of this type of content.
+\item Knowledge sharing: the professionals interviewed mention a wide range of
+skills they need to acquire during the adoption of DevOps. So, they cite
+structured events of sharing to smooth the learning curve of both technical and
+cultural knowledge.
+\item Process sharing: here, the focus is on sharing whole work processes. The
+content is more comprehensive than in sharing activities. Tech talks and
+lectures are the common forum of process sharing.
 \end{itemize}
+
+These sharing concepts contribute with the collaboration culture. For example,
+all team members gain a best insight about the entire software production
+process, with more sense of shared responsibilities. A shared vocabulary also
+emerged from sharing and this facilitates communication.
 
 \subsection{Transparency}
-\begin{itemize}
-\item Infrastructure as code
-\item Shared pipelines
-\item Sharing on a regular basis
-\end{itemize}
+
+Transparency contains concepts that are also commonly used to develop the
+collaboration culture. The use of \textbf{infrastructure as code} was
+recurrently cited as a mean of everyone knows how the execution environment of
+an application is provided and managed. Bellow, we present an interview
+transcript part which sums up this concept well:
+
+``So, here we adopted this type of strategy that is the infrastructure as code,
+consequently we have the versioning of our entire infrastructure in a common
+language, in such a way that any person, a developer, an architect, the
+operations guy of even the manager, he looks and is able to describe that the
+configuration of application x is y. So, it aggregates too much value for us
+exactly with more transparency" - P12, Cloud Engineer, United States.
+
+In previous section, we presented the concepts related to sharing category. In
+transparency, exists the concept of \textbf{sharing on a regular basis}, that
+is correspondent to the existence of regularity in the realization of the
+sharing events. The sharing must to be embedded in the process of software
+development to contribute effectively to transparency.
+
+As will be better detailed in the concept of continuous integration of agility
+category, a common way to integrate all tasks is a pipeline. Here, exists the
+concept of \textbf{shared pipelines} which indicates that the code of pipelines
+must be accessible to everyone, in order to foment the transparency.
+
+Citar entrevista (?)
 
 \subsection{Agility}
-\begin{itemize}
-\item Continuous Integration
-\item Continuous Delivery
-\item Continuous deployment: the deployment is a common point of manifestation
-of the existence of silos, the development team generates one artifact and
-throw it \textit{over the wall} to be deployed by the operations team.
-\end{itemize}
+
+Agility is an well explored capability provided by DevOps adoption. With more
+collaboration between teams, \textbf{continuous integration} with execution of
+multidisciplinary pipelines is possible and it is an agility related concept
+frequently explored by practitioners. These pipelines may contain
+infrastructure provisioning, automated regression testing, code analysis,
+automated deployment and any other task that the team consider important to
+execute continuously.
+
+These multidisciplinary pipelines provided in continuous integration naturally
+enable the manifestation of two other agility concepts: \textbf{continuous
+infrastructure provisioning} and \textbf{continuous deployment}. The latter is
+one of the most recurrent concepts identified in the interview analysis. Before
+DevOps, deployment was seen as a major event with high risk of downtime and
+failure involved. After DevOps, the sensation of risk in deployment decreases
+and this activity becomes more natural and frequent. Some practitioners claim
+to perform dozens of deployments daily.
 
 \subsection{Resilience}
-\begin{itemize}
-\item Auto scaling
-\item Recovery automation
-\item Zero down-time
-\end{itemize}
+Another category that appears as outcome of DevOps adoption is resilience. The
+infrastructure has the capability of \textbf{auto scaling}, allocating more or
+less resources to applications that increase or decrease in demand,
+respectively.
+
+Another concept of resilience category is \textbf{recovery automation} that is
+the capability of applications and infrastructure to recovery itself in case of
+some problem. There are two typical cases of recovery automation: (1) in cases
+of some instability in the execution environment of an application (a
+container, for example) occurs an auto restart of that environment; and (2) in
+cases of new version deployment, if the new version does not work properly, the
+previous one is automatic restored. This auto restore of previous version
+allows that downtimes does not occur due to errors in specific versions, which
+is the concept of textbf{zero down-time}, the last one of resilience category.
