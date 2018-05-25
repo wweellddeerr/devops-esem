@@ -150,66 +150,64 @@ DevOps, and the categories that are both enablers and consequences.
 
 In this section we details the categories that support the adoption of
 DevOps practices. 
-\subsubsection{Automation} \label{ssec:automation}
+\subsubsection*{Automation} \label{ssec:automation}
 
 Automation was the category with the higher number of related concepts. This
 occurs because manual proceedings are considered as strong candidates to
-propitiate the formation of a silo, hindering the constructions
+propitiate the formation of a silo, hindering the construction
 of a \cat{collaboration culture}. If a task is manual, one people, or one
 team will be responsible to execute it. Although transparency and sharing can
 be used to ensure collaboration even in manual tasks, with automation the
 points where silos may arise are minimized.
 
 \begin{mq}
-``\emph{When a developer needed to build a new application, the common flow demand he
-to create a ticket to the operations team, which manually evaluates and builds
-what were requested. This task could take a lot of time and there was no
-visibility between teams about what was done (...). Today, there is no more a
-silo in the company that is responsible for execute all these tasks manually,
-everything is automated.}" (P12, Cloud Engineer, United States)
+``\emph{When a developer needed to build a new application, the previous workflow demanded her
+to create a ticket to the operations teams, which should then manually evaluate and solve
+the requested issue. This task could take a lot of time and there was no
+visibility between teams about what was being done (\ldots). Today, those silos do not exist
+anymore within the company, in particular because it is not necessary to execute all these tasks manually,
+everything has been automated.}" (P12, Cloud Engineer, United States)
 \end{mq}
 
-In addition to contribute with transparency, automation is also considered
-important to ensure the repeatability of the tasks, reducing rework and risk of
-human failure and, consequently, collaborating to increase the confidence
-between teams, which is an important aspect of the collaboration culture.
+In addition to contribute to \cat{transparency}, \cat{automation} is also considered
+important to ensure \emph{reproducibility} of tasks, reducing rework and risk of
+human failure. Consequently, \cat{automation} increases the confidence
+between teams, which is an important aspect of the \cat{collaboration culture}.
 
 \begin{mq}
-``\emph{
-Before we adopt DevOps, there was a lot of manual work. For example, if you
-needed to create a database schema, was manual; if you needed to create a
-database server, was manual; if you needed to create one more EC2 instance,
-also manually. This manual work was time consuming and often caused errors and
-rework}" (P1, DevOps Developer, Ireland)
+``\emph{Before we adopted DevOps, there was a lot of manual work. For example, if you
+needed to create a database schema, it was a manual process; if you needed to create a
+database server, it was a manual process; if you needed to create one more EC2 instance,
+such a process was also manual. This manual work was time consuming and often caused errors and
+rework.}" (P1, DevOps Developer, Ireland)
 \end{mq}
 
 \begin{mq}
-``\emph{
-Our main motivation to adopt DevOps was basically reduce rework. Almost every
-week, we had to basically make new servers and start it manually, which was
-very time-consuming}" (P4, Computer Technician, Brazil)
+``\emph{Our main motivation to adopt DevOps was basically reduce rework. Almost every
+week, we had to basically make new servers and start them manually, which was
+very time-consuming.}" (P4, Computer Technician, Brazil)
 \end{mq}
 
-The eight concepts of automation category will be detailed bellow.
-
+The eight concepts of automation category will be detailed next.
 In all interviews we extracted explanations about \textbf{deployment
-automation} (1) as part of DevOps adoption. Software delivery is the clearest
+automation} (1), as part of DevOps adoption. Software delivery is the clearest
 manifestation of value delivery in software development. In case of problems
 in deployment, the expectation of delivering value to business can quickly
 generate conflicts and manifest the existence of silos. As previously discussed,
 automation typically increase agility and reliability of tasks. Some other
-concepts of automation revolve exactly around deployment automation. To
+concepts of automation go exactly around deployment automation. To
 effectively generate value to business, the mere quickly and successfully
 deployment is not sufficient. The delivered software needs to have quality.
 Therefore, quality checks needs to be automated so they can be part of the
 deployment pipeline, is the case of \textbf{test automation} (2). In order
 that the deployment can occur in an automated way, the environment where the
 application will run needs to be available. So, \textbf{infrastructure
-provisioning automation} (3) is embedded in the process. Beyond available,
-the environment needs to be properly configured. The amount of memory and CPU,
-versions of libraries, and database structure, if all this is not automated,
-the deployment automation can failure. So, the \textbf{infrastructure management
-automation} (4) is another concept of automation category.
+provisioning automation} (3) is embedded in the process. Beyond being available,
+the environment needs to be properly configured, including the amount of memory and CPU,
+libraries versions, and database structure. If the configuration of some of these concerns
+has not been automated, the deployment actitivy can go wrong. Therefore,
+the \textbf{infrastructure management automation} (4) is another
+concept of the \cat{automation} category.
 
 Modern software is built around services. Microservices  was commonly cited
 as one aspect of DevOps adoption. To Fowler and Lewis
@@ -217,19 +215,18 @@ as one aspect of DevOps adoption. To Fowler and Lewis
 microservice architectural style, services need to be independently deployable
 by fully automated deployment machinery. We call this part of microservices
 characteristics of \textbf{autonomous services} (5). \textbf{Containerization}
-(6) is cited as a way to automate the provisioning of containers that are the
+(6) is also metioned as a way to automate the provisioning of containers that are the
 environment where these autonomous services will execute.
-
 \textbf{Monitoring automation} (7) and \textbf{recovery automation} (8) are the
 remaining concepts. The first refers to the ability to monitor the
 applications and infrastructure without human intervention. One classic example
-is the automated sending of alerts (SMS, slack/hip chat message or even
+is the automated sending of alerts (SMS, Slack/Hip Chat messages, or even
 cellphone calls) in case of incidents. And the second is related to the ability
-to replace without human intervention server instances that present problem or
-roll back a failed deployment to the previous version of the software.
+to replace a component that is not working or
+roll back a failed deployment without human intervention.
 
 
-\subsection{Continuous Measurement}
+\subsubsection{Continuous Measurement}
 Continuous measurement has two facets in a DevOps adoption process: it can work
 as an enabler or as an outcome.
 
@@ -239,8 +236,7 @@ collaboration culture, because it is a typical responsibility of the operations
 team.
 
 \begin{mq}
-``\emph{
-Before, we had only sporadic looks to zabbix to check if everything was OK.
+``\emph{Before, we had only sporadic looks to zabbix to check if everything was OK.
 At most someone would stop to look memory and CPU consumption. To maintain the
 high performance we have expanded this view of metrics collection so that it
 became part of the software product. We pass to collect metrics continuously
