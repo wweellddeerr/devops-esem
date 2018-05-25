@@ -65,8 +65,8 @@ software engineering predominantly use this version~\cite{stol2016grounded}.
 We carried out our research using an existing
 guideline about how to conduct a research based on
 Grounded Theory~\cite{adolph2011using}. This guideline organizes
-a GT investigation in three steps: \emph{Open Ccoding} Data Collection,
-\emph{Selective Coding} Data Analysis using, and Theoretical Coding.
+a GT investigation in three steps: \emph{Open Coding} Data Collection,
+\emph{Selective Coding} Data Analysis, and \emph{Theoretical Coding}.
 
 \gnote{acho que antes disso, é preciso dizer como você encontrou e abordou
 os possiveis entrevistados? Jogou um convite nas redes socias? foi por
@@ -111,8 +111,9 @@ Throughout the process, we wrote memos capturing thoughts and analytic
 processes; the memos support the emerging concepts, categories, and their
 relationships~\cite{adolph2012reconciling}.
 
-\gnote{para cada um dos itens acima, poderiamos colocar exemplos reais
-do trabalho? p.e., citar 1-2 memos?}
+%\gnote{para cada um dos itens acima, poderiamos colocar exemplos reais
+%do trabalho? p.e., citar 1-2 memos?}
+% Welder: inseri um exemplo de coding na sequencia do artigo.
 
 % The following sub-sections present details of procedures applied in this study,
 % containing some examples to illustrate their application.
@@ -122,7 +123,7 @@ do trabalho? p.e., citar 1-2 memos?}
 Regarding data collection, we conducted semi-structured interviews with 15 practitioners of companies from
 Brazil, Ireland, Portugal, Spain, and United States. This practitioners claim
 to have contributed to DevOps adoption processes in their companies. Participants
-were recruited using two approaches: (1) through direct contact in a \emph{DevOps Days}
+were recruited using two approaches: (1) through direct contact in a \emph{DevOpsDays}
 event and (2) through  general
 calls for participation posted on DevOps user groups, social networking sites,
 and local communities. A variety of company types were covered, in order to
@@ -142,7 +143,7 @@ country of work (CN), main domain of the company, and company size (CS).
 \caption{Participant Profile. SWX means software development experience in years, DX means DevOps experience in years, CN means country of work, and CS means company size (CS).}
 \label{participant_table}
 \begin{tabular}{ccccccc} \toprule
-\textbf{P\#}          & \textbf{Role}  
+\textbf{P\#}          & \textbf{Role}
        & \textbf{SWX} & \textbf{DX} & \textbf{CN}   & \textbf{Domain}    & \multicolumn{1}{l}{\textbf{CS}} \\ \midrule
 P1                   & DevOps Developer      & 9            & 2           & IR            & IT                 & S                               \\
 
@@ -180,8 +181,18 @@ P15                  & Developer        & 3            & 2           & BR       
 
 The interview were conducted over one year using Skype calls.
 Data collection and analysis were iterative so the collected data helped guide
-future interviews. {\color{red}The questions of interview evolved according to the progress
-of the research...}
+future interviews. The questions of interview evolved according to
+the progress of the research. We start with five open-ended questions: (1) What
+motivated the adoption of DevOps? (2) What adopt DevOps means in the context of
+your company? (3) How was this adopted in your company? (4) What were the
+results of adopting DevOps? And (5) What were the main difficulties?
+
+As the analyzes were being carried out, new questions were added to the script.
+These new questions were related to the concepts and categories identified in
+previous interviews. Examples of new questions are: (1) What is the
+relationship between deployment automation and DevOps adoption? (2) Is it
+possible to adopt DevOps without automation? (3) How to form a collaboration
+culture?
 
 With respect to \emph{data analysis}, the interviews were voice recorded, transcribed, and analysed. The first moment
 of the analysis, called open coding in GT, started immediately after the
@@ -211,7 +222,7 @@ After the discovery of the core category, we started to restrict the coding only
 to specific variables that were directly related to the core category and their
 relationships: the selective coding.
 With more three interviews and respective analysis, we realized that
-the new data added less and less content to the emerging theory. Thtat is, the
+the new data added less and less content to the emerging theory. That is, the
 explanation around how the collaboration culture is developed providing
 DevOps adoption showed signs of saturation. We then conducted more two
 interviews to conclude that we had reached the theoretical saturation.
@@ -222,12 +233,48 @@ homogeneous theory, where we have pointed out the role of the categories as
 enablers and outcomes, as shown above. We present more details about
 the results of our theoretical coding phase in the next section.
 
-
 To illustrate the coding procedures, we present an example of working from
-interview transcript to the findings for one of the categories: automation.
+interview transcript to category.
+
+Raw interview transcripts are full of noise. So we start the coding by removing
+this noise, identifying the key points. Key points are the summarized points
+from sections of the interview~\cite{georgieva2008best}. Example:
+
+\textbf{Raw data:} \textit{``So, here we adopted this type of strategy that is
+the infrastructure as code, consequently we have the versioning of our entire
+infrastructure in a common language, in such a way that any person, a
+developer, an architect, the operations guy of even the manager, he looks and
+is able to describe that the configuration of application x is y. So, it
+aggregates too much value for us exactly with more transparency"}
+
+\textbf{Key point:} \textit{``Infrastructure as code contributes to
+transparency because it enables the infrastructure versioning in a common
+language to all professionals"}
+
+We then assigned a code to the key point. A code is a phrase that summarizes
+the key point and one key point can lead to several codes
+\cite{hoda2017becoming}.
+
+\textbf{Code:} \textit{Infrastructure as code contributes to transparency}
+
+\textbf{Code:} \textit{Infrastructure as code provides a common language}
+
+In this example, the concept that emerged was ``infrastructure as code". The
+expression corresponding to this concept comes directly from raw data, but this
+is not a rule. It is common for the concept to be an abstraction, without
+emerging from an expression present in raw data.
+
+At this moment in the analysis, we already had identified another concepts that
+contribute to transparency. We wrote the following memo:
+
+\textbf{Memo:} \textit{Similar to sharing on a regular basis and shared
+pipelines, the concept of infrastructure as code is related as important to
+transparency. These transparency related concepts have often been cited as
+means to achieve greater collaboration between teams}.
+
+The constant comparison method was repeated on the concepts to produce a third
+level of abstraction called categories. The concepts sharing on regular basis,
+shared pipelines and infrastructure as code were grouped into
+\textbf{transparency} category.
 
 \gnote{seria bom linkar aqui os itens A--B descritos na seção anterior.}
-
-Apresentar aqui a exemplificacao da codificacao....
-
-\subsection{Reintegrate with Literature (?)}
