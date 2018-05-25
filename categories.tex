@@ -143,7 +143,7 @@ automation.}" (P9, IT Manager, Brazil)
 
 Besides the core category (\cat{collaboration culture}), we identified
 three other sets of categories: the categories that work as enablers
-for DevOps adoption, the categories that a consequences of adopting
+for DevOps adoption, the categories that are consequences of adopting
 DevOps, and the categories that are both enablers and consequences.
 
 \subsection{Enabler Categories}
@@ -156,7 +156,7 @@ Automation was the category with the higher number of related concepts. This
 occurs because manual proceedings are considered as strong candidates to
 propitiate the formation of a silo, hindering the construction
 of a \cat{collaboration culture}. If a task is manual, one people, or one
-team will be responsible to execute it. Although transparency and sharing can
+team will be responsible to execute it. Although \cat{transparency} and \cat{sharing} can
 be used to ensure collaboration even in manual tasks, with automation the
 points where silos may arise are minimized.
 
@@ -225,8 +225,76 @@ cellphone calls) in case of incidents. And the second is related to the ability
 to replace a component that is not working or
 roll back a failed deployment without human intervention.
 
+\subsubsection*{Sharing}
+
+The \cat{sharing} category represents the grouping of concepts
+emerged from recurrent interviews that help to disseminate concepts and
+activities. Trainings, tech talks, committees lectures, and round tables
+are examples of these events. Creating 
+channels using communication tools are another pattern of
+stories about \cat{knowledge sharing} as part of DevOps adoption.
+According with the content of what is shared, we
+have identified three main concepts:
+
+\begin{itemize}
+\item Knowledge sharing: the professionals interviewed mention a wide range of
+skills they need to acquire during the adoption of DevOps, citing
+structured events of sharing to smooth the learning curve of both technical and
+cultural knowledge.
+
+\item Process sharing: here, the focus is on sharing whole work processes. The
+content is more comprehensive than in sharing activities. Tech talks and
+lectures are the common forum of process sharing.
+
+\item Activities sharing, where the focus is on sharing how simple tasks were
+performed. Communication tools, committees and round tables are the common
+forum for sharing this type of content.
+\end{itemize}
+
+Sharing concepts contribute with the \cat{collaboration culture}. For example,
+all team members gain best insight about the entire software production
+process, with more sense of shared responsibilities. A shared vocabulary also
+emerged from \cat{sharing} and this facilitates communication.
+
+\subsubsection*{Transparency}
+
+\cat{Transparency} contains concepts that are also commonly used to develop the
+\cat{collaboration culture}. The use of \textbf{infrastructure as code} was
+recurrently cited as a means of everyone that knows how the execution environment of
+an application is provided and managed. Bellow, we present an interview
+transcript which sums up this concept well.
+
+\begin{mq}
+``\emph{So, here we adopted this type of strategy that is the infrastructure as code,
+consequently we have the versioning of our entire infrastructure in a common
+language, in such a way that any person, a developer, an architect, the
+operations guy of even the manager, he looks and is able to describe that the
+configuration of application x is y. So, it aggregates too much value for us
+exactly with more transparency.}" (P12, Cloud Engineer, United States)
+\end{mq}
+
+In previous sections, we presented the concepts related to sharing category. In
+transparency, exists the concept of \textbf{sharing on a regular basis}, that
+is correspondent to the existence of regularity in the realization of the
+sharing events. The sharing must to be embedded in the process of software
+development to contribute effectively to transparency.
+
+As will be better detailed in the concept of continuous integration of agility
+category, a common way to integrate all tasks is a pipeline. Here, exists the
+concept of \textbf{shared pipelines} which indicates that the code of pipelines
+must be accessible to everyone, in order to foment the transparency.
+
+\begin{mq}
+``\emph{Today we have full code opening. The code of how the infrastructure is
+made is open to developers and the sysadmins need to know some aspects of how 
+the application code is built. The code of our pipelines is accessible for
+everyone in the company to know how activities are automated}" (P13, Technology
+Manager, Brazil)
+\end{mq}
+
 
 \subsubsection{Continuous Measurement}
+
 Continuous measurement has two facets in a DevOps adoption process: it can work
 as an enabler or as an outcome.
 
@@ -304,70 +372,6 @@ Another two concepts cited as part of quality assurance in DevOps adoption are
 the \textbf{source code static analysis} (4) to compute quality metrics in
 source code of applications and the \textbf{parity between environments} to
 reinforce transparency and collaboration during software development.
-
-\subsection{Sharing}
-
-The sharing category represents the grouping of concepts emerged from recurrent
-relates of regular events of sharing. Trainings, tech talks, committees
-lectures, and round tables are examples of these sharing events. The creation
-of channels in communication tools are another pattern of stories about sharing
-as part of DevOps adoption. According with the content of what is shared, we
-have identified three concepts:
-
-\begin{itemize}
-\item Activities sharing, where the focus is on sharing how simple tasks were
-performed. Communication tools, committees and round tables are the common
-forum of the sharing of this type of content.
-\item Knowledge sharing: the professionals interviewed mention a wide range of
-skills they need to acquire during the adoption of DevOps. So, they cite
-structured events of sharing to smooth the learning curve of both technical and
-cultural knowledge.
-\item Process sharing: here, the focus is on sharing whole work processes. The
-content is more comprehensive than in sharing activities. Tech talks and
-lectures are the common forum of process sharing.
-\end{itemize}
-
-These sharing concepts contribute with the collaboration culture. For example,
-all team members gain a best insight about the entire software production
-process, with more sense of shared responsibilities. A shared vocabulary also
-emerged from sharing and this facilitates communication.
-
-\subsection{Transparency}
-
-Transparency contains concepts that are also commonly used to develop the
-collaboration culture. The use of \textbf{infrastructure as code} was
-recurrently cited as a mean of everyone knows how the execution environment of
-an application is provided and managed. Bellow, we present an interview
-transcript part which sums up this concept well:
-
-\begin{mq}
-``\emph{
-So, here we adopted this type of strategy that is the infrastructure as code,
-consequently we have the versioning of our entire infrastructure in a common
-language, in such a way that any person, a developer, an architect, the
-operations guy of even the manager, he looks and is able to describe that the
-configuration of application x is y. So, it aggregates too much value for us
-exactly with more transparency}" (P12, Cloud Engineer, United States)
-\end{mq}
-
-In previous section, we presented the concepts related to sharing category. In
-transparency, exists the concept of \textbf{sharing on a regular basis}, that
-is correspondent to the existence of regularity in the realization of the
-sharing events. The sharing must to be embedded in the process of software
-development to contribute effectively to transparency.
-
-As will be better detailed in the concept of continuous integration of agility
-category, a common way to integrate all tasks is a pipeline. Here, exists the
-concept of \textbf{shared pipelines} which indicates that the code of pipelines
-must be accessible to everyone, in order to foment the transparency.
-
-\begin{mq}
-``\emph{Today we have full code opening. The code of how the infrastructure is
-made is open to developers and the sysadmins need to know some aspects of how 
-the application code is built. The code of our pipelines is accessible for
-everyone in the company to know how activities are automated}" (P13, Technology
-Manager, Brazil)
-\end{mq}
 
 \subsection{Agility}
 
