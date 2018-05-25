@@ -5,33 +5,10 @@
 \usepackage[usenames,svgnames]{xcolor}
 \usepackage{url}
 \usepackage{enumitem}
-\usepackage[framemethod=TikZ]{mdframed}
+
+\usepackage{float}
 
 \definecolor{yellow}{RGB}{255, 255, 204}
-
-\newmdenv [ % 
- outerlinewidth   = 2              , 
- roundcorner      = 5pt            ,   
- leftmargin       = 2              , 
- rightmargin      = 2              , 
-% backgroundcolor  = White        ,  
- outerlinecolor   = blue           , 
- innertopmargin   = \topskip       , 
- splittopskip     = \topskip      ]{mh}
-
-\newmdenv [ % 
- outerlinewidth   = 2              , 
- roundcorner      = 5pt            ,   
- leftmargin       = 2              , 
- rightmargin      = 2              , 
- backgroundcolor  = OldLace        ,  
- outerlinecolor   = blue           , 
- innertopmargin   = \topskip       , 
- splittopskip     = \topskip      ]{mq}
-
- 
-
-
 
 \ifCLASSINFOpdf
    \usepackage[pdftex]{graphicx}
@@ -39,6 +16,28 @@
  \else
    \usepackage[dvips]{graphicx}
 \fi
+
+\usepackage[framemethod=TikZ]{mdframed}
+\newmdenv [ %
+ outerlinewidth   = 2              ,
+ roundcorner      = 5pt            ,
+ leftmargin       = 2              ,
+ rightmargin      = 2              ,
+% backgroundcolor  = White        ,
+ outerlinecolor   = blue           ,
+ innertopmargin   = \topskip       ,
+ splittopskip     = \topskip      ]{mh}
+
+\newmdenv [ %
+ outerlinewidth   = 2              ,
+ roundcorner      = 5pt            ,
+ leftmargin       = 2              ,
+ rightmargin      = 2              ,
+ backgroundcolor  = OldLace        ,
+ outerlinecolor   = blue           ,
+ innertopmargin   = \topskip       ,
+ splittopskip     = \topskip      ]{mq}
+
 \long\def\gnote#1{[[[[\textbf{#1 -Gustavo}]]]]}
 
 % correct bad hyphenation here
