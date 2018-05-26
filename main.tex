@@ -1,22 +1,12 @@
-\documentclass[conference]{IEEEtran}
+\documentclass[sigconf]{acmart}
 
-\usepackage{booktabs}
-\usepackage[usenames,svgnames]{xcolor}
-\usepackage{url}
+
+\usepackage{booktabs} % For formal tables
 \usepackage{enumitem}
-
-\usepackage{float}
-
-\definecolor{yellow}{RGB}{255, 255, 204}
-
-\ifCLASSINFOpdf
-   \usepackage[pdftex]{graphicx}
-   \DeclareGraphicsExtensions{.png}
- \else
-   \usepackage[dvips]{graphicx}
-\fi
-
+\usepackage{xcolor}
 \usepackage[framemethod=TikZ]{mdframed}
+
+\definecolor{oldlace}{rgb}{0.99, 0.96, 0.9}
 \newmdenv [ %
 % outerlinewidth   = 2              ,
 % roundcorner      = 5pt            ,
@@ -32,39 +22,79 @@
  roundcorner      = 5pt            ,
  leftmargin       = 2              ,
  rightmargin      = 2              ,
- backgroundcolor  = OldLace        ,
+ backgroundcolor  = oldlace        ,
  outerlinecolor   = blue           ,
  innertopmargin   = \topskip       ,
  splittopskip     = \topskip      ]{mq}
 
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+\acmDOI{10.475/123_4}
+
+% ISBN
+\acmISBN{123-4567-24-567/08/06}
+
+%Conference
+\acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
+  Paso, Texas USA}
+\acmYear{1997}
+\copyrightyear{2016}
+
+
+\acmArticle{4}
+\acmPrice{15.00}
+
+% These commands are optional
+%\acmBooktitle{Transactions of the ACM Woodstock conference}
+%\editor{Jennifer B. Sartor}
+%\editor{Theo D'Hondt}
+%\editor{Wolfgang De Meuter}
+
 \long\def\gnote#1{[[[[\textbf{#1 -Gustavo}]]]]}
-
-% correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
-
-\newcommand{\cat}[1]{{\color{DarkRed}{\emph{#1}}}}
+\newcommand{\cat}[1]{{\textbf{\emph{#1}}}}
 
 \begin{document}
 
 \title{Adopting DevOps: A Grounded Theory of Well Succeeded DevOps Adoption in
-Practice}
+  Practice}
 
-\author{\IEEEauthorblockN{Welder Pinheiro Luz}
-\IEEEauthorblockA{Computer Science Department\\
-Univerisity of Bras\'{i}lia\\
-Bras\'{i}lia, Brazil}
-\and
-\IEEEauthorblockN{Gustavo Pinto}
-\IEEEauthorblockA{Faculty of Computing\\
-Federal University of Par\'{a} \\
-Bel\'{e}m, Brazil}
-\and
-\IEEEauthorblockN{Rodrigo Bonif\'{a}cio}
-\IEEEauthorblockA{Computer Science Department\\
-University of Bras\'{i}lia\\
-Bras\'{i}lia, Brazil}
+\author{Welder Pinheiro Luz}
+\affiliation{%
+  \institution{University of Bras\'{i}lia}
+  \city{Bras\'{i}lia}
+  \country{Brazil}
 }
-\maketitle
+\email{email@domain.com}
+
+\author{Gustavo Pinto}
+\affiliation{
+	\institution{Federal University of Par\'a}
+	\city{Bel\'em}
+	\state{Par\'a}
+}
+\email{gpinto@ufpa.br}
+
+\author{Rodrigo Bonif\'acio}
+\affiliation{%
+  \institution{University of Bras\'{i}lia}
+  \city{Bras\'{i}lia}
+  \country{Brazil}
+}
+\email{rbonifacio@cic.unb.br}
+
+
+\renewcommand{\shortauthors}{B. Trovato et al.}
 
 \input{abstract}
 
@@ -82,13 +112,7 @@ Bras\'{i}lia, Brazil}
 
 \input{conclusion}
 
-% use section* for acknowledgment
-\section*{Acknowledgment}
-
-The authors would like to thank...
-
-\bibliography{references}{}
-\bibliographystyle{plain}
-
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
 
 \end{document}
