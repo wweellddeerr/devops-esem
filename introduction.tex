@@ -1,32 +1,117 @@
-\section{Introduction}
+\section{Introduction} \label{sec:introduction}
 % no \IEEEPARstart
 
-DevOps is a term that has emerged in software development industry. Even before
-the existence of the term --- a mix of ``development" and ``operations" words, that
-has been used since 2009\gnote{REF?} --- companies like Flickr \cite{flickr} already
-pointed out the need to break the existing paradigms regarding the role of the
-operations team in the software development team. Since then, the term that has appeared
-without clear delimitation has gained strength and interest in companies that
-perceived the benefits of applying agile practices in operation tasks\gnote{since you are claiming a benefit, it is worth to point out a reference.}.
-However, adopt DevOps still as a challenge task\gnote{why it is challenging?}.
+DevOps is a a set of practices and cultural values that has emerged in the
+software development industry. Even before
+the existence of the term--- a mix of ``development" and ``operations"
+words~\cite{httermann2012devops}- companies like Flickr~\cite{flickr}
+had already pointed out the need to break the existing separation between
+the operations and software development team. Since then, the term
+has appeared without clear delimitation and gained strength and interest
+in companies that perceived the benefits of applying agile practices in
+operation. DevOps related benefits include increased organizational IT
+performance and productivity, cost reduction in software lifecycle, improvement
+in operational efficacy and efficiency and greater business alignment of
+development and operations \cite{characterizing_devops_sbes_2016}.
+%tasks\gnote{since you are
+%claiming a benefit, it is worth to point out a reference.}.
+However, the adoption of DevOps is still a challenging task, because there is a
+lot of information, practices and tools related to DevOps, but with little
+guidance about how all this stuff can be structured in an adoption.
+%\gnote{why it is challenging?}.
+% Welder: tentei apresentar uma justificativa razoável.
 
-In the academic arena, based on literature reviews, researchers have proposed a number of DevOps characterizations, for instance, as a set of concepts with related practices~\cite{cooperation_dev_ops_esem_2014,devops_a_definition_xp_15,dimensions_of_devops_xp_15,extending_dimensions_icsea_16,characterizing_devops_sbes_2016,qualitative_devops_journalsw_17}. Although some these studies leverage qualitative approaches to gather practitioners perception (for instance, conducting interviews with them), these interviews were merely used as a complement to the literature review, instead of playing a leading role. Consequently, the obtained DevOps characterizations allow a comprehensive understanding of the elements that constitute DevOps, but do not provide a detailed guidance to support newcomers interested in adopting DevOps practices.
-As a consequence, many practical and timely questions still remain open, for instance: (1) Is there any straight-forward way to adopt DevOps? (2) Since DevOps is composed by multiple elements~\cite{dimensions_of_devops_xp_15}, do these elements have the same weight, when adopting DevOps?
+% Welder: inseri esse parágrafo para tentar melhorar a justificativa para
+% a pesquisa. Não sei se essas citações de reports são adequadas.
+
+Some industrial reports have reinforced the importance of DevOps and its moment
+of growing interest. For instance, a recent survey reveals
+that 71\% of the respondents are either implementing DevOps or
+planning to adopt DevOps in the subsequent 12 months~\cite{state_of_agile}.
+Another report claims that DevOps enables mission achievement
+for any type of organization, independent of industry or sector~\cite{state_of_devops}.
+Finally, another study reports that DevOps is one of the trends in
+today's software industry~\cite{stackoverflow_2018}.
+
+In the academic arena, based on literature reviews, researchers have proposed a
+number of DevOps characterizations, for instance, as a set of concepts with
+related
+practices~\cite{cooperation_dev_ops_esem_2014,devops_a_definition_xp_15,dimensions_of_devops_xp_15,extending_dimensions_icsea_16,characterizing_devops_sbes_2016,qualitative_devops_journalsw_17}. Although some
+of these studies leverage qualitative approaches to gather practitioners perception (for instance,
+conducting interviews with them), they focus on characterizing DevOps,
+instead of providing some guidance to assist on DevOps adoption. Consequently,
+the obtained DevOps characterizations allow a comprehensive understanding of
+the elements that constitute DevOps, but do not provide detailed guidance to
+support newcomers interested in adopting DevOps practices.
+As a consequence, many practical and timely questions still remain open, for
+instance: (1) Is there any recommended path to adopt DevOps? (2) Since
+DevOps is composed by multiple elements~\cite{dimensions_of_devops_xp_15}, do
+these elements have the same relevance, when adopting DevOps?
 %For example, according to the framework proposed by Lwakatare and colleagues~\cite{dimensions_of_devops_xp_15}, automation is one of four dimensions.
 %So, if, by example, one team automated all of your procedures, will be him reached 25\% of DevOps adoption?
-(3) What is the role played by these different elements like measurement, sharing, and automation in a DevOps adoption? To provide answers to these questions, it is necessary a holistic understanding of the practices adopted by successfully DevOps teams.
+(3) What is the role played by these different elements like measurement, sharing, and automation
+in a DevOps adoption? To provide answers to these questions, it is necessary a holistic
+understanding of the practices adopted by successfully DevOps teams.
 
-In this paper, we present a model based on the perceptions of practitioners of 15 companies across five countries that successfully adopted DevOps. The model was constructed based on a Grounded Theory (GT) approach. Considering that we start from a limited exposure to existing literature, due to the nature of a GT approach, this study validates the previous research in the parts where they coincide\gnote{nao entendi bem a sentença. começa falando de literatura limitada, mas depois conclui dizendo validaria a literatura. ou seja, seja a literatura limitada ou não, acabaria sendo validada da mesma forma, certo?}. %We found elements that make up the adoption of DevOps and most of them are similar to those present in related work.
-After the construction of the model, the model was instantiated in an important Brazilian federal government institution. \gnote{explicar brevemente como foi feito}
+In this paper, we present a model based on the perceptions of practitioners of
+15 companies across five countries that successfully adopted DevOps. The model
+was constructed based on a classic Grounded Theory (GT) approach. After the
+construction of the model, it was instantiated in Brazilian Federal Court of
+Accounts (hereafter TCU), a Brazilian Federal Government institution. TCU was
+bogged down in implanting specific DevOps tools repeating the same non-DevOps
+problems, with conflicts between development and operations teams about how to
+divide the responsibilities related to the tools. The model helped TCU to
+change its focus to improve the collaboration between teams and to use the tool
+as a means and not an end and, consequently, better explore the benefits of
+these tools in a more collaborative environment.
+%\gnote{explicar brevemente como foi feito}
 
+%Considering that we start from a limited exposure to existing literature, due
+%to the nature of a GT approach, this study validates the previous research in
+%the parts where they coincide
 
-We found that the DevOps adoption involves a very specific relationship between eight categories: agility, automation, collaboration culture, continuous measurement, quality assurance, resilience, sharing, and transparency. The core category and validation point \gnote{o que seria esse validation point?} of DevOps adoption is the collaboration culture. Some of the identified categories (i.e., automation, sharing, and transparency) exist as means to propitiate the foundation of a collaboration culture. Other categories (i.e., agility and resilience) are expected consequences of this formation. Finally, two other categories (i.e., continuous measurement and quality assurance) work as both foundations and consequences. \gnote{acho que ta faltando um take away mais objetivo aqui. parte da argumentação da existencia desse trabalho é que ele pode facilitar a adoção de devops por praticantes da industria. de que forma isso seria possivel? seria bom detalhar aqui}
+%\gnote{nao entendi bem a sentença. começa falando de literatura limitada, mas
+%depois conclui dizendo validaria a literatura. ou seja, seja a literatura
+%limitada ou não, acabaria sendo validada da mesma forma, certo?}.
+
+%Welder: Tem toda razão Gustavo, o que eu disse não faz sentido.
+
+%We found elements that make up the adoption of DevOps and
+%most of them are similar to those present in related work.
+
+We found that the DevOps adoption involves a very specific relationship between
+eight categories: agility, automation, collaboration culture, continuous
+measurement, quality assurance, resilience, sharing, and transparency. The core
+category of DevOps adoption is the collaboration culture. Some of the
+identified categories (i.e., automation, sharing, and transparency) exist as
+means to propitiate the foundation of a collaboration culture. Other categories
+(i.e., agility and resilience) are expected consequences of this formation.
+Finally, two other categories (i.e., continuous measurement and quality
+assurance) work as both foundations and consequences.
+
+The model turns clear that the DevOps adoption should focus on building a
+collaboration culture, which prevents common pitfalls related to focusing on
+tooling or automation. In addition, the model explains the common ways used by
+the practitioners to reach this development of a collaboration culture: the
+DevOps enablers. Finally, the model explains the role of some concepts related to
+DevOps adoption but that do not contribute directly to bring a collaboration culture:
+the DevOps outcomes. This way of guidance simplify the understanding of the
+complex set of elements that are part of DevOps adoption, enabling it to be
+more direct and with lower risk of failure.
+
+%\gnote{acho que ta
+%faltando um take away mais objetivo aqui. parte da argumentação da existencia
+%desse trabalho é que ele pode facilitar a adoção de devops por praticantes da
+%industria. de que forma isso seria possivel? seria bom detalhar aqui}
+%
+% Welder: tentei atender à recomendação com o texto do parágrafo anterior.
 
 The main contributions of this paper are the following:
 
 \begin{itemize}
-\item The understanding about how do adopt DevOps based on an industry view;
-\item The use of Grounded Theory in a DevOps context, which had not been done before.
+\item The understanding about a model that explains how to adopt DevOps based on an industry view;
+\item Our experience of applying our DevOps Adoption Model in a real and non-trivial context;
+\item The use of the Classic Grounded Theory approach in a DevOps context, which had not been done before.
 \end{itemize}
 
 

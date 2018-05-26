@@ -1,66 +1,176 @@
-\section{Results} \label{sec:results}
-The results of a grounded theory study, as the name of the method itself suggests, are grounded on the collected data; the hypotheses emerged from data. A grounded theory should describe the key relationships between the categories that compose it, i.e., a set of inter-related hypotheses~\cite{hoda2017becoming}. We present the main categories of the grounded theory of DevOps adoption as a network of three categories of enablers\gnote{talvez fosse bom apresentar o que é um enabler} (automation, sharing and transparency\gnote{essas categorias já são as categorias da teoria? elas não deveriam ser introduzidas antes?}) that are commonly used to develop the core category ``collaboration culture". The use of enablers to develop the collaboration culture typically produces concepts related to two categories of outcomes: agility and resilience. And there are two categories that can be considered both as enablers and as outcomes: continuous measurement and quality assurance. In this section we describe the relationships between those categories, i.e. the hypotheses.\gnote{aqui eu fiquei um pouco confuso. qual a definição de enabler e outcome? existe alguma interseção entre as sub-categorias?}
+\section{A Theory on DevOps Adoption} \label{sec:results}
 
-\subsection{How to Adopt DevOps?}
-At the introduction of the paper, we asked the following question: is there a
-suitable way to adopt DevOps? Here, we present one possible response, based
-on the detailed analyses performed.
+The results of a grounded theory study, as the name of the method itself
+suggests, are grounded on the collected data, so the hypotheses emerge from
+data. A grounded theory should describe the key relationships between the
+categories that compose it, i.e., a set of inter-related hypotheses~\cite{hoda2017becoming}.
+We present the categories of our grounded theory
+about DevOps adoption as a network of the three categories of enablers (\cat{automation},
+\cat{sharing} and \cat{transparency}) that are commonly used to develop the core category
+\cat{collaboration culture}, as discussed in the previous section. Based on our understanding,
+implementing the enablers to develop the \cat{collaboration culture} typically leads
+to concepts related to two categories of expected outcomes:
+\cat{agility} and \cat{resilience}. Moreover, there are two categories that can be considered
+both as enablers and as outcomes: \cat{continuous measurement} and \cat{quality assurance}.
+In this section we describe the relationships between those categories, building a theory
+of DevOps adoption.
 
-The main point
-which should be sought is the formation of a \textbf{collaboration culture}
-between the teams and activities
-%of operations \gnote{parece estranho a colaboração ser baseada nos times e nas atividades _de operações_ somente.}
-related to software development.
-The other categories, some of which have been also discussed in related work\gnote{REF}
-, only make sense if the practices and concepts related to them generate some improvement in the level of collaboration culture \gnote{nao entendi. as demais categorias não precisariam existir, se elas não fomentam a cultura de colaboração?} or if this improvement produces expected or necessary\gnote{qual a diferença de expected e necessary?} consequences on it.
+\subsection{A General Path for DevOps Adoption}
 
-\textbf{H1:} \textit{There is a group of categories related to DevOps adoption that only make sense if used to improve the collaboration culture. We call this group of categories of \textbf{enablers}}. If there is some degree of automation to support deployment, infrastructure provisioning and management, and monitoring activities, but this automation is maintained into a silo, where only one people or one team is able or responsible to understand, adapt or evolve this automation, there is no increase in collaboration level and, consequently, the DevOps adoption has not advanced. The same is valid to the other categories of enablers. If transparency and sharing do not contribute to the collaboration culture, they do not contribute to DevOps adoption.
+In Section~\ref{sec:introduction} we presented the general question of this
+research: is there any recommended path to adopt DevOps? Here, we elaborate a response,
+based on the analyses conducted as detailed in Section~\ref{sec:research_method}. The main
+point which should be formulated is the construction of a \cat{collaboration
+culture} between the software development and operations teams and
+related activities. According to our findings, the other categories,
+many of which are also present in other studies that have investigated DevOps,
+only make sense if the practices and
+concepts related to them either contribute to the level of a \cat{collaboration
+culture} or lead to the expected consequences of a \cat{collaboration
+culture}. This understanding induces several hypothesis, as discussed in
+what follows.
 
-"This midfield between dev and ops was missing, and these tools that we used were just to connect the DevOps" P3
+\begin{mh}
+\textbf{H1:} \textit{There is a group of categories related to DevOps adoption
+that only make sense if used to increase the} \cat{collaboration culture} \emph{level. We
+call this group of categories of \textbf{enablers}}.
+\end{mh}
 
-\textbf{H2:} \textit{There is a group of categories related to DevOps adoption that don't contributes to increase of collaboration culture level, but that are pointed out as DevOps adoption related, because they emerge as expected or necessary consequence of the adoption. We call this group of categories of \textbf{outcomes}}. In a first moment, the simple fact that a team is more agile in delivering software, or more resilient in failure recovery, don't contributes directly to bring operations tasks closer to development tasks. But, the respondents of the interviews frequently cited the capacity of continuously delivery software and the strongly resilient infrastructure as part of their DevOps adoption process.
+Based on this first hypothesis, there is no increase in the collaboration
+level in the situations where only one team is responsible to understand, adapt, or
+evolve the automation to support (a) deployment activities, (b) infrastructure provisioning and management,
+and (c) monitoring activities. In these scenarios, the level of DevOps adoption does not advance.
+The same is valid to the other \emph{enabling} categories. That is, in the situations where
+\cat{transparency} and \cat{sharing} do not contribute to
+the \cat{collaboration culture}, they do not contribute to DevOps adoption as a whole. Next
+we present some examples of the underlying raw data that support H1.
 
-\textbf{H3:} \textit{The categories \textbf{Continuous Measurement} and \textbf{Quality Assurance} are related both to DevOps enabling capacity and to DevOps outcoming}. Measurement is cited as a typical responsibility of the operations team. At the same time that the sharing of this responsibility contributes to reduce the silo, it is also cited as a necessary consequence after DevOps adoption, because the context of agility with continuous delivery of software requires more caution, which is supplied by the concepts related to \textbf{continuous measurement} category. The same premise is valid to \textbf{quality assurance} category. At first glance \textbf{quality assurance} appears as one response to the context of agility in operations provided by DevOps adoption. But, the efforts in quality assurance of software products increase the confidence between the dev and ops teams developing the level of \textbf{collaboration culture}.
+\begin{mq}
+``\emph{Look, inside the operations sector there was some degree of automation. The guy
+had stored in his own machine bash scripts that helped him when setting up a
+server or when creating a new database instance. Nevertheless, there was no DevOps
+because there was no intrinsic relationship of this automation to the
+development process}" (P11, DevOps Supervisor, Brazil)
+\end{mq}
+
+
+\begin{mq}
+``\emph{
+DevOps involves tooling, but DevOps is not tooling. That is, people often
+focus on using tools that are called 'DevOps tools', believing that DevOps is
+this. I always insist that DevOps is not use tools, DevOps involves use these
+tools properly to improve software development procedures}" (P2, DevOps
+Consultant, Brazil)
+\end{mq}
+
+
+%% \begin{mq}
+%% ``\emph{Keeping the culture alive remains a challenge to us, and it is very
+%% important. Here in our company, for example, we have Tech Talks that are
+%% monthly conversations that we have with the teams. The purpose of these Tech
+%% Talks is to share knowledge about technologies and work processes increasing the
+%% transparency of how everything works. We also have a Slack channel called
+%% DevOps as Culture where we discuss things of DevOps culture. The idea is not to
+%% let the culture die, we are always feeding it with something, because that is
+%% the DevOps essence for us.}" (P12, Cloud Engineer, United States)
+%% \end{mq}
+
+\begin{mh}
+\textbf{H2:} \textit{There is a group of categories related to DevOps adoption
+that does not contribute to increase the} \cat{collaboration culture} \emph{level, but that instead are
+pointed out as DevOps adoption related, because they emerge as an expected or
+necessary consequence of the adoption. We call this group of categories of
+\textbf{outcomes}}.
+\end{mh}
+
+In a first moment, the simple fact that a team is more
+\cat{agile} in delivering software, or more \cat{resilient} in failure recovery, does not
+contribute directly to bring operations teams closer to development teams.
+Nevertheless, the respondents of the interviews frequently cited that DevOps
+increases the capacity for continuously delivering software (\cat{agile})
+and for building \cat{resilient} infrastructures.
+
+\begin{mh}
+\textbf{H3:} \textit{The categories \cat{Continuous Measurement} and \cat{Quality Assurance}
+are related both to DevOps enabling capacity and to DevOps outcomes}.
+\end{mh}
+
+Measurement is cited as a typical responsibility of the operations team.
+At the same time that the sharing of this responsibility contributes to reduce the silo,
+it is also cited as a necessary consequence after DevOps adoption, because
+the context of agility with the continuous delivery of software requires more caution,
+which is supplied by concepts related to the \cat{continuous measurement} category.
+The same premise is valid to the \cat{quality assurance} category. At first glance,
+\cat{quality assurance} appears as one response to the context of agility in operations
+provided by DevOps adoption. But, the efforts in quality assurance of software products
+increase the confidence between the dev and ops teams increasing the level
+of \cat{collaboration culture}.
 
 \subsection{DevOps Enablers}
 
-DevOps enablers are exactly the means commonly used to increase the level of the collaboration culture in a DevOps adoption process. We have identified five categories of DevOps enablers:
+DevOps enablers are exactly the means commonly used to increase the level of
+the \cat{collaboration culture} in a DevOps adoption process.
+We have identified five categories of DevOps enablers:
+\cat{ Automation}, \cat{Continuous Measurement}, \cat{Quality Assurance},
+\cat{Sharing}, and {\cat{Transparency}.
 
-\begin{itemize}
-\item Automation;
-\item Continuous Measurement*;
-\item Quality Assurance*;
-\item Sharing; and
-\item Transparency.
-\end{itemize}
+\begin{mh}
+\textbf{H4:} \textit{There is no precedence between enablers in a DevOps
+adoption process}.
+\end{mh}
 
-\footnotesize * This category can be outcome too
+We have realized that the adoption process can follow a
+path that prioritizes specific enablers, on the condition that the level of
+\cat{collaboration culture} increases. In addition, there is no enabler with evidence that
+can be more efficient than another for creating a \cat{collaboration culture}. For
+instance, although 14 respondents cite \cat{automation} as an important
+enabler to adopt DevOps, some respondents also ponder that considering
+automation with greater importance than other parts can actually be a risk:
 
-\normalsize
-\textbf{H4:} \textit{There is no precedence between enablers in a DevOps adoption process}. We have perceived that the adoption process can follow a path that prioritizes specific enablers, on the condition that the level of collaboration culture increases. And there is no an enabler with evidence that can be more efficient to another in collaboration culture development. For example, in 14 interviews \textbf{automation} was cited as a very important enabler to adopt DevOps. But, one respondent answered the following:
+\begin{mq}
+``\emph{I think that the expansion of collaboration between teams involved other
+things, it was not just automation. There must be an alignment with the
+business needs. (...) I think that DevOps made possible a broader understanding
+of software production and we were realizing exactly that it is not about
+automating everything. What we need is a broader understanding of all task involved from
+conception to production.
+Sometimes, we conclude that a given task is not completely necessary and then we
+solve the problem by changing procedures without the effort necessary to
+automate it. So, I see with caution a supposed vision that automate things can
+be the way to implement DevOps.}" (P7, Support Analyst, Brazil)
+\end{mq}
 
-"Embora a gente atualmente use automacao em um numero razoavel de cenarios, nos conseguimos desenvolver bastante a nossa cultura sem uso de automacao e eu penso que pode-se adotar DevOps com pouco ou ate mesmo nada de automacao" P8
+\begin{mq}
+``\emph{Despite of we actually use automation in a reasonable number of scenarios, we have been able to develop our culture significantly without automation and I think that you can reach a good DevOps level with little or even no automation.}" (P8, DevOps Engineer, Brazil)
+\end{mq}
 
-That is, although automation is a very commonly used enabler, it is possible to increase the level of collaboration culture without focus on automating. And this premise is valid to the other enablers. Each enabler will be detailed in the sequence of the paper.
+That is, although \cat{automation} is a very commonly used enabler, it is possible to
+increase the level of \cat{collaboration culture} without focus on automating. And
+this premise is valid to the other enablers.
 
 \subsection{DevOps Outcomes}
-DevOps outcomes is that group of categories doesn't produces primarily the expected effect of a DevOps enabler, typically concepts that are expected or required consequences of an adoption of DevOps. We have identified four categories that can work as DevOps outcomes:
 
-\begin{itemize}
-\item Agility;
-\item Continuous Measurement*;
-\item Quality Assurance*; and
-\item Resilience.
-\end{itemize}
+DevOps outcomes is that group of categories that does not produces primarily the
+expected effect of a DevOps enabler, typically concepts that are expected as
+consequences of an adoption of DevOps. We have identified four categories that
+can work as DevOps outcomes: \cat{Agility}, \cat{Continuous Measurement},
+\cat{Quality Assurance}, and \cat{Software Resilience}. Note that,
+as mentioned before, \cat{Continuous Measurement} and \cat{Quality Assurance}
+are both enablers and outcomes.
 
-\footnotesize * This category can be enabler too
+That is, a well succeeded DevOps adoption typically increases the potential of
+\cat{agility}, \cat{continuous measurement}, \cat{quality assurance} and
+\cat{resilience} of the infrastructure and the teams.
+However, in some situations, this potential is not completely used due business
+decisions. For example, one respondent cited that, at a first moment, the
+company did not allowed the continuous deployment of applications in production:
 
+\begin{mq}
+``\emph{We had conditions and security to continuously publish in production,
+however, in the beginning the managers were afraid and decided that the
+publication would happen weekly.}" (P9, IT Manager, Brazil)
+\end{mq}
 
-\normalsize
-One well succeeded DevOps adoption typically increases the potential of agility, continuous measurement, quality assurance and resilience of a team. But, in some cases this potential is not completely used due business decisions. For example, one respondent has cited that at a first moment the company don't allowed the continuous deployment of applications in production:
-
-"Nos tinhamos condicoes e seguranca para publicar continuamente em ambiente de producao, porem, por os gerentes tinham medo e decidiram por publicar apenas semanalmente em producao" P9
-
-In this case, DevOps increased the level of agility of the company, but, this potential was not totally tapped.
-
-As well as enablers, each outcome will be detailed in the sequence of the paper.
+In this case, DevOps increased the level of agility of the company, but this
+potential was not totally achieved. As well as enablers, each outcome
+will be detailed in the sequence of the paper.

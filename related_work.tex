@@ -1,18 +1,122 @@
 \section{Related Work} \label{sec:related_work}
 
-A literature review of 2014 \cite{cooperation_dev_ops_esem_2014} proposed eight main concepts related to DevOps: culture, automation, measurement, sharing, services, quality assurance, structures and standards. The research points out that four of this concepts (culture, automation, measurement and sharing) are related to CAMS framework, proposed in \cite{what_devops_means_2010}, which multiple articles referred to. The paper concludes that there is a great opportunity for empirical researchers to study organizations experimenting with DevOps.
+A literature review of 2014 \cite{cooperation_dev_ops_esem_2014} proposed eight
+main concepts related to DevOps: culture, automation, measurement, sharing,
+services, quality assurance, structures and standards. The research points out
+that four of this concepts (culture, automation, measurement and sharing) are
+related to CAMS framework, proposed in \cite{what_devops_means_2010}, which
+multiple articles referred to. The paper concludes that there is a great
+opportunity for empirical researchers to study organizations experimenting with
+DevOps.
 
-Since then, some studies have mixed literature reviews with empirical investigations in the industry \cite{devops_a_definition_xp_15}, \cite{qualitative_devops_journalsw_17} and \cite{dimensions_of_devops_xp_15}.
+Since then, some studies \cite{devops_a_definition_xp_15},
+\cite{dimensions_of_devops_xp_15}, \cite{extending_dimensions_icsea_16},
+\cite{characterizing_devops_sbes_2016} and
+\cite{qualitative_devops_journalsw_17} have mixed new literature reviews
+with empirical investigations in industry to investigate DevOps.
 
-In \cite{dimensions_of_devops_xp_15}, is presented a framework with four main dimensions that characterize DevOps: collaboration, automation, measurement and monitoring. The study advocates to confirm three elements of DevOps presented in previous research and to add a new element (monitoring). The paper does not indicates the role of each dimension in a DevOps adoption, causing some gaps: DevOps only make sense with all dimensions being improved at the same time? Does evolving into any single dimension provide proper adoption way of DevOps? If automation, by example, is fully attended, is the DevOps adoption in 25\% of progress? Depite of theses gaps, the paper offers an abrangent view of DevOps and the results combine literature review with a short direct investigation of industry through interviews with three practitioners. Except monitoring that was considered part of continuous measurement, the another dimensions are present too in our results, which validates them. The paper also concludes that still a need for empirical research that investigates DevOps adoption in order to validate and enhance the presented conceptual framework.
+Although our research and related work have investigated the same area, which
+is DevOps, there are subtle differences in methodological aspects and in focus
+of each work. Table~\ref{related_work_table} summarizes methodology and focus
+of each work, including our. \cite{extending_dimensions_icsea_16} is one
+extension of \cite{dimensions_of_devops_xp_15}, so, we only put the new one
+on the table.
 
-One extension of \cite{dimensions_of_devops_xp_15} was proposed in \cite{extending_dimensions_icsea_16}. This extension added culture as a new dimension of DevOps characterization and presented practices related to each dimension. The data was collected using multivocal literature review combined with three semi-structured interviews. The data analysis was performed using coding techniques similar to those used in Grounded Theory studies. In our study, culture is grouped with collaboration in one category named \"collaboration culture\", so this five dimensions are presented in our results as only three, but with similar descriptions. The paper present as future work the need to obtain empirical evidence of DevOps adoption in companies that claim to have implemented it, exactly as we are proposing here.
+\begin{table*}[t]
+\centering
+\caption{Comparing Methodology and Focus of Related Work}
+\label{related_work_table}
+\begin{tabular}{|p{1.4cm}|p{2.72cm}|p{2.72cm}|p{2.72cm}|p{2.72cm}|p{2.72cm}|}
+\toprule
+% Cabeçalho
+\textbf{Topic} &
+\textbf{Our study} &
+\textbf{Jens et al.~\cite{devops_a_definition_xp_15}} &
+\textbf{Lwakatare et al.~\cite{extending_dimensions_icsea_16}} &
+\textbf{Fran\c{c}a et al.~\cite{characterizing_devops_sbes_2016}} &
+\textbf{Erich et al.~\cite{qualitative_devops_journalsw_17}} \\ \midrule
+% Fim do cabeçalho
 
-Another source of useful elements that can help in a DevOps adoption is presented in \cite{characterizing_devops_sbes_2016}. Applying some Grounded Theory techniques to data analysis in data collected from multiple sources, including gray literature, some important results are presented: a definition to DevOps, issues motivating its adoption, driving principles, the potential benefits and challenges of adopting DevOps and 51 suggested practices and the required skills.
+Methodology
 
-Starting from the same premise that there is an increasing need for software organizations to understand how to adopt DevOps successfully, in \cite{devops_a_definition_xp_15} was performed a new literature review combined with interview of 13 subjects of one company adopting DevOps. The main results are a set of capabilities, enablers and impediments of DevOps adoption. The
-grouping of elements into enablers is a very similar way to the presented by us to describe the results of DevOps adoption. Our model presents as difference of this the existence of the collaboration culture category as the point of integration and many of elements presented in the study are grouped in categories in our study. By example, there are many enablers presented (build automation, test automation, deployment automation, monitoring automation, recovery automation and infrastructure automation) that appeared as concepts in our study and consequently are grouped into "automation" category.
+&
+Grounded Theory study interviewing practitioners which contributed to DevOps
+adoption in 15 companies across 5 countries.
 
-One investigation about the ways in which organizations implement DevOps was published in \cite{qualitative_devops_journalsw_17}. The study, similarly to the others cited above, combined literature review with some interviews with practitioners. In the literature review part, the papers were labeled and the similar labels are grouped. The 7 top labels are then presented as elements of DevOps usage in literature: culture of collaboration, automation, measurement, sharing, services, quality assurance and governance. Comparing these labels with our categories results, it is possible to note similarities between them. Except services and governance, the other labels appear as categories here. Specifically about services, in which the paper mentions microservices architecture, our model group the granularity of services as a quality assurance aspect of DevOps, and the autonomy of services as a automation aspect. In interviews the paper presented each experience in an isolated way, not seeking to identify common points of understanding to present a unified view of their DevOps experience. The study concludes that further research including several organizations and encompassing later stages of DevOps adoption still necessary to improve the understanding of DevOps adoption in practice.
+&
+Systematic literature review;
+\newline \newline
+Semi structured interviews with 13 employees of a single company whose DevOps
+process was at an initial stage.
 
-DevOps is a term that was born in industry. Although the academic studies seek reflect the industry practice, there is a lack of studies investigating it directly. None of the papers cited above focused on directly investigate DevOps adoption in companies that advocates adopt it, and most of them claimed for new research of this type. The presented work has a number of useful elements, but that need to be complemented with a view of how DevOps has been adopted, containing guidance about how to connect all these isolated parts and then enable new candidates to adopt DevOps in a more consistent way.
+&
+Multivocal literature review using data from gray literature;
+\newline \newline
+Three interviews with software practitioners in one company that was applying
+DevOps practices in one project.
+
+&
+Multivocal literature review with qualitative analysis procedures from
+Grounded Theory.
+
+&
+Systematic literature review;
+\newline \newline
+Interviews with practitioners from 6 companies across 3 countries.
+
+
+% Linha 2: Focus
+\\ \midrule
+
+Focus
+&
+Explain how DevOps has been successfully adopted in practice;
+\newline \newline
+Provide guidelines to be used in new DevOps adoptions.
+
+&
+Identify in literature the main defining characteristics of DevOps;
+\newline \newline
+Build a list of possible impediments to DevOps adoption through an empirical
+study.
+
+&
+Identify how do practitioners describe DevOps as a phenomenon;
+\newline \newline
+Identify the DevOps practices according to software practitioners.
+
+&
+Provide a DevOps definition;
+\newline \newline
+Identify DevOps practices, required skills, characteristics, benefits and
+issues motivating its adoption.
+
+&
+Identify how literature defines DevOps;
+\newline \newline
+Investigate how DevOps is being implemented in practice.\\ \bottomrule
+
+\end{tabular}
+\end{table*}
+
+Some of the cited papers claimed for new empirical research focused on directly
+investigate DevOps adoption in companies that advocates adopt it. To Jens et al.
+~\cite{devops_a_definition_xp_15}, to fully understand and be able to make
+generalizable conclusions, further research needs to include several
+organizations and to be done on the later stages of the adoption process.
+Lwakatare et al.~\cite{extending_dimensions_icsea_16} ask for new researches
+focusing on further empirical evidence of DevOps practices and patterns in
+companies that claim to have implemented it.
+
+One part of \cite{qualitative_devops_journalsw_17} focused on investigating the
+ways in which organizations implement DevOps. But, that part of the paper was
+used to validate data collected using literature review and not to formulate
+a new explanation about DevOps adoption using interviews data.
+
+DevOps is a term that was born in industry. Although the academic studies seek
+reflect the industry practice, there is a lack of studies investigating it
+directly. None of the papers cited above focused on explain DevOps adoption
+using data collected in industry practice. The presented work has a number of
+useful elements, but that need to be complemented with a view of how DevOps has
+been adopted, containing guidance about how to connect all these isolated parts
+and then enabling new candidates to adopt DevOps in a more consistent way.
