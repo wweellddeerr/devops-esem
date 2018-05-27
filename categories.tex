@@ -36,18 +36,18 @@ minimum viable software product, it is sent to the operations team for
 publication. Knowing few things about the nature of the software and how it
 was produced, the operations team has to create and configure an environment
 and to publish the software. In this scenario, software delivery is typically
-delayed and conflicts between teams manifest themselves. When a collaboration
-culture is fomented, teams collaborate to perform the tasks from the first day
+delayed and conflicts between teams manifest themselves. When a \cat{collaboration
+culture} is fomented, teams collaborate to perform the tasks from the first day
 of software development. With the constant exercise of provisioning, management,
 configuration and deployment practices, software delivery becomes more natural,
 reducing delays and, consequently, the conflicts between teams.
 
 \begin{mq}
-  ``\emph{We work in a very agile way, but we had a 15-day sprint where we focused on
-producing software, so we produced in a very absurd speed, and at the time of
-delivering what was produced, complications start to appear. The job of setting up
+  ``\emph{We work using an agile approach, planning 15-day sprints where we focused on
+producing software and producing new releases at a high frequency. However, at the time of
+delivering the software, complications start to appear. The job of setting up
 the whole environment and make a manual deployment was not part of our
-sprint, since we should only focused on coding the application. Then delivery was delayed,
+sprint, since we should only focused on coding the application. Deliveries was often delayed,
 having to deliver with delays of weeks, which was not good either for us or for
 the stakeholders.}" (P6, Developer, Portugal)
 \end{mq}
@@ -58,9 +58,9 @@ of one application server, or for the execution of some database script, or for
 the publication of a new version of the software in a staging environment.
 Everyone needs to know the way this is done and, with the collaboration of the
 operations team, this can be performed in a regular basis. If any task can be
-performed by development team and there is trust between the teams, this task is
+performed by the development team and there is trust between the teams, this task is
 incorporated into the development process in a natural way, manifesting the
-second concept related to collaboration culture category: \textbf{software
+second concept related to \cat{collaboration culture} category: \textbf{software
 development empowerment}.
 
 \begin{mq}
@@ -77,7 +77,7 @@ more power to execute some tasks which are intrinsically linked to their work.}"
 A \cat{collaboration culture} requires  \textbf{product thinking}, in substitution to
 \textbf{operations or development thinking}. The development team has to understand that
 the software is a product that does not end after ``pushing'' the code to a
-project's repository and the operations team has to understand that the process does not
+project's repository and the operations team has to understand that its processes does not
 start when an artifact is received for publication. \textbf{Product thinking}
 is the third concept related to our core category.
 
@@ -107,8 +107,8 @@ activities, in case of any doubt, the operations staff is within reach of a
 message.}" (P5, Systems Engineer, Spain)
 \end{mq}
 
-In case of problems at any point in the software life cycle, the responsibility
-to check it is shared. The strategy of avoiding liability should be kept away.
+There is a \emph{shared} responsability to identify and fix the issues 
+of a software when transitioning to production. The strategy of avoiding liability should be kept away.
 The development team must not say that a given issue is a problem in the infrastructure, then
 it is responsibility of the operations team. Or the opposite, the operations team
 must not say that a given failure was motivated by a problem in the application, then it is
@@ -152,15 +152,15 @@ DevOps, and the categories that are both enablers and consequences.
 \subsection{Enabler Categories}
 
 In this section we detail the categories that support the adoption of
-DevOps practices, including \cat{automation}, \cat{sharing}, and \cat{transparency};
+DevOps practices, including \cat{automation}, \cat{sharing and transparency};
 as discussed as follows.
 
-\subsubsection*{{\bf Automation}} \label{ssec:automation}
+\subsubsection{Automation} \label{ssec:automation}
 
-Automation was the category with the higher number of related concepts. This
-occurs because manual proceedings are considered as strong candidates to
+This category presents the higher number of related concepts. This
+occurs because manual proceedings are considered strong candidates to
 propitiate the formation of a silo, hindering the construction
-of a \cat{collaboration culture}. If a task is manual, one people, or one
+of a \cat{collaboration culture}. If a task is manual, a single person or 
 team will be responsible to execute it. Although \cat{transparency} and \cat{sharing} can
 be used to ensure collaboration even in manual tasks, with automation the
 points where silos may arise are minimized.
@@ -182,8 +182,9 @@ between teams, which is an important aspect of the \cat{collaboration culture}.
 \begin{mq}
 ``\emph{Before we adopted DevOps, there was a lot of manual work. For example, if you
 needed to create a database schema, it was a manual process; if you needed to create a
-database server, it was a manual process; if you needed to create one more EC2 instance,
-such a process was also manual. This manual work was time consuming and often caused errors and
+database server, it was a manual process; if you needed to create additional EC2 \footnote{Amazon Elastic 
+Compute Cloud} instances, such a process was also manual. 
+This manual work was time consuming and often caused errors and
 rework.}" (P1, DevOps Developer, Ireland)
 \end{mq}
 
@@ -193,24 +194,24 @@ rework.}" (P1, DevOps Developer, Ireland)
 %very time-consuming.}" (P4, Computer Technician, Brazil)
 %\end{mq}
 
-The eight concepts of automation category will be detailed next.
+The eight concepts of the \cat{automation} category will be detailed next.
 In all interviews we extracted explanations about \textbf{deployment
 automation} (1), as part of DevOps adoption. Software delivery is the clearest
 manifestation of value delivery in software development. In case of problems
 in deployment, the expectation of delivering value to business can quickly
-generate conflicts and manifest the existence of silos. As previously discussed,
-automation typically increase agility and reliability of tasks. Some other
+generate conflicts and manifest the existence of silos. 
+In this way, \cat{automation} typically increases agility and reliability. Some other
 concepts of automation go exactly around deployment automation.
 
-Nevertheless, to generate value to business, the mere quickly and successfully
-deployment is not sufficient. The delivered software needs to have quality.
-Therefore, quality checks needs to be automated as well, so they can be part of the
-deployment pipeline, is the case of \textbf{test automation} (2). In addition, to
+It is important to note that frequent and successfully
+deployments are not sufficient to generate value to business. Surely, the quality of 
+the software is more relevant. Therefore, quality checks need to be automated as well, so they can be part of the
+deployment pipeline, as is the case of \textbf{test automation} (2). In addition, to
 automate application deployment, the environment where the
 application will run needs to be available. So, \textbf{infrastructure
-provisioning automation} (3) is embedded in the process. Beyond being available,
+provisioning automation} (3) must be also considered in the process. Beyond being available,
 the environment needs to be properly configured, including the amount of memory and CPU,
-libraries versions, and database structure. If the configuration of some of these concerns
+availability of the correct libraries versions, and database structure. If the configuration of some of these concerns
 has not been automated, the deployment activity can go wrong. Therefore,
 the automation of \textbf{infrastructure management} (4) is another
 concept of the \cat{automation} category.
@@ -221,18 +222,18 @@ as one aspect of DevOps adoption. To Fowler and Lewis
 microservice architectural style, services need to be independently deployable
 by fully automated deployment machinery. We call this part of microservices
 characteristics of \textbf{autonomous services} (5). \textbf{Containerization}
-(6) is also mentioned as a way to automate the provisioning of containers that are the
+(6) is also mentioned as a way to automate the provisioning of containers---the
 environment where these autonomous services will execute.
 \textbf{Monitoring automation} (7) and \textbf{recovery automation} (8) are the
 remaining concepts. The first refers to the ability to monitor the
 applications and infrastructure without human intervention. One classic example
-is the widespread use of tools for sending sending messages reporting
+is the widespread use of tools for sending messages reporting
 alarms---through SMS, Slack/Hip Chat, or even
-cellphone calls-in case of incidents. And the second is related to the ability
+cellphone calls-- in case of incidents. And the second is related to the ability
 to either replace a component that is not working or
 roll back a failed deployment without human intervention.
 
-\subsubsection*{{\bf Sharing}} represents the grouping of concepts
+\subsubsection{Transparency and Sharing} Represents the grouping of concepts
 emerged from recurrent interviews that help to disseminate concepts and
 activities. Training, tech talks, committees lectures, and round tables
 are examples of these events. Creating
@@ -249,7 +250,7 @@ cultural knowledge.
 
 
 \item Activities sharing: where the focus is on sharing how simple tasks can or
-should performed. Communication tools, committees, and round tables are the common
+should be performed. Communication tools, committees, and round tables are the common
 forum for sharing this type of content.
 
 \item Process sharing: here, the focus is on sharing whole working processes. The
@@ -263,8 +264,7 @@ all team members gain best insight about the entire software production
 process, with a solid understanding of shared responsibilities. A shared vocabulary also
 emerged from \cat{sharing} and this facilitates communication.
 
-\subsubsection*{{\bf Transparency}} relates to concepts that are also commonly used to develop the
-\cat{collaboration culture}. The use of \textbf{infrastructure as code} was
+The use of \textbf{infrastructure as code} was
 recurrently cited as a means for guaranteeing that everyone knows how the execution environment of
 an application is provided and managed. Bellow, we present an interview
 transcript which sums up this concept.
@@ -278,14 +278,13 @@ configuration of application x is y. So, it aggregates too much value for us
 exactly with more transparency.}" (P12, Cloud Engineer, United States)
 \end{mq}
 
-Previously, we presented the concepts related to the \cat{sharing} category. In
-transparency, we also found the concept of \textbf{sharing on a regular basis}, which suggests
-that \cat{sharing} should be embedded in the process of software
-development, in order to contribute effectively to the \cat{transparency} category.
+Regarding cat{transparency and sharing}, we also found the concept of \textbf{sharing on a regular basis}, which suggests
+that sharing should be embedded in the process of software
+development, in order to contribute effectively to transparency.
 As we will detail in the \emph{continuous integration} concept of
 the \cat{agility} category, a common way to integrate all tasks is a pipeline. Here, there is the
 concept of \textbf{shared pipelines}, which indicates that the code of pipelines
-must be accessible to everyone, in order to foment \cat{transparency}.
+must be accessible to everyone, in order to foment transparency.
 
 \begin{mq}
 ``\emph{Today we have full code opening. The code of how the infrastructure is
