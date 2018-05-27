@@ -24,8 +24,7 @@ the development teams in a seamless way.}
 ``\emph{A very important step that we took was to bring the deployment into day-to-day
 development, no more waiting for a specific day of the week or month. We wanted
 to do deployment all the time, even if in a first moment it were not in
-production, a staging environment was enough. What we wanted was to embed
-deployment into development. Of course, to carry out the deployment
+production, a staging environment was enough. [...] Of course, to carry out the deployment
 continuously, we had to provide all the necessary infrastructure at the same
 pace.}" (P14, IT Manager, Brazil)
 \end{mq}
@@ -63,12 +62,14 @@ second concept related to \cc category: \textbf{software
 development empowerment}.
 
 \begin{mq}
-``\emph{We had several people working on development, the amount of developers is
-impressive. It was not feasible so many developers generating artifacts and
+``\emph{
+%We had several people working on development, the amount of developers is
+%impressive.
+It was not feasible to have so many developers generating artifacts and
 stopping their work to wait another completely separate team to publish. Or
 needing a test environment and having to wait for the operations team to
 provide it only when possible. These activities have to be available to quickly
-serve the development team. So, with DevOps we supply the need of freedom and
+serve the development team. With DevOps we supply the need of freedom and
 more power to execute some tasks which are intrinsically linked to their work.}"
 (P5, Systems Engineer, Spain)
 \end{mq}
@@ -106,7 +107,7 @@ activities, in case of any doubt, the operations staff is within reach of a
 message.}" (P5, Systems Engineer, Spain)
 \end{mq}
 
-There is a \emph{shared} responsibility to identify and fix the issues 
+There is a \emph{shared} responsibility to identify and fix the issues
 of a software when transitioning to production. The strategy of avoiding liability should be kept away.
 The development team must not say that a given issue is a problem in the infrastructure, then
 it is responsibility of the operations team. Or the opposite, the operations team
@@ -158,7 +159,7 @@ as discussed as follows.
 This category presents the higher number of related concepts. This
 occurs because manual proceedings are considered strong candidates to
 propitiate the formation of a silo, hindering the construction
-of a \cc. If a task is manual, a single person or 
+of a \cc. If a task is manual, a single person or
 team will be responsible to execute it. Although \cat{transparency} and \cat{sharing} can
 be used to ensure collaboration even in manual tasks, with automation the
 points where silos may arise are minimized.
@@ -180,8 +181,8 @@ between teams, which is an important aspect of the \cc.
 \begin{mq}
 ``\emph{Before we adopted DevOps, there was a lot of manual work. For example, if you
 needed to create a database schema, it was a manual process; if you needed to create a
-database server, it was a manual process; if you needed to create additional EC2 \footnote{Amazon Elastic 
-Compute Cloud} instances, such a process was also manual. 
+database server, it was a manual process; if you needed to create additional EC2 \footnote{Amazon Elastic
+Compute Cloud} instances, such a process was also manual.
 This manual work was time consuming and often caused errors and
 rework.}" (P1, DevOps Developer, Ireland)
 \end{mq}
@@ -197,12 +198,12 @@ In all interviews we extracted explanations about \textbf{deployment
 automation} (1), as part of DevOps adoption. Software delivery is the clearest
 manifestation of value delivery in software development. In case of problems
 in deployment, the expectation of delivering value to business can quickly
-generate conflicts and manifest the existence of silos. 
+generate conflicts and manifest the existence of silos.
 In this way, \cat{automation} typically increases agility and reliability. Some other
 concepts of automation go exactly around deployment automation.
 
 It is important to note that frequent and successfully
-deployments are not sufficient to generate value to business. Surely, the quality of 
+deployments are not sufficient to generate value to business. Surely, the quality of
 the software is more relevant. Therefore, quality checks need to be automated as well, so they can be part of the
 deployment pipeline, as is the case of \textbf{test automation} (2). In addition, to
 automate application deployment, the environment where the
@@ -320,10 +321,10 @@ to perform dozens of deployments daily.
 
 \subsubsection*{Resilience}
 
-Also related to an expected outcome of adopting DevOps, \cat{resilience} in this 
-context refers to the concept of \textbf{auto scaling}---i.e., 
-allocating more or less resources to applications that increase or 
-decrease on demand. Another concept related to 
+Also related to an expected outcome of adopting DevOps, \cat{resilience} in this
+context refers to the concept of \textbf{auto scaling}---i.e.,
+allocating more or less resources to applications that increase or
+decrease on demand. Another concept related to
 the \cat{resilience} category is \textbf{recovery automation}, that is
 the capability of the applications and infrastructure to recovery itself in case of
 failures. There are two typical cases of recovery automation: (1) in cases
@@ -344,7 +345,7 @@ and \cat{quality assurance}; as discussed as follows.
 
 Continuous measurement has two facets in a DevOps adoption process: it can work
 as an enabler or as an outcome. As an enabler, performing regularly the
-activities of measurement and sharing 
+activities of measurement and sharing
  contributes to avoid existing silos and reinforce the \cc, because it is a typical responsibility of the operations
 team.
 
@@ -393,7 +394,7 @@ detailed in subsection \ref{ssec:automation}.
 
 In the same way as continuous measurement, quality assurance is a category that
 can work both as enabler and as outcome. As enabler because an increasing quality
-leads to more confidence between the teams, which in the end generates a virtuous 
+leads to more confidence between the teams, which in the end generates a virtuous
 cycle of collaboration. As outcome, the principle is that it is not
 feasible to create a scenario of continuous delivery of software without control
 about the quality of the products and its production processes.
@@ -410,7 +411,7 @@ structure, which manifest a quality assurance concept: \textbf{cohesive
 services} (2). Regarding testing, another face is \textbf{continuous
 testing} (3). To ensure quality in software products, we found that
 tests (as well as other quality checks) should occur continuously. Continuous testing
-is considered challenging without automation, and this reinforces the need for automated 
+is considered challenging without automation, and this reinforces the need for automated
 tests.
 
 Another two concepts cited as part of quality assurance in DevOps adoption are
