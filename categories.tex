@@ -107,7 +107,7 @@ activities, in case of any doubt, the operations staff is within reach of a
 message.}" (P5, Systems Engineer, Spain)
 \end{mq}
 
-There is a \emph{shared} responsability to identify and fix the issues 
+There is a \emph{shared} responsibility to identify and fix the issues 
 of a software when transitioning to production. The strategy of avoiding liability should be kept away.
 The development team must not say that a given issue is a problem in the infrastructure, then
 it is responsibility of the operations team. Or the opposite, the operations team
@@ -301,9 +301,8 @@ In this section we detail the categories that correspond to
 the expected consequences with the adoption of
 DevOps practices, including \cat{agility} and \cat{resilience};
 as discussed as follows.
-
-\noindent
-\subsubsection*{{\bf Agility}}
+These
+\subsubsection{Agility}
 
 Agility is frequently discussed as a major outcome of DevOps adoption. With more
 collaboration between teams, \textbf{continuous integration} with execution of
@@ -313,8 +312,7 @@ infrastructure provisioning, automated regression testing, code analysis,
 automated deployment and any other task that the team consider important to
 execute continuously.
 
-These multidisciplinary pipelines provided in continuous integration naturally
-enable the manifestation of two other agile concepts: \textbf{continuous
+These pipelilnes encourage two other agile concepts: \textbf{continuous
 infrastructure provisioning} and \textbf{continuous deployment}. The latter is
 one of the most recurrent concepts identified in the interview analysis. Before
 DevOps, deployment had been seen as a major event with high risk of downtime and
@@ -322,23 +320,21 @@ failure involved. After DevOps, the sensation of risk in deployment decreases
 and this activity became more natural and frequent. Some practitioners claim
 to perform dozens of deployments daily.
 
-\noindent
-\subsubsection*{{\bf Resilience}}
+\subsubsection*{Resilience}
 
-Another category that appears as outcome of DevOps adoption is resilience. The
-infrastructure has the capability of \textbf{auto scaling}, allocating more or
-less resources to applications that increase or decrease in demand,
-respectively.
-
-Another concept of resilience category is \textbf{recovery automation} that is
-the capability of applications and infrastructure to recovery itself in case of
-some problem. There are two typical cases of recovery automation: (1) in cases
+Also related to an expected outcome of adopting DevOps, \cat{resilience} in this 
+context refers to the concept of \textbf{auto scaling}---i.e., 
+allocating more or less resources to applications that increase or 
+decrease on demand. Another concept related to 
+the \cat{resilience} category is \textbf{recovery automation}, that is
+the capability of the applications and infrastructure to recovery itself in case of
+failures. There are two typical cases of recovery automation: (1) in cases
 of some instability in the execution environment of an application (a
 container, for example) occurs an auto restart of that environment; and (2) in
 cases of new version deployment, if the new version does not work properly, the
-previous one must be restored. This auto restore of previous version
+previous one must be restored. This auto restore of a previous version
 decrease the chance of downtimes due to errors in specific versions, which
-is the concept of \textbf{zero down-time}, the last one of resilience category.
+is the concept of \textbf{zero down-time}, the last one of the \cat{resilience} category.
 
 \subsection{Categories that are both Enablers and Outcomes}
 
@@ -346,26 +342,26 @@ Finally, here we detail the categories that are both enablers
 and outcomes of a DevOps adoption, including \cat{continuous measurement}
 and \cat{quality assurance}; as discussed as follows.
 
-\subsubsection*{{\bf Continuous Measurement}}
+\subsubsection{Continuous Measurement}
 
 Continuous measurement has two facets in a DevOps adoption process: it can work
-as an enabler or as an outcome. As an enabler, it performs regularly the
-activities of measurement and sharing this
-responsibility contributes to avoid this typical silo and reinforce the
+as an enabler or as an outcome. As an enabler, performing regularly the
+activities of measurement and sharing 
+ contributes to avoid existing silos and reinforce the
 collaboration culture, because it is a typical responsibility of the operations
 team.
 
 \begin{mq}
 ``\emph{Before, we had only sporadic looks to
 zabbix\footnote{\url{https://www.zabbix.com/}} to check if everything was OK.
-At most someone would stop to look memory and CPU consumption. To maintain the
-high performance we have expanded this view of metrics collection so that it
+At most someone would stop to look memory and CPU consumption. To maintain a
+the quality of services, we expanded this view of metrics collection so that it
 became part of the software product. We then started to collect metrics continuously
 and with shared responsibilities. For example, if an overflow occurred in the
 number of database connections, everyone received an alert and had
-responsibility for seeking solutions to that problem. This is an interesting example of
+the responsibility to find solutions to that problem. This is an interesting example of
 metrics that everyone started to be more attentive, not only the operations
-area.}" (P3, DevOps Developer, Ireland)
+team.}" (P3, DevOps Developer, Ireland)
 \end{mq}
 
 As an outcome, the continuously collection of metrics from applications and
@@ -380,12 +376,12 @@ the need of greater control of what was happening. So, we used
 grafana\footnote{\url{https://grafana.com/}} and
 prometheus\footnote{\url{https://prometheus.io/}} to follow everything that is
 happening in the infrastructure and in the applications. We have a complete
-dashboard in real time, we extract reports an, when something goes wrong, we
+dashboard in real time, we extract reports and, when something goes wrong, we
 are the first to know.}" (P10, Network Administrator, Brazil)
 \end{mq}
 
-Continuous monitoring involves \textbf{application log monitoring} (1), an
-intuitive concept that corresponds to the use of the log produced by
+Continuous monitoring involves \textbf{application log monitoring} (1), a
+concept that corresponds to the use of the log produced by
 applications and infrastructure as data source. The concept of
 \textbf{continuous infrastructure monitoring} (2) indicates that the monitoring
 is not performed by a specific person or team in a specific moment. The
@@ -396,12 +392,12 @@ often direct evolution or business decisions. All these monitoring/measurement
 can occur in an automated way, the \textbf{monitoring automation} already been
 detailed in subsection \ref{ssec:automation}.
 
-\subsubsection*{{\bf Quality Assurance}}
+\subsubsection{Quality Assurance}
 
 In the same way as continuous measurement, quality assurance is a category that
-can work both as enabler and as outcome. As enabler because more quality
-generates more confidence between teams generating a virtuous cycle of
-collaboration between them. And as outcome the principle is that it is not
+can work both as enabler and as outcome. As enabler because an increasing quality
+leads to more confidence between the teams, which in the end generates a virtuous 
+cycle of collaboration. As outcome, the principle is that it is not
 feasible to create a scenario of continuous delivery of software without control
 about the quality of the products and its production processes.
 
@@ -409,18 +405,18 @@ Respondents pointed to the need for sophisticated control of which code should
 be part of deliverables that are continuously delivered. Git Flow was
 recurrently cited as suitable \textbf{code branching} (1) model, the first
 concept of quality assurance.
-In a previous section we explore the automation face of
-microservices and testing. These elements has also a quality assurance face.
+In a previous section, we explored the automation face of
+microservices and testing. These elements have also a quality assurance face.
 Another characteristic of microservices is the need for small services focusing
 in doing only one thing. These small services are easier to scale and
 structure, which manifest a quality assurance concept: \textbf{cohesive
-services} (2). Regarding testing, the another face is \textbf{continuous
-testing} (3). To ensure quality in software products, the obtained view is that
+services} (2). Regarding testing, another face is \textbf{continuous
+testing} (3). To ensure quality in software products, we found that
 tests (as well as other quality checks) should occur continuously. Continuous testing
-is considered challenging without automation, and this reinforces the need of
-the testing in an automated way.
+is considered challenging without automation, and this reinforces the need for automated 
+tests.
 
 Another two concepts cited as part of quality assurance in DevOps adoption are
-the \textbf{source code static analysis} (4) to compute quality metrics in
-source code of applications and the \textbf{parity between environments} to
+the use of \textbf{source code static analysis} (4) to compute quality metrics in
+source code and the \textbf{parity between environments} to
 reinforce transparency and collaboration during software development.
