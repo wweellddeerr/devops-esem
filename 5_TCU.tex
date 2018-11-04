@@ -87,10 +87,11 @@ the TCU was to facilitate communication between teams. The use of tickets and
 SLAs were then abolished in most of the scenarios. In its turn, the concepts of
 \textbf{software development empowerment} and \textbf{shared responsibilities}
 have found some resistance from some professionals. The strategy to bypass this
-kind of cultural resistance has been to make everyone aware that: (1) fortifying
-the collaboration will bring benefits to all involved and especially to the TCU
-and (2) following a model builded upon well succeeded experiences is a low-risk
-strategy for TCU to explore the benefits of DevOps.
+kind of cultural resistance involves the use of enablers that will be discussed
+bellow and awareness about: (1) fortifying the collaboration will bring benefits
+to all involved and especially to the TCU and (2) following a model builded upon
+well succeeded experiences is a low-risk strategy for TCU to explore the
+benefits of DevOps.
 
 Finally, we consider that the efforts to disseminate and promote the \cc are
 continuous, but the kick-off was given and it is possible to notice that the
@@ -261,7 +262,43 @@ the use of the Slack tool has been institutionalized and facilitated the contact
 between the two teams. We highlight the concept \textbf{straightforward communication}
 of the \cc category as part of this point of discussion.
 
-Then, the use of multidisciplinary pipelines in the most recent applications
+Then, the use of \textbf{multidisciplinary pipelines} in the most recent applications of
+TCU was pointed out and debated. These pipelines involve everything from the
+build, through automated tests and static analysis of source code, execution of
+containers using Kubernetes and publication isonomically in the different
+environments (development, staging and production). A Jenkins is used as tool
+to describe and execute the pipelines. One single trigger execute a set of
+steps that previously required several comings and goings between the teams and
+a long time to complete. The group agreed that the construction of multidisciplinary
+and collaboratively produced and maintained pipelines like these ones is only
+possible when the \cc is fostered. This point of discussion refers to a few
+more concepts: (1) operations in day-to-day development, (2) test automation,
+(3) deployment automation, (4) shared pipelines, (5) continuous integration,
+(6) continuous infrastructure provisioning, (7) continuous deployment,
+(8) continuous testing and (9) source code static analysis.
+
+\textbf{Automated Database Migrations} was the next point considered as part of
+DevOps adoption. The participants explored the differences between the previous
+scenario - where changes in the database structure of an application needed to be
+made according to an SLA and, therefore, requested through service-desk - and
+the new one where the Flyway\footnote{https://flywaydb.org/} tool is used to
+manage database migrations. The use of these type of tool had previously been
+discarded because the operations team could not provide the database owner
+password. This discussion was retaken recently, and the teams jointly developed
+a solution to safely share the owner password. This discussion reinforces two
+aspects of the \cc that are the confidence and the collaboration between the
+teams. The concept of \textbf{infrastructure management automation} was present
+here.
+
+Finally, the last point considered by the group as part of DevOps adoption was
+one more solution built in a collaborative way for \textbf{continuously and automated
+monitoring} of application errors. Previously, a developer's simple access
+to an application's log needed to be requested through the service-desk. The
+solution automatically collects the logs, searches for errors in its content,
+and send messages through Slack to both teams in case of error. We can find
+the application of two other concepts: (1) monitoring automation and
+(2) application log monitoring.
+
 }
 
 \subsubsection{Applicability and Utility of the Proposed Model}
