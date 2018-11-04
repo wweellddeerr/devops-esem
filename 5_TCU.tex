@@ -57,23 +57,46 @@ this experience.
 
 \subsection{Applying The Model}
 
-Here we present our perception about
+Here we present our perception about how our model has contributed to DevOps
+adoption at TCU.
 
 \subsubsection{Disseminating the Collaborative Culture}
 
 Before the application of our model, the TCU had produced some w.r.t deployment
-automation results and the focus was being directed to the tooling issue. Considering this
-incomplete perspective of DevOps, the conflicts between development and operations
-teams continued. That is, the mere advance in implanting ``DevOps tools'' simply
-changed the points of conflict, but they persisted.
+automation results and the focus was being directed to the tooling issue.
+Considering this incomplete perspective of DevOps, the conflicts between
+development and operations teams continued. That is, the mere advance in
+implanting ``DevOps tools'' simply changed the points of conflict, but they
+persisted.
 
-After the presentation of our  model in a series of lectures, development and
-operations teams changed their focus to build a \cc. This
-change was only possible due to the engagement and sponsorship of the IT
-managers. Looking to the concepts within the \cc category, the first practical
-action at the TCU was to facilitate communication between teams. The use of tickets
-was then abolished. The problems had to be solved in a collaborative way, preferably
-face to face.
+{
+\color{blue}
+To start disseminating our model at TCU, we conducted a series of lectures to
+explain both the model itself and the way it was formulated. After knowing the
+model, the professionals began to understand that if the TCU wants to succeed in
+DevOps adoption, tooling and automation would not be enough. We consider that
+the teams changed their focus to build a \cc. This change was only possible due
+two factors: (1) the engagement and sponsorship of the IT managers and (2) the
+explanations about the process of constructing the model: although the TCU is a
+governmental institution, its IT professionals recognize the importance of
+staying in line with industry practice to avoid an already before faced weight
+of dealing with completely legacy software.
+
+Looking to the concepts within the \cc category, the first practical action at
+the TCU was to facilitate communication between teams. The use of tickets and
+SLAs were then abolished in most of the scenarios. In its turn, the concepts of
+\textbf{software development empowerment} and \textbf{shared responsibilities}
+have found some resistance from some professionals. The strategy to bypass this
+kind of cultural resistance has been to make everyone aware that: (1) fortifying
+the collaboration will bring benefits to all involved and especially to the TCU
+and (2) following a model builded upon well succeeded experiences is a low-risk
+strategy for TCU to explore the benefits of DevOps.
+
+Finally, we consider that the efforts to disseminate and promote the \cc are
+continuous, but the kick-off was given and it is possible to notice that the
+idea has been widely accepted and applied by most of the involved professionals.
+
+}
 
 \subsubsection{Applying the Enablers}
 
@@ -114,9 +137,10 @@ exploration of DevOps benefits.
 
 \subsubsection{Checking the Outcomes}
 
+\subsection{A Focus Group on DevOps Adoption at TCU}
+
 {
 \color{blue}
-\subsection{A Focus Group on DevOps Adoption at TCU}
 To reduce the bias of our perception about the scenario of adopting DevOps at
 TCU, we conducted a focus group with four professionals of the company for an
 empirical evaluation about their perception about the adoption of DevOps.
@@ -154,4 +178,104 @@ P4 & Ops & Graduate & 3 years in dev team at TCU and 10 years of previous experi
 \end{tabular}
 \caption{Focus Group Participants}
 \end{table}
+
+Following a similar structure to that performed by Lehtola et al.~\cite{requirementes_priorization_in_practice},
+the focus group was conducted as follows: (1) the researcher-moderator served as
+focus group facilitator providing participants with three discussion topics
+listed in Table \ref{table_topics}; (2) at the beginning of the discussion of each topic, the
+questions were presented to participants who wrote their ideas and keywords in
+post-it note and (3) after that, the notes were placed on a white board and served
+as a starting point for discussions on the respective topic in order to reach
+conclusions about the respective question. The results of the discussions of
+each topic are presented below.
+
+\begin{table}[hb!]
+\centering
+\label{table_topics}
+\begin{tabular}{|p{0.2cm}|p{3.4cm}|p{3.8cm}|} \hline
+& \textbf{Topic} & \textbf{Questions} \\ \hline
+
+1 & Current status of DevOps adoption at TCU &
+1. What actions developed in the TCU do you consider to be part of DevOps adoption?\newline\newline
+2. What previously existing problems have been solved by these actions? \\ \hline
+
+2 & Applicability and utility of the proposed model &
+1. Do you consider that the proposed model has contributed to DevOps adoption at TCU?\newline\newline
+2. If so, what are the main contributions? \\ \hline
+
+3 & Challenges faced and next steps in DevOps adoption &
+1. What are the main challenges that TCU currently faces in DevOps adoption?\newline\newline
+2. What are the next steps in DevOps adoption at TCU?\\ \hline
+
+\end{tabular}
+\caption{Focus Group Topics}
+\end{table}
 }
+
+\subsubsection{Current Status of DevOps Adoption at TCU}
+
+{
+\color{blue}
+The first action indicated and discussed in the group was the \textbf{provision of
+environments} (Virtual Machines) for the installation of tools that are related
+to the development work. This action was exemplified by the successful
+installations of the Elasticsearch\footnote{https://www.elastic.co/} and
+Kafka\footnote{https://kafka.apache.org/} tools. The previously existing problem
+was that when a developer needed a tool like these, inherent in his work and
+necessary to adequately address specific problems, he depended on opening a
+request for the operations team to provide it, with deadlines that often make
+the use of the most adequate solution unfeasible. With VM provisioning and
+cooperation between the two teams, these tools became available quickly for use
+and the responsibility for its management is joint. This is a clear example of
+application of the concepts of \textbf{software development empowerment} and
+\textbf{shared responsibility} of the core category \cc.
+
+Next, the use of \textbf{microservices}, and \textbf{containers} as environment
+to run them was debated. The first problem that this action solved, in the
+participants' understanding, was the previous lack of parity between the environments
+(development, test, staging and production). The recurring problems of
+applications that worked in a development environment but which had problems
+in production were recalled, which was solved with the use of containers. In
+this context, the use of tools like Docker\footnote{https://www.docker.com/}
+and Kubernetes\footnote{https://kubernetes.io} was discussed as means of providing
+configuration details of the environments in the applications source code
+repositories themselves. This enabled both development and operations teams to
+get a first idea of the running environment of each application in a more
+transparent way. Finally, the use of containers and related tools also enabled
+the use of mechanisms for horizontal scalability, high availability and
+publication of applications without down-time, solving a recurring problem of
+interrupting the work of business teams during the deployment of the applications.
+Here, it is possible to identify several concepts of our theory, such as:
+(1) parity between environments, (2) infrastructure provisioning automation,
+(3) autonomous services, (4) containerization, (5) auto scaling, (6) recovery
+automation and (7) zero down-time.
+
+The third discussed point was the \textbf{reduction of bureaucracy in communication}
+between the teams. It was pointed out that although there is still much room
+for progress, this can already be considered as one of the advances of the TCU
+related to DevOps adoption. During the discussion, the extremely ceremonious
+communication process in the scope of the deployment SLA was recalled. There is
+a current guideline to avoid using service-desk for simple problem solving. The
+problems had to be solved in a collaborative way, preferably face to face and
+the use of the Slack tool has been institutionalized and facilitated the contact
+between the two teams. We highlight the concept \textbf{straightforward communication}
+of the \cc category as part of this point of discussion.
+
+Then, the use of multidisciplinary pipelines in the most recent applications
+}
+
+\subsubsection{Applicability and Utility of the Proposed Model}
+
+\subsubsection{Challenges Faced and Next Steps in DevOps Adoption}
+
+\subsubsection{General Considerations}
+
+Even though it was not the only point of debate, considerations about the model
+permeated all the discussed topics, practical actions were highlighted that only
+materialized due to the exchange of experiences that occurred during this
+research. Many of the concepts presented in the model were visualized during
+focus group discussions, this is not a mere coincidence and emphasizes that our
+model is guiding, in a high level of abstraction, the actions of the TCU toward
+DevOps adoption. In addition, it was possible to note a previously non-existent
+concern about the \cc, the participants frequently placed their actions as part
+of the efforts to foster the \cc.
