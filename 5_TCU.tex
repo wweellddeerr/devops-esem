@@ -103,40 +103,81 @@ idea has been widely accepted and applied by most of the involved professionals.
 
 Looking to enablers, the TCU is applying \cat{sharing and transparency} concepts.
 The role of internal tech talks and committees to disseminate that collaboration
-culture and related concepts is being reinforced.
-When a new infrastructure had to be provided and configured, the current guideline is
-that there must be a kind of \emph{pair programming} between developers and infrastructure
+culture and related concepts is being reinforced. When a new infrastructure had
+to be provided and configured, the current guideline is that there must be a
+kind of \emph{pair programming} between developers and infrastructure
 members. All application related tasks must be executed in a collaborative
 way. Naturally, the professionals noticed that automation would facilitate the
-operationalization of that collaboration. For this reason, the infrastructure provisioning
-and management was automated.
+operationalization of that collaboration. For this reason, the infrastructure
+provisioning and management was automated.
 
 The TCU also uses continuous measurement and quality assurance concepts as
 enablers of its DevOps adoption. The applications started to be continuously
 tested and measured. The tests were automated and included in the pipelines.
 Verification of test coverage and quality code also became part of the pipeline.
-This increased the confidence between teams. The TCU started
-to explore the potential of DevOps tools, like recovery automation, zero
-down-time, and auto scaling. The deployment has also been automated.
-It is important to note that, before DevOps, deployment activities were historically a controversial point at the TCU.
-Several conflicts occurred over time. Rigid procedures were created to try to
-avoid problems. These ``rigid procedures'' often led to periods of months
-without any software delivery. The more collaborative scenario, with a strong appeal in automation and quality,
-created by following an appropriate path in adopting DevOps, enabled the deployment activities to become
-a lightweight task at the TCU. Continuous deployment became a reality and, currently, several deployments
-occur as regular activities of the development teams at the TCU.
+This increased the confidence between teams. {\color{blue} More confidence leads to a more
+robust \cc, and a more robust \cc enables the company to explore the benefits
+of DevOps as will be seen below when checking the outputs.
 
-Since the TCU is a government institution, some advances in DevOps adoption still comes up
-against regulatory issues. For example, there are internal regulations that
-establish that only the operations sector is responsible for issues related to
-application infrastructure, contrasting with shared responsibilities that are
-part of the \cc. Nevertheless, our model enabled the TCU to adopt DevOps in a more
-sustainable way. Knowing the role
-of each DevOps element in the adoption was fundamental for the TCU to avoid points
-of failure and to build a collaborative environment that supports the
-exploration of DevOps benefits.
+It is important to note that, before DevOps, deployment activities were
+historically a controversial point at the TCU. Several conflicts occurred over
+time. Rigid procedures were created to try to avoid problems. These ``rigid
+procedures'' often led to periods of months without any software delivery. As
+our model advocates that there is no precedence between enablers, the specific
+characteristics of the company are a good starting point to select the most
+relevant enablers to explore. So, the TCU' teams started by the deployment,
+applying automation and quality checking in the process. With the automated
+execution of tests and static source code analysis, the development team
+demonstrates to the operations team that the products had quality, increasing
+confidence between them and reducing the necessity of rigid procedures to put
+some software in production. So, to automate the deployment in a collaborative
+way, the teams jointly developed an infrastructure as code strategy to put the
+details about deployment in the application source code repository itself,
+increasing the transparency. Little by little the deployment of applications has
+ceased to be a ceremonial event to become a day-to-day activity.
+}
 
 \subsubsection{Checking the Outcomes}
+
+Initially, we highlight that a more robust \cc enabled TCU to explore a scenario
+of continuous deployment of some applications. The newer applications have
+pipelines that publish every commit in production. This continuous delivery is
+only possible in applications whose pipelines contain several quality checks,
+mitigating the risk of something going wrong. Additionally, automated monitoring
+is required for these applications. Some applications have a history of dozen
+of deployments in a single day, contrasting with one deployment per week in the
+best case, or more than a month without publishing in the worst.
+
+To reduce even more the risks related to continuously delivery software in
+production, and taking advantage of greater collaboration between its Development
+and operations teams, the TCU started to explore the potential of DevOps tools,
+like recovery automation, zero down-time, and auto scaling.
+
+In our evaluation, the TCU' change of focus from tooling to collaboration was
+decisive to increase the confidence between teams, reduce the blame game and,
+consequently, to enable the company to sustainably exploit the benefits of
+adopting DevOps. In addition, our model has served as a roadmap that allows
+the teams to focus on the \cc. So, the outcomes already present in TCU' DevOps
+Adoption are compatible with those foreseen in the third step of our model.
+
+\subsubsection{General Considerations}
+Since the TCU is a government institution, some advances in DevOps adoption
+still comes up against regulatory issues. For example, there are internal
+regulations that establish that only the operations sector is responsible for
+issues related to application infrastructure, contrasting with shared
+responsibilities that are part of the \cc.
+
+{
+\color{blue}
+The \cc need to be continuously fomented and our model is only a general roadmap,
+the efforts need to continue over time to deal with incidents that disfavor
+the collaboration and to restrain the emergence of new ones.
+}
+
+Nevertheless, our model enabled the TCU to adopt DevOps in a more sustainable
+way. Knowing the role of each DevOps element in the adoption was fundamental for
+the TCU to avoid points of failure and to build a collaborative environment that
+supports the exploration of DevOps benefits.
 
 \subsection{A Focus Group on DevOps Adoption at TCU}
 
