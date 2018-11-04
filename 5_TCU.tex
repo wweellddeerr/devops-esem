@@ -1,9 +1,15 @@
-\section{Application of The Model} \label{sec:tcu}
+\section{Application of The Model} \label{sec:TCU}
 
 {
 \color{blue}
 In this section we detail an real experience on DevOps adoption where we could
-demonstrate the practical application of the model proposed above.
+demonstrate the practical application of the model proposed above. Initially,
+we explain the context of the institution in which the model was applied; after
+we present, step by step, our perception about the model application; and,
+finally, we present the results of a focus group containing the perception of
+four professionals from the company about the adoption of DevOps as a whole,
+including their perception about the applicability and utility of our model
+during the process.
 }
 
 \subsection{Context}
@@ -11,7 +17,7 @@ demonstrate the practical application of the model proposed above.
 The TCU is responsible for the accounting, financial, budget, performance, and property
 oversight of federal institutions and entities of the country. Currently, there are 2500
 professionals working at the TCU, of which approximately 300 work directly on either
-software development or operations. The source code repository at the TCU hosts,
+software development or operations. The source code repository at the TCU hosts
 more than 200 software project, totaling over 4 million lines of code.
 
 {
@@ -51,6 +57,10 @@ this experience.
 
 \subsection{Applying The Model}
 
+Here we present our perception about
+
+\subsubsection{Disseminating the Collaborative Culture}
+
 Before the application of our model, the TCU had produced some w.r.t deployment
 automation results and the focus was being directed to the tooling issue. Considering this
 incomplete perspective of DevOps, the conflicts between development and operations
@@ -64,6 +74,9 @@ managers. Looking to the concepts within the \cc category, the first practical
 action at the TCU was to facilitate communication between teams. The use of tickets
 was then abolished. The problems had to be solved in a collaborative way, preferably
 face to face.
+
+\subsubsection{Applying the Enablers}
+
 Looking to enablers, the TCU is applying \cat{sharing and transparency} concepts.
 The role of internal tech talks and committees to disseminate that collaboration
 culture and related concepts is being reinforced.
@@ -99,4 +112,46 @@ of each DevOps element in the adoption was fundamental for the TCU to avoid poin
 of failure and to build a collaborative environment that supports the
 exploration of DevOps benefits.
 
-\subsection{A Focus Group}
+\subsubsection{Checking the Outcomes}
+
+{
+\color{blue}
+\subsection{A Focus Group on DevOps Adoption at TCU}
+To reduce the bias of our perception about the scenario of adopting DevOps at
+TCU, we conducted a focus group with four professionals of the company for an
+empirical evaluation about their perception about the adoption of DevOps.
+
+Focus group emerged as a research method in the social sciences in the 1950s
+and is currently widely used, for example, in sociological studies, market
+research, product planning, and system usability studies~\cite{shull2007guide}.
+Morgan~\cite{morgan1996focus} defines focus group as a research technique that
+collects data through group interaction on a specific topic determined by the
+researcher.
+
+According to F. Shull et al.~\cite{shull2007guide}, focus groups typically have
+between three and twelve participants, are designed to obtain personal
+perceptions of members of one or more groups involved in a defined area of
+research interest and have as benefits the production of candid, often
+insightful information, with a low cost and fast execution. These
+characteristics make the focus group an adequate alternative to the purposes
+of this evaluation. According to the authors, the discussion is guided and
+facilitated by a researcher-moderator who follows a predefined structure of
+questions.
+
+The focus group at TCU was attended by four professionals, two of each
+development and operations team. The profile of participants is described in
+Table \ref{table_participants_focus_group}.
+
+\begin{table}[hb!]
+\centering
+\label{table_participants_focus_group}
+\begin{tabular}{|p{0.4cm}|p{0.8cm}|p{1.8cm}|p{4cm}|} \hline
+{\bf P\#} & {\bf Team} & {\bf Formation} & {\bf Experience}\\ \hline
+P1 & Dev & Graduate & 3 years in dev team at TCU and 9 years of previous experience \\ \hline
+P2 & Dev & Posgraduate & 6 years in dev team at TCU and 7 years of previous experience \\ \hline
+P3 & Ops & Graduate & 3 years in dev team at TCU and 8 years of previous experience \\ \hline
+P4 & Ops & Graduate & 3 years in dev team at TCU and 10 years of previous experience \\ \hline
+\end{tabular}
+\caption{Focus Group Participants}
+\end{table}
+}
