@@ -89,7 +89,7 @@ There should be a \textbf{straightforward communication} between teams. Ticketin
 systems are cited as a typical and inappropriate means of communication
 between development and operations teams. Face-to-face communication is the best
 option, but considering that it is not always feasible, the continuous use of
-tools like \emph{Slack} and \emph{Hip Chat} was cited as appropriate options.
+tools like \emph{Slack} and \emph{Hip Chat} was cited as more appropriate options.
 
 \begin{mq}
 ``\emph{We also use this tool (Hip Chat) as a way to facilitate communication between
@@ -140,7 +140,7 @@ DevOps, and the categories that are both enablers and consequences.
 \subsection{Enabler Categories}
 
 Below, we detail the categories that support the adoption of
-DevOps practices, including \cat{automation}, \cat{sharing and transparency}.
+DevOps practices, including \cat{automation} and \cat{sharing and transparency}.
 
 \subsubsection{Automation} \label{ssec:automation}
 
@@ -175,7 +175,7 @@ This manual work was time consuming and often caused errors and
 rework.}'' (P1, DevOps Developer, Ireland)
 \end{mq}
 
-The eight concepts of the \cat{automation} category will be detailed next.
+The eight concepts regarding the \cat{automation} category will be detailed next.
 In all interviews we extracted explanations about \textbf{deployment
 automation} (1), as part of DevOps adoption. Software delivery is the clearest
 manifestation of value delivery in software development. In case of problems
@@ -189,7 +189,7 @@ deployments are not sufficient to generate value to business. Surely, the qualit
 the software is more relevant. Therefore, quality checks need to be automated as well, so they can be part of the
 deployment pipeline, as is the case of \textbf{test automation} (2). In addition, to
 automate application deployment, the environment where the
-application will run needs to be available. So, \textbf{infrastructure
+application will run needs to be available. As a consequence, \textbf{infrastructure
 provisioning automation} (3) must be also considered in the process. Besides being available,
 the environment needs to be properly configured, including the amount of memory and CPU,
 availability of the correct libraries versions, and database structure. If the configuration of some of these concerns
@@ -197,7 +197,7 @@ has not been automated, the deployment activity can go wrong. Therefore,
 the automation of \textbf{infrastructure management} (4) is another
 concept of the \cat{automation} category.
 
-Modern software is built around services. Microservices  was commonly cited
+Modern software is built around services~\cite{Luz:2018:SBES}. Microservices  was commonly cited
 as one aspect of DevOps adoption. To Fowler and Lewis
 \cite{martinfowler2014microservices}, in the
 microservice architectural style, services need to be independently deployable
@@ -206,13 +206,13 @@ characteristics of \textbf{autonomous services} (5). \textbf{Containerization}
 (6) is also mentioned as a way to automate the provisioning of containers---the
 environment where these autonomous services will execute.
 \textbf{Monitoring automation} (7) and \textbf{recovery automation} (8) are the
-remaining concepts. The first refers to the ability to monitor the
+remaining concepts. The former refers to the ability to monitor the
 applications and infrastructure without human intervention. One classic example
 is the widespread use of tools for sending messages reporting
 alarms---through SMS, Slack/Hip Chat, or even
-cellphone calls-- in case of incidents. And the second is related to the ability
+cellphone calls---in case of incidents. The latter is related to the ability
 to either replace a component that is not working or
-roll back a failed deployment without human intervention.
+rollback a failed deployment without human intervention.
 
 \subsubsection{Transparency and Sharing} It represents the grouping of concepts
 whose essence is to help disseminate information and ideas among all. Training,
@@ -300,7 +300,7 @@ to perform dozens of deployments daily.
 
 Also related to an expected outcome of adopting DevOps, \cat{resilience} refers
 to the ability of applications to adapt quickly to adverse situations.
-The first related concept is \textbf{auto scaling}---i.e.,
+The first related concept is \textbf{auto scaling}, i.e.,
 allocating more or fewer resources to applications that increase or
 decrease on demand. Another concept related to
 the \cat{resilience} category is \textbf{recovery automation}, that is
@@ -308,7 +308,7 @@ the capability that applications and infrastructure have to recovery itself in c
 failures. There are two typical cases of recovery automation: (1) in cases
 of instability in the execution environment of an application (a
 container, for example) an automatic restart of that environment will occur; and (2) in
-cases of new version deployment, if the new version does not work properly, the
+cases of new version deployment; if the new version does not work properly, the
 previous one must be restored. This auto restore of a previous version
 decrease the chances of downtimes due to errors in specific versions, which
 is the concept of \textbf{zero down-time}, the last one of the \cat{resilience} category.
@@ -390,6 +390,6 @@ tests.
 
 Another two concepts cited as part of quality assurance in DevOps adoption are
 the use of \textbf{source code static analysis} (4) to compute quality metrics in
-source code and the \textbf{parity between environments} (development, staging
+source code and the \textbf{parity between environments} (development, staging, 
 and production) to reinforce transparency and collaboration during software
 development.
