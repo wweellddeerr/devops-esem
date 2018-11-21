@@ -1,0 +1,129 @@
+%https://docs.google.com/document/d/1GPGvGlILx7VLJmytuHB63WPelsxnxfXFBNtEj3nlttU/edit?usp=sharing
+
+\documentclass[preprint,12pt,3p]{elsarticle}
+
+\usepackage{booktabs} % For formal tables
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{xspace}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{graphicx}
+
+\definecolor{oldlace}{rgb}{0.99, 0.96, 0.9}
+\newmdenv [ %
+ skipabove=\topsep,
+ skipbelow=\topsep,
+ leftmargin       = 2              ,
+ rightmargin      = 2              ,
+ splittopskip     = \topskip      ]{mh}
+
+\newmdenv [ %
+ skipabove=\topsep,
+ skipbelow=\topsep,
+ roundcorner      = 5pt            ,
+ leftmargin       = 2              ,
+ rightmargin      = 2              ,
+ backgroundcolor  = oldlace        ,
+ innertopmargin   = 3       ,
+ splittopskip     = 3      ]{mq}
+
+\hyphenation{Dev-Ops}
+
+\newcommand{\cat}[1]{{\textbf{\emph{#1}}}}
+\newcommand{\cc}{\cat{collaborative culture}\xspace}
+
+
+\journal{Journal of Systems and Software}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Building a Collaborative Culture: A Grounded Theory of Well Succeeded DevOps Adoption in Practice}
+
+\author[label1]{Welder Pinheiro Luz}
+\address[label1]{Brazilian Federal Court of Accounts}
+\ead{welder.luz@tcu.gov.br}
+
+\author[label2]{Gustavo Pinto\corref{cor1}}
+\address[label2]{Federal University of Par\'a}
+\cortext[cor1]{I am corresponding author}
+\ead{gpinto@ufpa.br}
+
+\author[label3]{Rodrigo Bonif\'acio}
+\address[label3]{University of Bras\'{i}lia}
+\ead{rbonifacio@cic.unb.br}
+
+\begin{abstract}
+
+  \emph{Background.} DevOps is a set of practices and cultural values
+  that aims to reduce the
+  barriers between development and operations
+  teams. Due to its increasing interest and imprecise
+  definitions, existing research works have tried to
+  characterize DevOps---mainly using a set of concepts and related practices.
+
+  \emph{Aims.} Nevertheless, little is
+  known about the \emph{practitioners' understanding}
+  about successful paths for DevOps adoption. The lack of such understanding
+  might hinder institutions to adopt DevOps practices. Therefore, our goal
+  here is to present a theory about DevOps adoption, highlighting the
+  main related concepts that contribute to its adoption in industry.
+
+  \emph{Method.} Our work builds upon Classic Grounded Theory. We interviewed practitioners
+  that contributed to DevOps adoption in 15 companies from different
+  domains and across 5 countries. We empirically evaluate our model through
+  a case study, whose goal is to increase the maturity level of
+  DevOps adoption at the Brazilian Federal Court of Accounts,
+  a Brazilian Government institution.
+
+  \emph{Results.} This paper
+  presents a model to improve both the understanding and guidance
+  of DevOps adoption. The model increments the existing view of
+  DevOps by explaining the role and motivation of each
+  category (and their relationships) in the DevOps adoption process.
+  We organize this model in terms of \emph{DevOps enabler categories} and
+  \emph{DevOps outcome categories}. We provide evidence that
+  \emph{collaboration} is the core DevOps concern, contrasting with an existing
+  wisdom that implanting specific tools to \emph{automate building, deployment,
+  and infrastructure provisioning and management} is enough to achieve DevOps.
+
+  \emph{Conclusions.} Altogether, our results contribute to (a) generating
+  an adequate understanding of DevOps, from the perspective
+  of practitioners; and (b) assisting other institutions in the
+  migration path towards DevOps adoption.
+
+\end{abstract}
+
+\begin{keyword}
+DevOps \sep Grounded Theory \sep Software Development \sep Software Operations
+\end{keyword}
+
+\end{frontmatter}
+
+\input{1_introduction}
+
+\input{2_methodology}
+
+\input{3_categories}
+
+\input{4_1_results}
+
+\input{4_2_model}
+
+\input{5_TCU}
+
+\input{6_threats}
+
+\input{7_related_work}
+
+\input{8_conclusion}
+
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-num.tex'.

@@ -1,0 +1,169 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{httermann2012devops}
+M.~Httermann, DevOps for developers, Apress, 2012.
+
+\bibitem{flickr}
+J.~Allspaw, P.~Hammond, 10+ deploys per day: Dev and ops cooperation at flickr,
+  talk presented at Velocity: Web Performance and Operations Conference (2009).
+
+\bibitem{characterizing_devops_sbes_2016}
+B.~B.~N. de~Fran\c{c}a, H.~Jeronimo, Junior, G.~H. Travassos,
+  \href{http://doi.acm.org/10.1145/2973839.2973845}{Characterizing devops by
+  hearing multiple voices}, in: Proceedings of the 30th Brazilian Symposium on
+  Software Engineering, SBES '16, ACM, New York, NY, USA, 2016, pp. 53--62.
+\newblock \href {http://dx.doi.org/10.1145/2973839.2973845}
+  {\path{doi:10.1145/2973839.2973845}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2973839.2973845}
+
+\bibitem{state_of_devops}
+P.~Labs, D.~Research, D.~Assessment, 2017 state of devops report, Tech. rep.,
+  retrieved May, 2018 from
+  \url{https://puppet.com/resources/whitepaper/state-of-devops-report} (2018).
+
+\bibitem{DevOps_Adoption_Benefits_and_Challenges}
+L.~Riungu-Kalliosaari, S.~M{\"a}kinen, L.~E. Lwakatare, J.~Tiihonen,
+  T.~M{\"a}nnist{\"o}, Devops adoption benefits and challenges in practice: A
+  case study, in: P.~Abrahamsson, A.~Jedlitschka, A.~Nguyen~Duc, M.~Felderer,
+  S.~Amasaki, T.~Mikkonen (Eds.), Product-Focused Software Process Improvement,
+  Springer International Publishing, Cham, 2016, pp. 590--597.
+
+\bibitem{cooperation_dev_ops_esem_2014}
+F.~Erich, C.~Amrit, M.~Daneva,
+  \href{http://doi.acm.org/10.1145/2652524.2652598}{Cooperation between
+  information system development and operations: A literature review}, in:
+  Proceedings of the 8th ACM/IEEE International Symposium on Empirical Software
+  Engineering and Measurement, ESEM '14, ACM, New York, NY, USA, 2014, pp.
+  69:1--69:1.
+\newblock \href {http://dx.doi.org/10.1145/2652524.2652598}
+  {\path{doi:10.1145/2652524.2652598}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2652524.2652598}
+
+\bibitem{devops_a_definition_xp_15}
+J.~Smeds, K.~Nybom, I.~Porres, Devops: A definition and perceived adoption
+  impediments, in: C.~Lassenius, T.~Dings{\o}yr, M.~Paasivaara (Eds.), Agile
+  Processes in Software Engineering and Extreme Programming, Springer
+  International Publishing, Cham, 2015, pp. 166--177.
+
+\bibitem{dimensions_of_devops_xp_15}
+L.~E. Lwakatare, P.~Kuvaja, M.~Oivo, Dimensions of devops, in: C.~Lassenius,
+  T.~Dings{\o}yr, M.~Paasivaara (Eds.), Agile Processes in Software Engineering
+  and Extreme Programming, Springer International Publishing, Cham, 2015, pp.
+  212--217.
+
+\bibitem{extending_dimensions_icsea_16}
+L.~E. Lwakatare, P.~Kuvaja, M.~Oivo, An exploratory study of devops extending
+  the dimensions of devops with practices, ICSEA'16, 2016, pp. 91--99.
+
+\bibitem{qualitative_devops_journalsw_17}
+E.~F.~M. A., A.~C., D.~M., A qualitative study of devops usage in practice,
+  Journal of Software: Evolution and Process 29~(6) (2017) e1885.
+
+\bibitem{glase1967discovery}
+B.~G. Glaser, A.~L. Strauss, The Discovery of Grounded Theory: Strategies for
+  Qualitative Research, Observations (Chicago, Ill.), Aldine Publishing
+  Company, 1967.
+
+\bibitem{coleman2007using}
+G.~Coleman, R.~O'Connor, Using grounded theory to understand software process
+  improvement: A study of irish software product companies, Information and
+  Software Technology 49~(6) (2007) 654--667.
+
+\bibitem{gt_medical_sociology}
+K.~Charmaz, Discovering chronic illness: using grounded theory, Social science
+  \& medicine 30~(11) (1990) 1161--1172.
+
+\bibitem{barnsteiner2002using}
+J.~H. Barnsteiner, Using grounded theory in nursing, Journal of Advanced
+  Nursing 40~(3) (2002) 370--370.
+
+\bibitem{gt_education}
+S.~A. Hutchinson, Education and grounded theory, Journal of Thought (1986)
+  50--68.
+
+\bibitem{gt_management}
+G.~Kenealy, Management research and grounded theory: A review of grounded
+  theory building approach in organisational and management research, The
+  Grounded Theory Review 7~(2) (2008) 95--117.
+
+\bibitem{hoda2017becoming}
+R.~Hoda, J.~Noble, \href{https://doi.org/10.1109/ICSE.2017.21}{Becoming agile:
+  A grounded theory of agile transitions in practice}, in: Proceedings of the
+  39th International Conference on Software Engineering, ICSE '17, IEEE Press,
+  Piscataway, NJ, USA, 2017, pp. 141--151.
+\newblock \href {http://dx.doi.org/10.1109/ICSE.2017.21}
+  {\path{doi:10.1109/ICSE.2017.21}}.
+\newline\urlprefix\url{https://doi.org/10.1109/ICSE.2017.21}
+
+\bibitem{stol2016grounded}
+K.-J. Stol, P.~Ralph, B.~Fitzgerald,
+  \href{http://doi.acm.org/10.1145/2884781.2884833}{Grounded theory in software
+  engineering research: A critical review and guidelines}, in: Proceedings of
+  the 38th International Conference on Software Engineering, ICSE '16, ACM, New
+  York, NY, USA, 2016, pp. 120--131.
+\newblock \href {http://dx.doi.org/10.1145/2884781.2884833}
+  {\path{doi:10.1145/2884781.2884833}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2884781.2884833}
+
+\bibitem{adolph2011using}
+S.~Adolph, W.~Hall, P.~Kruchten, Using grounded theory to study the experience
+  of software development, Empirical Software Engineering 16~(4) (2011)
+  487--513.
+
+\bibitem{denzin2007grounded}
+N.~K. Denzin, Grounded theory and the politics of interpretation, The Sage
+  handbook of grounded theory (2007) 454--471.
+
+\bibitem{jantunen2014using}
+S.~Jantunen, D.~C. Gause, Using a grounded theory approach for exploring
+  software product management challenges, Journal of Systems and Software 95
+  (2014) 32--51.
+
+\bibitem{hoda2011impact}
+R.~Hoda, J.~Noble, S.~Marshall, The impact of inadequate customer collaboration
+  on self-organizing agile teams, Information and Software Technology 53~(5)
+  (2011) 521--534.
+
+\bibitem{adolph2012reconciling}
+S.~Adolph, P.~Kruchten, W.~Hall, Reconciling perspectives: A grounded theory of
+  how people manage the process of software development, Journal of Systems and
+  Software 85~(6) (2012) 1269--1286.
+
+\bibitem{georgieva2008best}
+S.~Georgieva, G.~Allan, Best practices in project management through a grounded
+  theory lens., Electronic Journal of Business Research Methods 6~(1) (2008)
+  43--52.
+
+\bibitem{martinfowler2014microservices}
+J.~Lewis, F.~Martin, Microsservices,
+  \url{http://martinfowler.com/articles/microservices.html}, accessed:
+  2018-05-22 (2014).
+
+\bibitem{shull2007guide}
+F.~Shull, J.~Singer, D.~I. Sj{\o}berg, Guide to advanced empirical software
+  engineering, Springer, 2007.
+
+\bibitem{morgan1996focus}
+D.~L. Morgan, Focus groups, Annual review of sociology 22~(1) (1996) 129--152.
+
+\bibitem{requirementes_priorization_in_practice}
+L.~Lehtola, M.~Kauppinen, S.~Kujala, Requirements prioritization challenges in
+  practice, in: F.~Bomarius, H.~Iida (Eds.), Product Focused Software Process
+  Improvement, Springer Berlin Heidelberg, Berlin, Heidelberg, 2004, pp.
+  497--508.
+
+\bibitem{hoda2012developing}
+R.~Hoda, J.~Noble, S.~Marshall, Developing a grounded theory to explain the
+  practices of self-organizing agile teams, Empirical Software Engineering
+  17~(6) (2012) 609--639.
+
+\bibitem{what_devops_means_2010}
+J.~Willis, What devops means to me, retrieved from
+  \url{https://blog.chef.io/2010/07/16/what-devops-means-to-me/} (2010).
+
+\end{thebibliography}
