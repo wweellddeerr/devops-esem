@@ -148,8 +148,44 @@ is required for these applications. Some applications have a history of dozen
 of deployments in a single day, contrasting with one deployment per week in the
 best case, or more than a month without publishing in the worst.
 
+{
+\color{blue}
+
+Currently, of TCU's 131 enterprise systems, 15 are developed in a DevOps way.
+To illustrate the benefits of DevOps in terms of continuous delivery, in Table
+\ref{deployments_table} we present some numbers related to the number of deployments
+in production of the most significant systems.
+
+\begin{table}[hb!]
+\centering
+\begin{tabular}{|p{3cm}|p{1.2cm}|p{1.2cm}|p{0.8cm}|} \hline
+{\bf System Name} & {\bf Max Deployments in a Day} & {\bf Deployments in a Week} & {\bf KLOC}\\ \hline
+Autenticidade de Documentos & 18 & 37 & 26 \\ \hline
+Cobrança Executiva & 12 & 33 & 33 \\ \hline
+%Compras Governamentais & 8 & 2 & 1 \\ \hline
+Conecta TCU & 42 & 51 & 39  \\ \hline
+% e-Cautelares & 9 & 12 & 47  \\ \hline
+% e-Denuncia & 31 & 5 & 26 \\ \hline
+% e-Representação & 33 builds & 5 & 26 \\ \hline
+% e-TCE & 29 builds & 68 & 261 \\ \hline
+e-TCU Gestores & 18 & 64 & 98 \\ \hline
+Mapa de Exposição à Fraude e Corrupção & 9 & 39 & 7 \\ \hline
+Ministro & 17 & 51 & 48 \\ \hline
+%PessoaTCU & 23 & 1 & 127 \\ \hline
+%PessoaRFB & 7 & 0 & 3 \\ \hline
+%Protocolo Eletrônico & 19 & 0 & 35 \\ \hline
+Siga & 12 & 17 & 55 \\ \hline
+
+\end{tabular}
+\caption{Deployments of TCU' Enterprise Systems}
+\label{deployments_table}
+\end{table}
+
+}
+
+
 To reduce even more the risks related to continuously delivery software in
-production, and taking advantage of greater collaboration between its Development
+production, and taking advantage of greater collaboration between its development
 and operations teams, the TCU started to explore the potential of DevOps tools,
 like recovery automation, zero down-time, and auto scaling.
 
