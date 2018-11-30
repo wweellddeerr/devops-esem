@@ -3,49 +3,49 @@
 {
 \color{blue}
 In this section we detail a real experience on DevOps adoption where we could
-demonstrate the practical application of the model proposed above. Initially,
-we explain the context of the institution in which the model was applied; after
-we present, step by step, our perception about the model application; and,
+demonstrate the practical application of our DevOps adoption model. Initially,
+we explain the context of the institution where we applied our model; after that, 
+we present our perceptions about the model application; and,
 finally, we present the results of a focus group containing the perception of
-four professionals from the company about the adoption of DevOps as a whole,
-including their perception about the applicability and utility of our model
+four professionals from the institution about the adoption of DevOps as a whole,
+including their opinion about the applicability and utility of our model
 during the process.
 }
 
 \subsection{Context}
 
-The TCU is responsible for the accounting, financial, budget, performance, and property
+TCU is responsible for the accounting, financial, budget, performance, and property
 oversight of federal institutions and entities of the country. Currently, there are 2500
-professionals working at the TCU, of which approximately 300 work directly on either
-software development or operations. The source code repository at the TCU hosts
-more than 200 software project, totaling over 4 million lines of code.
+professionals working at TCU, of which approximately 300 work directly on either
+software development or operations. The source code repository at TCU hosts
+more than 200 software projects, totaling over 4 million lines of code.
 
 {
 \color{blue}
-For many years, the TCU software development process was marked by a strong call
+For many years, the software development process at TCU was characterized by a strong call
 for standardization of procedures. This approach favored the specialization of
 activities, causing segregation of development and operations teams in a rigid
 silo structure. Work on this structure revolved around bureaucratic
-communication and well-defined service level agreements - SLAs. Communication
+communication and well-defined service level agreements (SLAs). Communication
 between teams occurred basically through the use of a corporate service-desk tool.
-The SLAs provided maximum deadlines for the operations team to perform the
-procedures requested by the development team through the service-desk. The
+The SLAs mostly ensured deadlines for the operations team to perform the
+procedures that the development teams requested through the service-desk. The
 procedures include provisioning of infrastructure and database servers for
-development, testing, staging and production environments, requesting access
+development, testing, staging, and production environments, requesting access
 to server logs, and the most controversial of all: deployment of new versions
 of applications. The deployment involved a long chain of a week-long process,
 whose complex chaining of responsibilities often ran out of schedule, causing
 months of delays in software deliveries.
 
-In addition to delays in software deliveries, the silo structure caused a
+In addition to delaying software delivering, the silo structure caused a
 devastating blaming game between the teams. If there were delays in delivery
 or errors in some functionality, the focus was not on solving the problem, but
-on pointing out which team was the culprit.
+rather on pointing out which team was responsible for the problem.
 
 In search of solutions to these problems, and knowing the alleged benefits of
-the approach, the TCU included the development of the DevOps approach among the
+the approach, TCU included the development of the DevOps approach among the
 objective of its IT area. The first attempt by the technical teams to reach the
-goal was to seek consulting firms whose proposed solutions invariably involved
+goal was to hire consulting firms whose proposed solutions invariably involved
 implanting specific DevOps tools. These DevOps tools were typically related to
 automate some aspect of the process and, naturally, the teams turned their
 attentions to establish clear and separated responsibilities to each aspect of
@@ -62,9 +62,9 @@ adoption at TCU.
 
 \subsubsection{Disseminating the Collaborative Culture}
 
-Before the application of our model, the TCU had produced some w.r.t deployment
-automation results and the focus was being directed to the tooling issue.
-Considering this incomplete perspective of DevOps, the conflicts between
+Before applying our model, TCU had been using automation for supporting deployment
+activities and focusing on the tooling dimention of DevOps.
+Considering this incomplete perspective, the conflicts between
 development and operations teams continued. That is, the mere advance in
 implanting ``DevOps tools'' simply changed the points of conflict, but they
 persisted.
@@ -73,23 +73,23 @@ persisted.
 \color{blue}
 To start disseminating our model at TCU, we conducted a series of lectures to
 explain both the model itself and the way it was formulated. After knowing the
-model, the professionals began to understand that if the TCU wants to succeed in
+model, the professionals began to understand that if TCU wants to succeed in
 DevOps adoption, tooling and automation would not be enough. We consider that
 the teams changed their focus to build a \cc. This change was only possible due
-two factors: (1) the engagement and sponsorship of the IT managers and (2) the
-explanations about the process of constructing the model: although the TCU is a
+to two aspects: (1) the engagement and sponsorship of the IT managers and (2) the
+explanations about the process of constructing the model: although TCU is a
 governmental institution, its IT professionals recognize the importance of
 staying in line with industry practice to avoid an already before faced weight
 of dealing with completely legacy software.
 
 Looking to the concepts within the \cc category, the first practical action at
-the TCU was to facilitate communication between teams. The use of tickets and
+TCU was to facilitate communication between teams. The use of tickets and
 SLAs were then abolished in most of the scenarios. In its turn, the concepts of
 \textbf{software development empowerment} and \textbf{shared responsibilities}
-have found some resistance from some professionals. The strategy to bypass this
-kind of cultural resistance involves the use of enablers that will be discussed
-bellow and awareness about: (1) fortifying the collaboration will bring benefits
-to all involved and especially to the TCU and (2) following a model builded upon
+have found some resistance from some professionals. The strategy to mitigate this
+cultural resistance involved the use of enablers (that will be further discussed)
+and awareness about: (1) fortifying the collaboration will bring benefits
+to all involved and especially to TCU and (2) following a model built upon
 well succeeded experiences is a low-risk strategy for TCU to explore the
 benefits of DevOps.
 
@@ -101,17 +101,18 @@ idea has been widely accepted and applied by most of the involved professionals.
 
 \subsubsection{Applying the Enablers}
 
-Looking to enablers, the TCU is applying \cat{sharing and transparency} concepts.
-The role of internal tech talks and committees to disseminate that collaboration
-culture and related concepts is being reinforced. When a new infrastructure had
-to be provided and configured, the current guideline is that there must be a
-kind of \emph{pair programming} between developers and infrastructure
-members. All application related tasks must be executed in a collaborative
+Considering the enablers dimention of our model, TCU is currently
+applying \cat{sharing and transparency} concepts.
+The role of internal tech talks and committees to disseminate that \cc
+and related concepts is being reinforced. When a new infrastructure had
+to be provided and configured, the current guideline is that these
+activities should be conducted in ``pairs'' involving members of
+development and infrastructure teams. All application related tasks must be executed in a collaborative
 way. Naturally, the professionals noticed that automation would facilitate the
 operationalization of that collaboration. For this reason, the infrastructure
 provisioning and management was automated.
 
-The TCU also uses continuous measurement and quality assurance concepts as
+TCU also uses continuous measurement and quality assurance concepts as
 enablers of its DevOps adoption. The applications started to be continuously
 tested and measured. The tests were automated and included in the pipelines.
 Verification of test coverage and quality code also became part of the pipeline.
