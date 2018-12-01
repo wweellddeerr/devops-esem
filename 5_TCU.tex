@@ -32,17 +32,17 @@ The SLAs mostly ensured deadlines for the operations team to perform the
 procedures that the development teams requested through the service-desk. The
 procedures include provisioning of infrastructure and database servers for
 development, testing, staging, and production environments, requesting access
-to server logs, and the most controversial of all: deployment of new versions
+to server logs, and the most controversial of all acitivies: deployment of new versions
 of applications. The deployment involved a long chain of a week-long process,
 whose complex chaining of responsibilities often ran out of schedule, causing
 months of delays in software deliveries.
 
-In addition to delaying software delivering, the silo structure caused a
-devastating blaming game between the teams. If there were delays in delivery
+In addition to delay the software delivering, the silo structure caused a
+devastating blaming game between the teams. If there were delays in the delivery process,
 or errors in some functionality, the focus was not on solving the problem, but
 rather on pointing out which team was responsible for the problem.
 
-In search of solutions to these problems, and knowing the alleged benefits of
+When searching of solutions to mitigate these problems, and knowing the alleged benefits of
 the approach, TCU included the development of the DevOps approach among the
 objective of its IT area. The first attempt by the technical teams to reach the
 goal was to hire consulting firms whose proposed solutions invariably involved
@@ -122,16 +122,16 @@ of DevOps as will be seen below when checking the outputs.
 
 It is important to note that, before DevOps, deployment activities were
 historically a controversial point at the TCU. Several conflicts occurred over
-time. Rigid procedures were created to try to avoid problems. These ``rigid
+time. Rigid procedures were created to try to avoid problems. However, these ``rigid
 procedures'' often led to periods of months without any software delivery. As
 our model advocates that there is no precedence between enablers, the specific
 characteristics of the company are a good starting point to select the most
-relevant enablers to explore. So, the TCU' teams started by the deployment,
+relevant enablers to explore. The TCU teams started by the deployment,
 applying automation and quality checking in the process. With the automated
-execution of tests and static source code analysis, the development team
-demonstrates to the operations team that the products had quality, increasing
+execution of tests and static source code analyser, the development team
+demonstrated to the operations team that the products had quality, increasing
 confidence between them and reducing the necessity of rigid procedures to put
-some software in production. So, to automate the deployment in a collaborative
+some software in production. To automate the deployment in a collaborative
 way, the teams jointly developed an infrastructure as code strategy to put the
 details about deployment in the application source code repository itself,
 increasing the transparency. Little by little the deployment of applications has
@@ -152,10 +152,11 @@ best case, or more than a month without publishing in the worst.
 {
 \color{blue}
 
-Currently, of TCU's 131 enterprise systems, 15 are developed in a DevOps way.
-To illustrate the benefits of DevOps in terms of continuous delivery, in Table
-\ref{deployments_table} we present some numbers related to the number of deployments
-in production of the most significant systems.
+Currently, among the TCU's 131 enterprise systems, 15 are developed in a DevOps way.
+To illustrate the benefits of DevOps in terms of continuous delivery, at Table~\ref{deployments_table}
+we present some numbers related to the number of deployments
+in production of the most significant systems.\gnote{seria interessante saber
+quantas pessoas trabalham nos dois times}
 
 \begin{table}[hb!]
 \centering
@@ -276,16 +277,17 @@ environments} (Virtual Machines) for the installation of tools that are related
 to the development work. This action was exemplified by the successful
 installations of the Elasticsearch\footnote{https://www.elastic.co/} and
 Kafka\footnote{https://kafka.apache.org/} tools. The previously existing problem
-was that when a developer needed a tool like these, inherent in his work and
-necessary to adequately address specific problems, he depended on opening a
+was that when a developer needed tools like these consensus
+%, inherent in his work and necessary to adequately address specific problems,
+he depended on opening a
 request for the operations team to provide it, with deadlines that often make
-the use of the most adequate solution unfeasible. With VM provisioning and
+the use of the most adequate solution unfeasible\gnote{nao entendi. demora demais?}. With VM provisioning and
 cooperation between the two teams, these tools became available quickly for use
 and the responsibility for its management is joint. This is a clear example of
 application of the concepts of \textbf{software development empowerment} and
 \textbf{shared responsibility} of the core category \cc.
 
-Next, the use of \textbf{microservices}, and \textbf{containers} as environment
+Next, the use of \textbf{microservices} and \textbf{containers} as environment
 to run them was debated. The first problem that this action solved, in the
 participants' understanding, was the previous lack of parity between the environments
 (development, test, staging and production). The recurring problems of
@@ -320,7 +322,7 @@ Then, the use of \textbf{multidisciplinary pipelines} in the most recent applica
 TCU was pointed out and debated. These pipelines involve everything from the
 build, through automated tests and static analysis of source code, execution of
 containers using Kubernetes and publication isonomically in the different
-environments (development, staging and production). A Jenkins is used as tool
+environments (development, staging and production). Jenkins is used as a tool
 to describe and execute the pipelines. One single trigger execute a set of
 steps that previously required several comings and goings between the teams and
 a long time to complete. The group agreed that the construction of multidisciplinary
@@ -333,8 +335,8 @@ more concepts: (1) operations in day-to-day development, (2) test automation,
 
 \textbf{Automated Database Migrations} was the next point considered as part of
 DevOps adoption. The participants explored the differences between the previous
-scenario - where changes in the database structure of an application needed to be
-made according to an SLA and, therefore, requested through service-desk - and
+scenario --- where changes in the database structure of an application needed to be
+made according to an SLA and, therefore, requested through service-desk --- and
 the new one where the Flyway\footnote{https://flywaydb.org/} tool is used to
 manage database migrations. The use of these type of tool had previously been
 discarded because the operations team could not provide the database owner
@@ -346,10 +348,10 @@ here.
 
 Finally, the last point considered by the group as part of DevOps adoption was
 one more solution built in a collaborative way for \textbf{continuously and automated
-monitoring} of application errors. Previously, a developer's simple access
+monitoring} of application errors. Previously, a simple access
 to an application's log needed to be requested through the service-desk. The
 solution automatically collects the logs, searches for errors in its content,
-and send messages through Slack to both teams in case of error. We can find
+and,  in case of errors, sends messages through Slack to both teams. We can find
 the application of two other concepts: (1) monitoring automation and
 (2) application log monitoring.
 
@@ -368,14 +370,14 @@ The following are the two main benefits of model usage, discussed in the focus
 group:
 
 \textbf{DevOps Institutional Understanding}: In response to the question about
-the model' contributions to TCU, initially it was pointed out that, during the
+the model contributions to TCU, initially it was pointed out that, during the
 initial attempts with consultant firms, it was clear that the mere use of
 tools did not bring the teams closer together. Some developers acted as if DevOps
-had given them permission to ignore operations team' procedures. And the
-operations team was overly concerned in formally delimit the administration
-responsibilities to each used tool. The discussion advance showed that they all
-agreed that fostering a \cc was not taken into account before. And seeing,
-throughout the model, that the DevOps adoption in well succeeded scenarios goes
+had given them permission to ignore operations team' procedures. The
+operations team, on the other hand, was overly concerned in formally delimit the administration
+responsibilities to each used tool. The discussion showed that they all
+agreed that fostering a \cc was not taken into account before.
+Throughout the model, the DevOps adoption in well succeeded scenarios goes
 mainly through this point, has made possible a change in teams posture about
 collaboration.
 
@@ -390,7 +392,7 @@ to guide next steps.
 built taking into account successful industry experiences and this represents
 great value for the TCU. In the group's understanding, although the TCU
 possesses many governmental environments peculiarities, the search for
-technological innovation is part of its strategic map, and can not be achieved
+technological innovation is part of its strategic map, and cannot be achieved
 by looking only at scenarios similar to the current one. It was emphasized that
 the industry is an important player in the definition of new technologies that,
 adapted to a greater or lesser degree, may be fully applicable to government
@@ -436,7 +438,7 @@ Here, the group discussed that DevOps adoption has considerably increased the
 TCU's surface of technological vulnerabilities. It was pointed out that the
 operations team is very concerned about information security, and that its
 professionals are evaluating the implemented tools and will propose modifications.
-The participants then aligned that this debate can not be only on the operations
+The participants then aligned that this debate cannot be only on the operations
 team, as this is a manifestation of collaboration lack.
 
 The P2 then suggested that these concerns extend the scope from DevOps to a
