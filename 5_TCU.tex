@@ -141,30 +141,37 @@ best case, or more than a month without publishing in the worst.
 Currently, among the TCU's 131 enterprise systems, 15 are developed in a DevOps way.
 To illustrate the benefits of DevOps in terms of continuous delivery, at Table~\ref{deployments_table}
 we present some numbers related to deployments
-in production of the most significant systems.
+in production of the most significant systems. Considering the e-TCE system,
+after the DevOps adoption, it was possible to make 29 deployments
+on a single day. Before, after the DevOps adoption, and due to the
+rigid policies of the operations team, the deployments were
+schedule to occur once a week. Now, for these specific systems,
+it is possible to deploy at any moment and the typical
+downtime of the old enterprise system (around 15 minutes) was
+almost completely eliminated for the new systems using
+Kubernetes. That is, making the deployment activities
+more agile and reducing the downtime of the applications are
+the current main outcomes of introducing DevOps at TCU. 
 
 \begin{table}[hb!]
-\centering
-\begin{tabular}{|p{5.5cm}|p{3.5cm}|p{2.7cm}|p{1.5cm}|} \hline
-{\bf System Name} & {\bf Max Deployments in a Day} & {\bf Deployments in a Week} & {\bf KLOC}\\ \hline
-Autenticidade de Documentos & 18 & 37 & 26 \\ \hline
-Cobrança Executiva & 12 & 33 & 33 \\ \hline
-% Compras Governamentais & 8 & 2 & 1 \\ \hline
-Conecta TCU & 42 & 51 & 39  \\ \hline
-e-Cautelares & 9 & 12 & 47  \\ \hline
-% e-Denuncia & 31 & 0 & 26 \\ \hline
-% e-Representação & 33 builds & 0 & 26 \\ \hline
-e-TCE & 29 & 68 & 261 \\ \hline
-e-TCU Gestores & 18 & 64 & 98 \\ \hline
-Mapa de Exposi\c{c}\~{a}o a Fraude & 9 & 39 & 7 \\ \hline
-Ministro & 17 & 51 & 48 \\ \hline
-% PessoaTCU & 23 & 1 & 127 \\ \hline
-% PessoaRFB & 7 & 0 & 3 \\ \hline
-% Protocolo Eletrônico & 19 & 0 & 35 \\ \hline
-Siga & 12 & 17 & 55 \\ \hline
-
+  \centering
+  \begin{small}
+\begin{tabular}{p{7cm}p{3cm}p{3cm}} \toprule
+{\bf System Name} & {\bf MDDS} & {\bf MWDS} \\ \midrule
+Autenticidade de Documentos (26 KLOC) & 18 & 37 \\ 
+Cobrança Executiva (33 KLOC) & 12 & 33 \\ 
+Conecta TCU (39 KLOC) & 42 & 51 \\ 
+e-Cautelares (47 KLOC) & 9 & 12 \\ 
+e-TCE (261 KLOC) & 29 & 68 \\ 
+e-TCU Gestores (98 KLOC) & 18 & 64 \\ 
+Mapa de Exposi\c{c}\~{a}o a Fraude (7 KLOC) & 9 & 39 \\ 
+Ministro (48 KLOC) & 17 & 51 \\ 
+Siga (55 KLOC) & 12 & 17 \\ \bottomrule
 \end{tabular}
-\caption{Deployments of TCU' Enterprise Systems}
+\end{small}
+  \caption{Deployments of TCU' Enterprise Systems. MDDS means the maximum
+    number of deployments in a day. MWDS means the maximum number of deployments
+  in a week}
 \label{deployments_table}
 \end{table}
 
@@ -208,12 +215,12 @@ profile is described in Table \ref{focusgroup_part}.
 
 \begin{table}[hb!]
 \centering
-\begin{tabular}{|p{0.6cm}|p{1.2cm}|p{2.5cm}|p{6cm}|} \hline
-{\bf P\#} & {\bf Team} & {\bf Formation} & {\bf Experience}\\ \hline
-P1 & Dev & Graduate & 3 years in dev team at TCU and 9 years of previous experience \\ \hline
-P2 & Dev & Posgraduate & 6 years in dev team at TCU and 7 years of previous experience \\ \hline
-P3 & Ops & Graduate & 3 years in ops team at TCU and 8 years of previous experience \\ \hline
-P4 & Ops & Graduate & 3 years in ops team at TCU and 10 years of previous experience \\ \hline
+\begin{tabular}{p{0.6cm}p{1.2cm}p{2.5cm}p{6cm}} \toprule
+{\bf P\#} & {\bf Team} & {\bf Educational background} & {\bf Experience}\\ \midrule
+P1 & Dev & Graduate & 3 years in dev team at TCU and 9 years of previous experience \\ 
+P2 & Dev & Posgraduate & 6 years in dev team at TCU and 7 years of previous experience \\ 
+P3 & Ops & Graduate & 3 years in ops team at TCU and 8 years of previous experience \\ 
+P4 & Ops & Graduate & 3 years in ops team at TCU and 10 years of previous experience \\ \bottomrule
 \end{tabular}
 \caption{Focus Group Participants}
 \label{focusgroup_part}
@@ -225,20 +232,20 @@ remaining of this section.
 
 \begin{table}[t]
 \centering
-\begin{tabular}{|p{0.2cm}|p{3.4cm}|p{10cm}|} \hline
-& \textbf{Topic} & \textbf{Questions} \\ \hline
+\begin{tabular}{p{0.2cm}p{3.4cm}p{10cm}} \toprule
+& \textbf{Topic} & \textbf{Questions} \\ \midrule
 
 1 & Current status of DevOps adoption at TCU &
 1. What actions developed in the TCU do you consider to be part of DevOps adoption?\newline\newline
-2. What previously existing problems have been solved by these actions? \\ \hline
+2. What previously existing problems have been solved by these actions? \\
 
 2 & Applicability and utility of the proposed model &
 1. Do you consider that the proposed model has contributed to DevOps adoption at TCU?\newline\newline
-2. If so, what are the main contributions? \\ \hline
+2. If so, what are the main contributions? \\ 
 
 3 & Challenges faced and next steps in DevOps adoption &
 1. What are the main challenges that TCU currently faces in DevOps adoption?\newline\newline
-2. What are the next steps in DevOps adoption at TCU?\\ \hline
+2. What are the next steps in DevOps adoption at TCU?\\ \bottomrule
 
 \end{tabular}
 \caption{Focus Group Topics}
@@ -462,7 +469,7 @@ focus group discussions, this is not a mere coincidence and emphasizes that our
 model is guiding, in a high level of abstraction, the actions of the TCU toward
 DevOps adoption. In addition, it was possible to note a previously non-existent
 concern about the \cc, the participants frequently placed their actions as part
-of the efforts to foster the \cc. {\color{blue}Altogether, the results of the
+of the efforts to foster the \cc. Altogether, the results of the
 focus group allow us to answer our second research question 
 \emph{(RQ2) How does our model contribute to the adoption of DevOps on a specific scenario?}
 
@@ -479,5 +486,5 @@ focus group allow us to answer our second research question
   is guiding the decisions on the adoption process
   at TCU. 
 \end{mr}
-}
+
 
