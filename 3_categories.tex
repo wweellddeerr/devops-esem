@@ -169,8 +169,8 @@ between teams, which is an important aspect of the \cc.
 \begin{mq}
 ``\emph{Before we adopted DevOps, there was a lot of manual work. For example, if you
 needed to create a database schema, it was a manual process; if you needed to create a
-database server, it was a manual process; if you needed to create additional EC2 \footnote{Amazon Elastic
-Compute Cloud} instances, such a process was also manual.
+database server, it was a manual process; if you needed to create additional EC2 (Amazon Elastic
+Compute Cloud) instances, such a process was also manual.
 This manual work was time consuming and often caused errors and
 rework.}'' (P1, DevOps Developer, Ireland)
 \end{mq}
@@ -246,7 +246,7 @@ structured actions. For instance, if one person wants to share some content
 relevant to the rest of the team, she is completely free to book a room
 and carry out her own tech talk. \ldots Considering this investment in removing
 silos, the guy knows that every procedure should be transparent and shared
-to anyone that is interested on that. 
+to anyone that is interested on that.
 This creates a positive cycle that increases the sense of collaboration
 and makes one to share more details about what she does. "(P7, Support Analyst, Brazil)
 \end{mq}
@@ -339,31 +339,33 @@ decrease the chances of downtimes due to errors in specific versions, which
 is the concept of \textbf{zero down-time}, the last one of the \cat{resilience} category.
 
 \begin{mq}
-``When it was necessary to deploy some specific systems, 
+``When it was necessary to deploy some specific systems,
   there was often a downtime of a few minutes of the
   application. In the cases that the deployment did not
   succeed, the downtime was even greater (perhaps a couple
   of hours). But with the adoption of DevOps we were able
   to eliminate the downtime, particularly with the introduction
-  of Kubernetes\footnote{https://kubernetes.io/}"
+  of Kubernetes (https://kubernetes.io/)"
   (P1, DevOps Developer, Ireland)
 \end{mq}
 
 \subsection{Categories that are both Enablers and Outcomes}
 
-Finally, we detail in what follows the categories that are both enablers
+Finally, we summarize the categories that are both enablers
 and outcomes, including \cat{continuous measurement}
-and \cat{quality assurance}.
+and \cat{quality assurance}. More details about these categories
+can be found in the original study~\cite{Luz:2018:ESEM}.
 
-\subsubsection{Continuous Measurement}
-
+\vspace{0.2cm}
+\noindent
+\textbf{Continuous Measurement.}
 As an enabler, regularly performing the measurement and sharing activities
 contributes to avoiding existing silos and reinforces the \cc, because it is
 considered a typical responsibility of the operations team.
-
+\iffalse
 \begin{mq}
 ``\emph{Before, we had only sporadic looks to
-zabbix\footnote{https://www.zabbix.com/} to check if everything was OK.
+zabbix (https://www.zabbix.com/) to check if everything was OK.
 At most someone would stop to look memory and CPU consumption. To maintain
 the quality of services, we expanded this view of metrics collection so that it
 became part of the software product. We then started to collect metrics continuously
@@ -371,18 +373,18 @@ and with shared responsibilities. For example, if an overflow occurred in the
 number of database connections, everyone received an alert and had
 the responsibility to find solutions to that problem.}'' (P3, DevOps Developer, Ireland)
 \end{mq}
-
+\fi
 As an outcome, the continuously collection of metrics from applications and
 infrastructure was appointed as a necessary behavior of the teams after the adoption
 of DevOps. It occurs because the resultant agility increases the risk of
 something going wrong. The teams should be able to react quickly in case of
 problems, and the continuous measurement allows it to be proactive and resilient.
-
+\iffalse
 \begin{mq}
 ``\emph{With DevOps we can do deployment all the time and, consequently, there was
 a need for greater control of what was happening. So, we used
-grafana\footnote{https://grafana.com/} and
-prometheus\footnote{https://prometheus.io/} to follow everything that is
+grafana (https://grafana.com/) and
+prometheus (https://prometheus.io/) to follow everything that is
 happening in the infrastructure and in the applications. We have a complete
 dashboard in real time, we extract reports and, when something goes wrong, we
 are the first to know.}'' (P10, Network Administrator, Brazil)
@@ -399,9 +401,11 @@ the instrumentation to provide metrics that are used to evaluate aspects and
 often direct evolution or business decisions. All this monitoring/measurement
 can occur in an automated way, the \textbf{monitoring automation} has already been
 detailed in subsection \ref{ssec:automation}.
+\fi
 
-\subsubsection{Quality Assurance}
-
+\vspace{0.2cm}
+\noindent
+\textbf{Quality Assurance.}
 In the same way as continuous measurement, quality assurance is a category that
 can work both as enabler and as outcome. As enabler because increasing quality
 leads to more confidence between the teams, which in the end generates a virtuous
@@ -409,6 +413,7 @@ cycle of collaboration. As outcome, the principle is that it is not
 feasible to create a scenario of continuous delivery of software with no control
 regarding the quality of the products and its production processes.
 
+\iffalse
 Respondents pointed to the need for a sophisticated control of which code should
 be part of assets that are continuously delivered. The Gitflow
 approach~\cite[Chapter~5]{wheeler:2016} was recurrently cited as a
@@ -432,9 +437,11 @@ tests.
   that we should automate the tests as much as possible. \ldots there we
   also started using Gitflow to eliminate the inconsistencies that
   happened, since there was a lot of people contributing
-  to the same repository, without using a pull request based approach. 
+  to the same repository, without using a pull request based approach.
   This often compromised the delivery process\ldots'' (P6, Developer, Portugal)
 \end{mq}
+
+\fi
 
 Another two concepts cited as part of quality assurance in DevOps adoption are
 the use of \textbf{source code static analysis} (4) to compute quality metrics in
